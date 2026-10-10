@@ -321,3 +321,40 @@ footer a { color: var(--green); font-weight: 600; }
 .nearby-days { max-width: 150px; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px; }
 .nearby-days button { min-width: 44px; height: 36px; padding: 0 8px; border: 1px solid #b9cdc1; border-radius: 9px; background: white; color: var(--green); font-size: 13px; font-weight: 700; }
 .nearby-days button:hover { border-color: var(--green); background: var(--green); color: white; }
+
+/* Termos, privacidade e apoio */
+.legal-updated { color: var(--muted); font-size: 13px; }
+.legal h3 { margin: 16px 0 4px; color: var(--ink); font-size: 15px; font-weight: 700; }
+.legal ul, .legal ol { margin: 0 0 12px; padding-left: 20px; }
+.legal li { margin-bottom: 6px; }
+.legal-nav { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 14px; }
+.legal-independence { margin-top: 14px; color: var(--muted); font-size: 13px; }
+.footer-independence { flex-basis: 100%; margin: 0; color: var(--ink-soft); font-size: 12px; font-weight: 600; }
+
+/* Doação: o aviso vem antes de tudo e o código só aparece depois da confirmação */
+.donation-warning { margin: 20px 0 16px; padding: 18px; border: 2px solid #b3261e; border-radius: 16px; background: #fff4f2; color: #5c1a15; }
+.donation-warning h2 { display: flex; align-items: flex-start; gap: 10px; margin: 0 0 12px; color: #8c1d18; font-family: inherit; font-size: 19px; font-weight: 800; line-height: 1.25; }
+.donation-warning h2 svg { flex: none; margin-top: 1px; }
+.donation-warning ul { margin: 0 0 14px; padding-left: 20px; }
+.donation-warning li { margin-bottom: 8px; }
+.donation-confirm { display: flex; align-items: flex-start; gap: 12px; padding: 14px; border: 1px solid #e0a39c; border-radius: 12px; background: white; color: var(--ink); cursor: pointer; font-weight: 600; }
+.donation-confirm input { width: 22px; height: 22px; flex: none; margin: 1px 0 0; accent-color: var(--green); }
+.donation-locked { margin: 0; padding: 14px; border: 1px dashed #c8d4cd; border-radius: 12px; color: var(--muted); font-size: 14px; text-align: center; }
+.donation-pix { padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: white; }
+.donation-receiver { margin: 0 0 14px; padding: 10px 12px; border-radius: 10px; background: var(--mint); color: var(--green-dark); font-size: 14px; }
+.donation-amounts { display: flex; flex-wrap: wrap; gap: 6px; }
+.donation-amounts button { height: 44px; padding: 0 14px; border: 1px solid var(--line); border-radius: 10px; background: white; color: var(--ink-soft); font-size: 14px; font-weight: 700; }
+.donation-amounts button:hover { border-color: #a8c4b5; color: var(--green); }
+.donation-amounts button.active { border-color: var(--green); background: var(--green); color: white; }
+.donation-custom { display: block; margin-top: 12px; color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
+.donation-custom input { display: block; width: 100%; max-width: 220px; height: 44px; margin-top: 6px; padding: 0 12px; border: 1px solid #d3ddd7; border-radius: 10px; color: var(--ink); font-size: 16px; font-weight: 400; }
+.donation-custom small { display: block; margin-top: 6px; color: var(--danger); font-size: 12px; font-weight: 400; text-transform: none; letter-spacing: 0; }
+.donation-code { display: grid; justify-items: center; gap: 10px; margin: 18px 0; }
+.pix-qr { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; }
+.donation-amount-line { margin: 0; color: var(--ink-soft); font-size: 14px; }
+.donation-code code { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: #f6f8f6; color: var(--ink-soft); font-family: var(--font-geist-mono), ui-monospace, monospace; font-size: 12px; line-height: 1.5; overflow-wrap: anywhere; user-select: all; }
+.donation-copy { width: 100%; height: 48px; display: flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 12px; background: var(--green); color: white; font-size: 15px; font-weight: 700; }
+.donation-copy:hover { background: var(--green-dark); }
+.donation-steps { margin: 0; padding-left: 20px; color: var(--ink-soft); font-size: 14px; }
+.legal ul, .donation-warning ul { list-style: disc; }
+.legal ol { list-style: decimal; }
