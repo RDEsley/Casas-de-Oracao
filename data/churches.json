@@ -57,8 +57,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.861639,
+      "longitude": -48.023828,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -89,7 +89,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Areal%2C%20QS%208%20-%20Conjunto%20420-B%20-%20Lote%201%2C%20%C3%81guas%20Claras%2C%20DF%2C%2071973-725%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Areal%2C%20QS%208%20-%20Conjunto%20420-B%20-%20Lote%201%2C%20%C3%81guas%20Claras%2C%20DF%2C%2071973-725%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0108",
@@ -115,8 +116,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8614324,
-      "longitude": -48.0034122,
+      "latitude": -15.873747,
+      "longitude": -48.008331,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -138,7 +139,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vered%C3%A3o%20-%20Setor%20Habitacional%20Arniqueira%20-%20Central%2C%20Ch%C3%A1cara%2056%20-%20Lote%2072%2C%20%C3%81guas%20Claras%2C%20DF%2C%2071993-100%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vered%C3%A3o%20-%20Setor%20Habitacional%20Arniqueira%20-%20Central%2C%20Ch%C3%A1cara%2056%20-%20Lote%2072%2C%20%C3%81guas%20Claras%2C%20DF%2C%2071993-100%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-07-1342",
@@ -169,8 +171,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7442236,
-      "longitude": -48.2795007,
+      "latitude": -15.76693,
+      "longitude": -48.260746,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -192,7 +194,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Camping%20Clube%2C%20Quadra%2047%20-%20Lote%2018%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072914-093%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Camping%20Clube%2C%20Quadra%2047%20-%20Lote%2018%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072914-093%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "approximate",
+      "coordinateSource": "cnefe-address"
     },
     {
       "id": "BR-07-1056",
@@ -218,8 +221,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7519033,
-      "longitude": -48.253564,
+      "latitude": -15.752486,
+      "longitude": -48.250197,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -241,7 +244,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Bela%20Vista%20da%20Barragem%2C%20Quadra%207%20-%20Lote%205%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072911-551%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Bela%20Vista%20da%20Barragem%2C%20Quadra%207%20-%20Lote%205%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072911-551%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-07-1184",
@@ -267,8 +271,8 @@
           "type": "Reunião de jovens e menores"
         }
       ],
-      "latitude": -15.7059053,
-      "longitude": -48.2756227,
+      "latitude": -15.705361,
+      "longitude": -48.280755,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -284,7 +288,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Embaixador%2C%20Quadra%2001%20-%20Lote%2005%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072917-144%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Embaixador%2C%20Quadra%2001%20-%20Lote%2005%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072917-144%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-07-1001",
@@ -305,8 +310,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7359993,
-      "longitude": -48.30657069999999,
+      "latitude": -15.738491,
+      "longitude": -48.308682,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -328,7 +333,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Solar%20da%20Barragem%2C%20Quadra%209%20-%20Lote%2013%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072921-149%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Solar%20da%20Barragem%2C%20Quadra%209%20-%20Lote%2013%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072921-149%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-07-0611",
@@ -359,8 +365,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7480732,
-      "longitude": -48.3309352,
+      "latitude": -15.750324,
+      "longitude": -48.334385,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -382,7 +388,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Am%C3%A9rica%20IV%2C%20Quadra%204%20-%20Lote%2010%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072922-473%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Am%C3%A9rica%20IV%2C%20Quadra%204%20-%20Lote%2010%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072922-473%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-07-0846",
@@ -413,8 +420,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7434495,
-      "longitude": -48.3378959,
+      "latitude": -15.710984,
+      "longitude": -48.283902,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -442,7 +449,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Brasilia%20II%2C%20Quadra%2026%20-%20Lotes%2012%20e%2013%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072917-678%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Brasilia%20II%2C%20Quadra%2026%20-%20Lotes%2012%20e%2013%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072917-678%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-07-0641",
@@ -473,8 +481,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7196378,
-      "longitude": -48.2889032,
+      "latitude": -15.724415,
+      "longitude": -48.291829,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -509,7 +517,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20da%20Barragem%20IV%2C%20Quadra%2038%20-%20Lotes%2025%20e%2026%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072920-304%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20da%20Barragem%20IV%2C%20Quadra%2038%20-%20Lotes%2025%20e%2026%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072920-304%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-07-1114",
@@ -540,8 +549,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.72186,
-      "longitude": -48.2886787,
+      "latitude": -15.728219,
+      "longitude": -48.300108,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -563,7 +572,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20da%20Barragem%20VI%2C%20Quadra%2043%20-%20Lote%209%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072921-034%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20da%20Barragem%20VI%2C%20Quadra%2043%20-%20Lote%209%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072921-034%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-07-1004",
@@ -594,8 +604,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7610757,
-      "longitude": -48.2457966,
+      "latitude": -15.769707,
+      "longitude": -48.245982,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -618,7 +628,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Gua%C3%ADra%2C%20Quadra%2020%20-%20Lote%207%20e%208%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072912-603%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Gua%C3%ADra%2C%20Quadra%2020%20-%20Lote%207%20e%208%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072912-603%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-07-1285",
@@ -639,8 +650,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7442065,
-      "longitude": -48.2794916,
+      "latitude": -15.758258,
+      "longitude": -48.329122,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -656,7 +667,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Planalto%2C%20Quadra%201%20-%20Lote%2010%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072926-323%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Planalto%2C%20Quadra%201%20-%20Lote%2010%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072926-323%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "approximate",
+      "coordinateSource": "cnefe-address"
     },
     {
       "id": "BR-07-0807",
@@ -682,8 +694,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7798421,
-      "longitude": -48.2971143,
+      "latitude": -15.787194,
+      "longitude": -48.291945,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -705,7 +717,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Santa%20L%C3%BAcia%2C%20Quadra%2057%20-%20Lote%2019%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072927-565%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Santa%20L%C3%BAcia%2C%20Quadra%2057%20-%20Lote%2019%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072927-565%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-07-0965",
@@ -736,8 +749,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7293545,
-      "longitude": -48.2560712,
+      "latitude": -15.733327,
+      "longitude": -48.258956,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -771,7 +784,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Mans%C3%B5es%20Village%2C%20Quadra%20C-34%20-%20Lotes%2012%20e%2019%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072916-155%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Mans%C3%B5es%20Village%2C%20Quadra%20C-34%20-%20Lotes%2012%20e%2019%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072916-155%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-07-1287",
@@ -787,8 +801,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7442065,
-      "longitude": -48.2794916,
+      "latitude": -15.773158,
+      "longitude": -48.290757,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -804,7 +818,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Royal%20Parque%2C%20Quadra%205C%20-%20Lote%2020%20A%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072927-263%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Royal%20Parque%2C%20Quadra%205C%20-%20Lote%2020%20A%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072927-263%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "approximate",
+      "coordinateSource": "cnefe-address"
     },
     {
       "id": "BR-07-0805",
@@ -835,8 +850,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.819699,
-      "longitude": -48.2140379,
+      "latitude": -15.740759,
+      "longitude": -48.291119,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -870,7 +885,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%2010%2C%20Quadra%20104%20-%20Conjunto%20A%20-%20Lote%2029%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072925-135%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%2010%2C%20Quadra%20104%20-%20Conjunto%20A%20-%20Lote%2029%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072925-135%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-07-0612",
@@ -901,8 +917,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.819699,
-      "longitude": -48.2140379,
+      "latitude": -15.750307,
+      "longitude": -48.265239,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -940,7 +956,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%202%20-%20Central%2C%20Quadra%2038%20-%20Conjunto%20B%20-%20Lote%2012%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072910-127%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%202%20-%20Central%2C%20Quadra%2038%20-%20Conjunto%20B%20-%20Lote%2012%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072910-127%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-07-0613",
@@ -971,8 +988,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7442065,
-      "longitude": -48.2794916,
+      "latitude": -15.773784,
+      "longitude": -48.2759,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -995,7 +1012,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%206%2C%20Quadra%205%20-%20Conjunto%20B%20-%20Lote%2026%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072914-499%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%206%2C%20Quadra%205%20-%20Conjunto%20B%20-%20Lote%2026%2C%20%C3%81guas%20Lindas%20de%20Goi%C3%A1s%2C%20GO%2C%2072914-499%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0092",
@@ -1026,8 +1044,8 @@
           "type": "Reunião de jovens e menores"
         }
       ],
-      "latitude": -15.74422142584659,
-      "longitude": -47.897788094104946,
+      "latitude": -15.744205,
+      "longitude": -47.897843,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1061,7 +1079,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Asa%20Norte%20-%20Central%2C%20SCLRN%20715%20-%20Bloco%20B%20-%20Lote%202%2C%20Bras%C3%ADlia%2C%20DF%2C%2070770-512%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Asa%20Norte%20-%20Central%2C%20SCLRN%20715%20-%20Bloco%20B%20-%20Lote%202%2C%20Bras%C3%ADlia%2C%20DF%2C%2070770-512%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0103",
@@ -1092,8 +1111,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.707775047463567,
-      "longitude": -47.91485712898672,
+      "latitude": -15.700545,
+      "longitude": -47.909783,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1115,7 +1134,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Granja%20do%20Torto%2C%20Rua%205%20-%20Lote%2017%2C%20Bras%C3%ADlia%2C%20DF%2C%2070636-340%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Granja%20do%20Torto%2C%20Rua%205%20-%20Lote%2017%2C%20Bras%C3%ADlia%2C%20DF%2C%2070636-340%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "approximate",
+      "coordinateSource": "cnefe-address"
     },
     {
       "id": "BR-24-0144",
@@ -1141,8 +1161,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.844627098650037,
-      "longitude": -47.793507745029494,
+      "latitude": null,
+      "longitude": null,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1164,7 +1184,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Bot%C3%A2nico%2C%20Quadra%20S%C3%A3o%20Bartolomeu%20-%20QSB%2001%20-%20Lote%2018%2C%20Bras%C3%ADlia%2C%20DF%2C%2071680-351%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Bot%C3%A2nico%2C%20Quadra%20S%C3%A3o%20Bartolomeu%20-%20QSB%2001%20-%20Lote%2018%2C%20Bras%C3%ADlia%2C%20DF%2C%2071680-351%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "unavailable",
+      "coordinateSource": null
     },
     {
       "id": "BR-24-0125",
@@ -1190,8 +1211,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7949723,
-      "longitude": -47.8502648,
+      "latitude": -15.794929,
+      "longitude": -47.850283,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1213,7 +1234,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20Planalto%2C%20Rua%20das%20Flores%20-%20Casa%202%2C%20Bras%C3%ADlia%2C%20DF%2C%2070802-080%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20Planalto%2C%20Rua%20das%20Flores%20-%20Casa%202%2C%20Bras%C3%ADlia%2C%20DF%2C%2070802-080%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0005",
@@ -1244,8 +1266,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6852244,
-      "longitude": -48.1964662,
+      "latitude": -15.685149,
+      "longitude": -48.19629,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1281,7 +1303,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20%C3%81rea%20Especial%202%20-%20Central%2C%20Lote%20A%20-%20Setor%20Norte%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072705-620%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20%C3%81rea%20Especial%202%20-%20Central%2C%20Lote%20A%20-%20Setor%20Norte%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072705-620%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0141",
@@ -1307,8 +1330,8 @@
           "type": "Reunião de jovens e menores"
         }
       ],
-      "latitude": -15.5843329,
-      "longitude": -48.1849529,
+      "latitude": -15.741587,
+      "longitude": -48.125015,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1324,7 +1347,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Incra%207%20-%20Assentamento%20Graziela%20Alves%2C%20Rodovia%20BR-080%20-%20Km%2003%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072773-010%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Incra%207%20-%20Assentamento%20Graziela%20Alves%2C%20Rodovia%20BR-080%20-%20Km%2003%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072773-010%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "approximate",
+      "coordinateSource": "cnefe-address"
     },
     {
       "id": "BR-24-0010",
@@ -1350,8 +1374,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.743258,
+      "longitude": -48.168694,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1373,7 +1397,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Incra%208%2C%20Quadra%201%20-%20Lote%204%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072760-010%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Incra%208%2C%20Quadra%201%20-%20Lote%204%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072760-010%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0082",
@@ -1399,8 +1424,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.5287211,
-      "longitude": -48.1894577,
+      "latitude": -15.529939,
+      "longitude": -48.187696,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1416,7 +1441,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20N%C3%BAcleo%20Rural%20Curralinho%2C%20Rodovia%20DF-180%20-%20Km%202%2F3%20-%20Ch%C3%A1cara%203%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072799-899%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20N%C3%BAcleo%20Rural%20Curralinho%2C%20Rodovia%20DF-180%20-%20Km%202%2F3%20-%20Ch%C3%A1cara%203%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072799-899%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0122",
@@ -1437,8 +1463,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6750251,
-      "longitude": -48.1031985,
+      "latitude": -15.619939,
+      "longitude": -48.136375,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1454,7 +1480,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Radiobr%C3%A1s%2C%20Assentamento%20Betinho%20-%20Conjunto%20C%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072710-991%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Radiobr%C3%A1s%2C%20Assentamento%20Betinho%20-%20Conjunto%20C%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072710-991%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0073",
@@ -1475,8 +1502,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6741503,
-      "longitude": -48.2011447,
+      "latitude": -15.67197,
+      "longitude": -48.200969,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1498,7 +1525,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Veredas%2C%20Quadra%202%20-%20Lote%204%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072725-200%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Veredas%2C%20Quadra%202%20-%20Lote%204%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072725-200%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0124",
@@ -1524,8 +1552,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6550628,
-      "longitude": -48.1931352,
+      "latitude": -15.656622,
+      "longitude": -48.193965,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1547,7 +1575,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20S%C3%A3o%20Jos%C3%A9%2C%20Quadra%2056%20-%20Conjunto%20G%20-%20Lote%20803%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072755-133%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20S%C3%A3o%20Jos%C3%A9%2C%20Quadra%2056%20-%20Conjunto%20G%20-%20Lote%20803%2C%20Brazl%C3%A2ndia%2C%20DF%2C%2072755-133%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0023",
@@ -1578,8 +1607,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.855689,
+      "longitude": -47.949858,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1607,7 +1636,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Candangol%C3%A2ndia%20-%20Central%2C%20Pra%C3%A7a%20do%20Bosque%2C%207%2C%20Candangol%C3%A2ndia%2C%20DF%2C%2071727-255%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Candangol%C3%A2ndia%20-%20Central%2C%20Pra%C3%A7a%20do%20Bosque%2C%207%2C%20Candangol%C3%A2ndia%2C%20DF%2C%2071727-255%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0088",
@@ -1633,8 +1663,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8172763,
-      "longitude": -48.1352297,
+      "latitude": -15.845943,
+      "longitude": -48.167983,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1657,7 +1687,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Ch%C3%A1cara%20Girassol%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072299-899%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Ch%C3%A1cara%20Girassol%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072299-899%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0107",
@@ -1683,8 +1714,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.777842,
-      "longitude": -48.0133166,
+      "latitude": -15.831522,
+      "longitude": -48.134625,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1718,7 +1749,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Maranata%2C%20Quadra%20SHSN%20-%20VC%20311%20-Ch%C3%A1cara%20126-A%20-%20Conjunto%20F%20-%20Lotes%2010%20e%2011%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072236-800%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Maranata%2C%20Quadra%20SHSN%20-%20VC%20311%20-Ch%C3%A1cara%20126-A%20-%20Conjunto%20F%20-%20Lotes%2010%20e%2011%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072236-800%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0051",
@@ -1744,8 +1776,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8560872,
-      "longitude": -48.1113346,
+      "latitude": null,
+      "longitude": null,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1767,7 +1799,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Vista%20Bela%2C%20Rua%205%20-%20Conjunto%20D%20-%20Lote%209%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072225-000%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Vista%20Bela%2C%20Rua%205%20-%20Conjunto%20D%20-%20Lote%209%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072225-000%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "unavailable",
+      "coordinateSource": null
     },
     {
       "id": "BR-24-0006",
@@ -1798,8 +1831,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.812677,
+      "longitude": -48.115122,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1829,7 +1862,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QNN%205%20-%20Central%2C%20Conjunto%20I%20-%20Lote%2046%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072225-059%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QNN%205%20-%20Central%2C%20Conjunto%20I%20-%20Lote%2046%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072225-059%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0132",
@@ -1855,8 +1889,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8336483,
-      "longitude": -48.1239438,
+      "latitude": -15.828672,
+      "longitude": -48.144828,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1878,7 +1912,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Habitacional%20Sol%20Nascente%2C%20Conjunto%20C%20-%20Ch%C3%A1cara%20105%20A%20-%20Lotes%207%20e%208%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072246-508%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Habitacional%20Sol%20Nascente%2C%20Conjunto%20C%20-%20Ch%C3%A1cara%20105%20A%20-%20Lotes%207%20e%208%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072246-508%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "approximate",
+      "coordinateSource": "cnefe-address"
     },
     {
       "id": "BR-24-0018",
@@ -1909,8 +1944,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.794976,
+      "longitude": -48.13333,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -1944,7 +1979,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20O%2C%20QNO%2018%20-%20Conjunto%20G%20-%20Lote%2018%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072260-895%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20O%2C%20QNO%2018%20-%20Conjunto%20G%20-%20Lote%2018%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072260-895%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0016",
@@ -1975,8 +2011,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.807921,
+      "longitude": -48.131132,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2004,7 +2040,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20P%20-%20Norte%2C%20QNP%2013%20-%20Conjunto%20O%20-%20Casa%2050%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072241-315%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20P%20-%20Norte%2C%20QNP%2013%20-%20Conjunto%20O%20-%20Casa%2050%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072241-315%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0102",
@@ -2035,8 +2072,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8226132,
-      "longitude": -48.11424419999999,
+      "latitude": -15.819493,
+      "longitude": -48.154472,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2058,7 +2095,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20P%20-%20Norte%20-%20SHSN%20Cinco%20Estrelas%2C%20Setor%20Habitacional%20Sol%20Nascente%20-%20SHSN%20-%20Conjunto%20B%20-%20Lotes%2001%20e%2002%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072236-800%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20P%20-%20Norte%20-%20SHSN%20Cinco%20Estrelas%2C%20Setor%20Habitacional%20Sol%20Nascente%20-%20SHSN%20-%20Conjunto%20B%20-%20Lotes%2001%20e%2002%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072236-800%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0030",
@@ -2089,8 +2127,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8060498,
-      "longitude": -48.1414883,
+      "latitude": -15.803227,
+      "longitude": -48.140994,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2126,7 +2164,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Q%2C%20QNQ%2002%20-%20Conjunto%2020%20-%20Lote%2001%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072270-020%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Q%2C%20QNQ%2002%20-%20Conjunto%2020%20-%20Lote%2001%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072270-020%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0117",
@@ -2152,8 +2191,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8051898,
-      "longitude": -48.11841949999999,
+      "latitude": -15.801975,
+      "longitude": -48.158569,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2169,7 +2208,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20QNR%2C%20QNR%203%20-%20Conjunto%20A%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072275-352%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20QNR%2C%20QNR%203%20-%20Conjunto%20A%2C%20Ceil%C3%A2ndia%20Norte%2C%20DF%2C%2072275-352%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0098",
@@ -2200,8 +2240,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8630665,
-      "longitude": -48.1207047,
+      "latitude": -15.856698,
+      "longitude": -48.119976,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2231,7 +2271,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20P%C3%B4r%20do%20Sol%20-%20P%20Sul%2C%20SHPS%20-%20Quadra%20502%20-%20Conjunto%20A%20-%20Lote%208%2C%20Ceil%C3%A2ndia%20Sul%2C%20DF%2C%2072238-273%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20P%C3%B4r%20do%20Sol%20-%20P%20Sul%2C%20SHPS%20-%20Quadra%20502%20-%20Conjunto%20A%20-%20Lote%208%2C%20Ceil%C3%A2ndia%20Sul%2C%20DF%2C%2072238-273%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0120",
@@ -2257,8 +2298,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.838925,
+      "longitude": -48.139726,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2280,7 +2321,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Novo%20Horizonte%20-%20Sol%20Nascente%2C%20SHSN%20-%20Rua%20Novo%20Horizonte%20-%20Avenida%20Central%20-%20Lote%20110%2C%20Ceil%C3%A2ndia%20Sul%2C%20DF%2C%2072236-800%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Novo%20Horizonte%20-%20Sol%20Nascente%2C%20SHSN%20-%20Rua%20Novo%20Horizonte%20-%20Avenida%20Central%20-%20Lote%20110%2C%20Ceil%C3%A2ndia%20Sul%2C%20DF%2C%2072236-800%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0007",
@@ -2311,8 +2353,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.825888,
+      "longitude": -48.09283,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2351,7 +2393,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QNM%2029%20-%20M%C3%B3dulo%20H%20-%20Central%2C%20Ceil%C3%A2ndia%20Sul%2C%20DF%2C%2072215-298%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QNM%2029%20-%20M%C3%B3dulo%20H%20-%20Central%2C%20Ceil%C3%A2ndia%20Sul%2C%20DF%2C%2072215-298%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0021",
@@ -2382,8 +2425,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.835982,
+      "longitude": -48.117652,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2419,7 +2462,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20P%20Sul%2C%20EQNP%206%2F10%20-%20%C3%81rea%20Especial%20-%20M%C3%B3dulo%20H%2C%20Ceil%C3%A2ndia%20Sul%2C%20DF%2C%2072230-518%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20P%20Sul%2C%20EQNP%206%2F10%20-%20%C3%81rea%20Especial%20-%20M%C3%B3dulo%20H%2C%20Ceil%C3%A2ndia%20Sul%2C%20DF%2C%2072230-518%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0116",
@@ -2440,8 +2484,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.755137,
+      "longitude": -48.008399,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2457,7 +2501,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Assentamento%2026%20de%20Setembro%2C%20Rua%2006%20-%20Ch%C3%A1cara%2089%2C%20Cidade%20Estrutural%2C%20DF%2C%2071309-899%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Assentamento%2026%20de%20Setembro%2C%20Rua%2006%20-%20Ch%C3%A1cara%2089%2C%20Cidade%20Estrutural%2C%20DF%2C%2071309-899%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0089",
@@ -2488,8 +2533,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.826691,
-      "longitude": -47.92182039999999,
+      "latitude": -15.784725,
+      "longitude": -47.994362,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2523,7 +2568,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Especial%20-%20Central%2C%20Quadra%201%20-%20Conjunto%203%20-%20Lote%202%2C%20Cidade%20Estrutural%2C%20DF%2C%2071266-025%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Especial%20-%20Central%2C%20Quadra%201%20-%20Conjunto%203%20-%20Lote%202%2C%20Cidade%20Estrutural%2C%20DF%2C%2071266-025%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0134",
@@ -2554,8 +2600,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -16.0233401,
-      "longitude": -48.0537612,
+      "latitude": null,
+      "longitude": null,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2577,7 +2623,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Leste%2C%20Quadra%20SCSV%201%20-%20Conjunto%202%20-%20Lote%2027%2C%20Cidade%20Estrutural%2C%20DF%2C%2071262-110%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Leste%2C%20Quadra%20SCSV%201%20-%20Conjunto%202%20-%20Lote%2027%2C%20Cidade%20Estrutural%2C%20DF%2C%2071262-110%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "unavailable",
+      "coordinateSource": null
     },
     {
       "id": "BR-24-0060",
@@ -2608,8 +2655,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.776844,
+      "longitude": -47.999313,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2631,7 +2678,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Oeste%2C%20Quadra%205%20-%20Conjunto%2011%20-%20Lote%2017%2C%20Cidade%20Estrutural%2C%20DF%2C%2071256-205%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Oeste%2C%20Quadra%205%20-%20Conjunto%2011%20-%20Lote%2017%2C%20Cidade%20Estrutural%2C%20DF%2C%2071256-205%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0003",
@@ -2662,8 +2710,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.785214,
+      "longitude": -47.939206,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2700,7 +2748,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20%C3%81rea%20Especial%20-%20Central%2C%20SRES%20-%20Quadra%201%20-%20Lote%2013%2C%20Cruzeiro%20Velho%2C%20DF%2C%2070640-002%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20%C3%81rea%20Especial%20-%20Central%2C%20SRES%20-%20Quadra%201%20-%20Lote%2013%2C%20Cruzeiro%20Velho%2C%20DF%2C%2070640-002%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0045",
@@ -2726,8 +2775,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -16.0480687,
-      "longitude": -48.0429304,
+      "latitude": -16.047066,
+      "longitude": -48.044087,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2750,7 +2799,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20DVO%2C%20Rua%20das%20Rosas%20-%20Lote%2008%2C%20Gama%2C%20DF%2C%2072491-060%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20DVO%2C%20Rua%20das%20Rosas%20-%20Lote%2008%2C%20Gama%2C%20DF%2C%2072491-060%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0062",
@@ -2776,8 +2826,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -16.0419731,
-      "longitude": -48.2543587,
+      "latitude": -16.041078,
+      "longitude": -48.255534,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2799,7 +2849,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Engenho%20das%20Lages%2C%20Rua%20Oliveira%20-%20Lote%208%2C%20Gama%2C%20DF%2C%2072492-235%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Engenho%20das%20Lages%2C%20Rua%20Oliveira%20-%20Lote%208%2C%20Gama%2C%20DF%2C%2072492-235%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0061",
@@ -2820,8 +2871,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.9694557,
-      "longitude": -48.1273628,
+      "latitude": -15.970798,
+      "longitude": -48.128706,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2837,7 +2888,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Ponte%20Alta%20de%20Baixo%2C%20Estrada%20DF-180%20-%20Km%2065%20-%20Incubat%C3%B3rio%20L-JIL%2C%20Gama%2C%20DF%2C%2072428-800%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Ponte%20Alta%20de%20Baixo%2C%20Estrada%20DF-180%20-%20Km%2065%20-%20Incubat%C3%B3rio%20L-JIL%2C%20Gama%2C%20DF%2C%2072428-800%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0040",
@@ -2858,8 +2910,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -16.0479778,
-      "longitude": -48.145978,
+      "latitude": -16.047981,
+      "longitude": -48.146318,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2875,7 +2927,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Ponte%20Alta%20de%20Cima%2C%20Ch%C3%A1cara%20Dois%20Amigos%2C%20Gama%2C%20DF%2C%2072426-000%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Ponte%20Alta%20de%20Cima%2C%20Ch%C3%A1cara%20Dois%20Amigos%2C%20Gama%2C%20DF%2C%2072426-000%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0046",
@@ -2906,8 +2959,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8241637,
-      "longitude": -48.1573133,
+      "latitude": -15.983425,
+      "longitude": -48.075669,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2929,7 +2982,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Ponte%20Alta%20Norte%2C%20Ch%C3%A1cara%2005%20-%20Dayane%2C%20Gama%2C%20DF%2C%2072426-000%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Ponte%20Alta%20Norte%2C%20Ch%C3%A1cara%2005%20-%20Dayane%2C%20Gama%2C%20DF%2C%2072426-000%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0008",
@@ -2960,8 +3014,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -16.01387,
+      "longitude": -48.065905,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -2998,7 +3052,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Central%20-%20Central%2C%20%C3%81rea%20Especial%201%2C%2014%20-%20Lote%203637%2C%20Gama%2C%20DF%2C%2072405-610%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Central%20-%20Central%2C%20%C3%81rea%20Especial%201%2C%2014%20-%20Lote%203637%2C%20Gama%2C%20DF%2C%2072405-610%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0034",
@@ -3029,8 +3084,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -16.0090591,
-      "longitude": -48.070153,
+      "latitude": -16.009223,
+      "longitude": -48.048966,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3065,7 +3120,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Leste%2C%20Quadra%206%20-%20Lote%2015%2C%20Gama%2C%20DF%2C%2072450-060%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Leste%2C%20Quadra%206%20-%20Lote%2015%2C%20Gama%2C%20DF%2C%2072450-060%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "approximate",
+      "coordinateSource": "cnefe-address"
     },
     {
       "id": "BR-24-0022",
@@ -3096,8 +3152,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -16.028539,
+      "longitude": -48.072535,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3127,7 +3183,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Sul%2C%20Quadra%201%20-%20%C3%81rea%20Especial%201%20-%20Lote%20D%2C%20Gama%2C%20DF%2C%2072410-100%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Sul%2C%20Quadra%201%20-%20%C3%81rea%20Especial%201%20-%20Lote%20D%2C%20Gama%2C%20DF%2C%2072410-100%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0001",
@@ -3163,8 +3220,8 @@
           "type": "Reunião de jovens e menores"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.821874,
+      "longitude": -47.980381,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3201,7 +3258,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Guar%C3%A1%20I%20-%20Central%2C%20QE%2011%20-%20%C3%81rea%20Especial%20I%2C%20Guar%C3%A1%2C%20DF%2C%2071020-691%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Guar%C3%A1%20I%20-%20Central%2C%20QE%2011%20-%20%C3%81rea%20Especial%20I%2C%20Guar%C3%A1%2C%20DF%2C%2071020-691%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0054",
@@ -3232,8 +3290,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8487296,
-      "longitude": -47.9708711,
+      "latitude": -15.849288,
+      "longitude": -47.970524,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3255,7 +3313,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Guar%C3%A1%20II%2C%20QE%2038%20-%20Conjunto%20K%20-%20Casa%2025%2C%20Guar%C3%A1%2C%20DF%2C%2071070-110%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Guar%C3%A1%20II%2C%20QE%2038%20-%20Conjunto%20K%20-%20Casa%2025%2C%20Guar%C3%A1%2C%20DF%2C%2071070-110%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0118",
@@ -3286,8 +3345,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8093649,
-      "longitude": -47.9857228,
+      "latitude": -15.801265,
+      "longitude": -47.986131,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3309,7 +3368,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20L%C3%BAcio%20Costa%2C%20Conjunto%20B%20-%20Ch%C3%A1cara%209%20-%20Lote%2010%2C%20Guar%C3%A1%2C%20DF%2C%2071090-085%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20L%C3%BAcio%20Costa%2C%20Conjunto%20B%20-%20Ch%C3%A1cara%209%20-%20Lote%2010%2C%20Guar%C3%A1%2C%20DF%2C%2071090-085%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0090",
@@ -3340,8 +3400,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7431562,
-      "longitude": -47.7622735,
+      "latitude": -15.741673,
+      "longitude": -47.760443,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3363,7 +3423,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Del%20Lago%20II%2C%20Quadra%20378%20-%20Conjunto%20K%20-%20Lote%206%2C%20Itapo%C3%A3%2C%20DF%2C%2071593-630%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Del%20Lago%20II%2C%20Quadra%20378%20-%20Conjunto%20K%20-%20Lote%206%2C%20Itapo%C3%A3%2C%20DF%2C%2071593-630%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0085",
@@ -3394,8 +3455,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7461232,
-      "longitude": -47.7611709,
+      "latitude": -15.754164,
+      "longitude": -47.773232,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3417,7 +3478,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Itapo%C3%A3%20I%20-%20Central%2C%20Quadra%201%20-%20Conjunto%20I%20-%20Lote%204%2C%20Itapo%C3%A3%2C%20DF%2C%2071590-227%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Itapo%C3%A3%20I%20-%20Central%2C%20Quadra%201%20-%20Conjunto%20I%20-%20Lote%204%2C%20Itapo%C3%A3%2C%20DF%2C%2071590-227%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0111",
@@ -3443,8 +3505,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7081513,
-      "longitude": -47.9146951,
+      "latitude": -15.742976,
+      "longitude": -47.770556,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3466,7 +3528,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Mandala%2C%20Quadra%20318%20-%20Conjunto%20J%20-%20Lote%201%2C%20Itapo%C3%A3%2C%20DF%2C%2071593-240%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Mandala%2C%20Quadra%20318%20-%20Conjunto%20J%20-%20Lote%201%2C%20Itapo%C3%A3%2C%20DF%2C%2071593-240%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0138",
@@ -3492,8 +3555,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7461232,
-      "longitude": -47.7611709,
+      "latitude": -15.713135,
+      "longitude": -47.746968,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3515,7 +3578,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20Margarida%20-%20Rota%20do%20Cavalo%2C%20Rua%205%20-%20Espa%C3%A7o%20232%2C%20Itapo%C3%A3%2C%20DF%2C%2071590-899%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20Margarida%20-%20Rota%20do%20Cavalo%2C%20Rua%205%20-%20Espa%C3%A7o%20232%2C%20Itapo%C3%A3%2C%20DF%2C%2071590-899%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "approximate",
+      "coordinateSource": "cnefe-address"
     },
     {
       "id": "BR-24-0044",
@@ -3546,8 +3610,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7078796,
-      "longitude": -47.8741927,
+      "latitude": -15.708118,
+      "longitude": -47.874095,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3571,7 +3635,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Varj%C3%A3o%20do%20Torto%20-%20Central%2C%20Quadra%205%20-%20Conjunto%20I%20-%20Lote%203%2C%20Lago%20Norte%2C%20DF%2C%2071540-400%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Varj%C3%A3o%20do%20Torto%20-%20Central%2C%20Quadra%205%20-%20Conjunto%20I%20-%20Lote%203%2C%20Lago%20Norte%2C%20DF%2C%2071540-400%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0002",
@@ -3602,8 +3667,8 @@
           "type": "Reunião de jovens e menores"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.874451,
+      "longitude": -47.972759,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3645,7 +3710,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Terceira%20Avenida%20%C3%81rea%20Especial%206%20-%20Central%2C%20M%C3%B3dulos%20E%20e%20Q%2C%20N%C3%BAcleo%20Bandeirante%2C%20DF%2C%2071720-588%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Terceira%20Avenida%20%C3%81rea%20Especial%206%20-%20Central%2C%20M%C3%B3dulos%20E%20e%20Q%2C%20N%C3%BAcleo%20Bandeirante%2C%20DF%2C%2071720-588%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0086",
@@ -3671,8 +3737,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.870066,
-      "longitude": -47.97281539999999,
+      "latitude": -15.933897,
+      "longitude": -47.941272,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3694,7 +3760,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vargem%20Bonita%20-%20SMPW%2C%20Quadra%208%20-%20Lote%205%2C%20N%C3%BAcleo%20Bandeirante%2C%20DF%2C%2071750-080%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vargem%20Bonita%20-%20SMPW%2C%20Quadra%208%20-%20Lote%205%2C%20N%C3%BAcleo%20Bandeirante%2C%20DF%2C%2071750-080%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0004",
@@ -3715,8 +3782,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.963988,
+      "longitude": -47.55664,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3732,7 +3799,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Agrovila%20Cap%C3%A3o%20Seco%2C%20Lote%2038%2C%20Parano%C3%A1%2C%20DF%2C%2071570-990%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Agrovila%20Cap%C3%A3o%20Seco%2C%20Lote%2038%2C%20Parano%C3%A1%2C%20DF%2C%2071570-990%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0065",
@@ -3758,8 +3826,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8161032,
-      "longitude": -47.7858143,
+      "latitude": -15.818833,
+      "longitude": -47.716011,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3781,7 +3849,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Altiplano%20Leste%2C%20Ch%C3%A1cara%20Jardim%20Segredo%2C%20Parano%C3%A1%2C%20DF%2C%2071589-899%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Altiplano%20Leste%2C%20Ch%C3%A1cara%20Jardim%20Segredo%2C%20Parano%C3%A1%2C%20DF%2C%2071589-899%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "approximate",
+      "coordinateSource": "cnefe-address"
     },
     {
       "id": "BR-24-0130",
@@ -3812,8 +3881,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7817778,
-      "longitude": -47.79661770000001,
+      "latitude": -15.770067,
+      "longitude": -47.783937,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3835,7 +3904,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Parano%C3%A1%20Parque%2C%20Quadra%2021%20-%20Conjunto%20L%20-%20Lote%2016%2C%20Parano%C3%A1%2C%20DF%2C%2071572-112%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Parano%C3%A1%20Parque%2C%20Quadra%2021%20-%20Conjunto%20L%20-%20Lote%2016%2C%20Parano%C3%A1%2C%20DF%2C%2071572-112%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0014",
@@ -3871,8 +3941,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.763121,
+      "longitude": -47.778793,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3904,7 +3974,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Quadra%2030%20-%20Conjunto%20D%20-%20Lotes%2028%20e%2029%20-%20Central%2C%20Parano%C3%A1%2C%20DF%2C%2071573-024%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Quadra%2030%20-%20Conjunto%20D%20-%20Lotes%2028%20e%2029%20-%20Central%2C%20Parano%C3%A1%2C%20DF%2C%2071573-024%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0009",
@@ -3935,8 +4006,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.794253,
+      "longitude": -47.69283,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -3958,7 +4029,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Sobradinho%20dos%20Melos%2C%20Rodovia%20DF-250%20-%20Km%205%2C%20Parano%C3%A1%2C%20DF%2C%2071589-899%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Sobradinho%20dos%20Melos%2C%20Rodovia%20DF-250%20-%20Km%205%2C%20Parano%C3%A1%2C%20DF%2C%2071589-899%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0128",
@@ -3984,8 +4056,8 @@
           "type": "Reunião de jovens e menores"
         }
       ],
-      "latitude": -15.6239465,
-      "longitude": -47.6553677,
+      "latitude": -15.633391,
+      "longitude": -47.520775,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4007,7 +4079,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Agrovila%20Taquara%2C%20Quadra%2002%20-%20Lote%2004%2C%20Planaltina%2C%20DF%2C%2073307-991%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Agrovila%20Taquara%2C%20Quadra%2002%20-%20Lote%2004%2C%20Planaltina%2C%20DF%2C%2073307-991%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0055",
@@ -4038,8 +4111,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6239465,
-      "longitude": -47.6553677,
+      "latitude": -15.638448,
+      "longitude": -47.633372,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4073,7 +4146,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Arapoanga%2C%20Quadra%2021-%20Conjunto%20I%20-%20Lote%2010%2C%20Planaltina%2C%20DF%2C%2073368-724%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Arapoanga%2C%20Quadra%2021-%20Conjunto%20I%20-%20Lote%2010%2C%20Planaltina%2C%20DF%2C%2073368-724%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0031",
@@ -4099,8 +4173,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8841049,
-      "longitude": -47.7992596,
+      "latitude": -15.613926,
+      "longitude": -47.633428,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4122,7 +4196,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Buritis%20III%20-%20Setor%20Residencial%20Leste%2C%20Quadra%2012%20-%20Conjunto%204%20-%20Casa%2011%2C%20Planaltina%2C%20DF%2C%2073355-204%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Buritis%20III%20-%20Setor%20Residencial%20Leste%2C%20Quadra%2012%20-%20Conjunto%204%20-%20Casa%2011%2C%20Planaltina%2C%20DF%2C%2073355-204%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0078",
@@ -4158,8 +4233,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6187072,
-      "longitude": -47.6311709,
+      "latitude": -15.622124,
+      "longitude": -47.63697,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4194,7 +4269,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Buritis%20IV%20-%20Setor%20Residencial%20Leste%20-%20Central%2C%20Quadra%2024%20-%20%C3%81rea%20Especial%203%2C%20Planaltina%2C%20DF%2C%2073358-385%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Buritis%20IV%20-%20Setor%20Residencial%20Leste%20-%20Central%2C%20Quadra%2024%20-%20%C3%81rea%20Especial%203%2C%20Planaltina%2C%20DF%2C%2073358-385%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0119",
@@ -4215,8 +4291,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6683105,
-      "longitude": -47.65870289999999,
+      "latitude": -15.666352,
+      "longitude": -47.658598,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4238,7 +4314,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Mans%C3%B5es%20do%20Amanhecer%2C%20Conjunto%20A%20-%20Lote%2014%2C%20Planaltina%2C%20DF%2C%2073376-603%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Mans%C3%B5es%20do%20Amanhecer%2C%20Conjunto%20A%20-%20Lote%2014%2C%20Planaltina%2C%20DF%2C%2073376-603%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0036",
@@ -4269,8 +4346,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6042067,
-      "longitude": -47.6549139,
+      "latitude": -15.603077,
+      "longitude": -47.648633,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4292,7 +4369,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Roriz%2C%20Quadra%203%20-%20Conjunto%203H%20-%20Lote%2028%2C%20Planaltina%2C%20DF%2C%2073340-308%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jardim%20Roriz%2C%20Quadra%203%20-%20Conjunto%203H%20-%20Lote%2028%2C%20Planaltina%2C%20DF%2C%2073340-308%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0121",
@@ -4318,8 +4396,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.745708,
-      "longitude": -47.6621283,
+      "latitude": -15.728027,
+      "longitude": -47.654965,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4341,7 +4419,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20N%C3%BAcleo%20Rural%20Rajadinha%20III%2C%20Planaltina%2C%20DF%2C%2073499-899%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20N%C3%BAcleo%20Rural%20Rajadinha%20III%2C%20Planaltina%2C%20DF%2C%2073499-899%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0129",
@@ -4362,8 +4441,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6720475,
-      "longitude": -47.6340369,
+      "latitude": -15.701364,
+      "longitude": -47.613799,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4385,7 +4464,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20N%C3%BAcleo%20Rural%20Santos%20Dumont%2C%20Lote%2027%20A%20-%20Gleba%203%2C%20Planaltina%2C%20DF%2C%2073499-899%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20N%C3%BAcleo%20Rural%20Santos%20Dumont%2C%20Lote%2027%20A%20-%20Gleba%203%2C%20Planaltina%2C%20DF%2C%2073499-899%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0068",
@@ -4411,8 +4491,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6127306,
-      "longitude": -47.683349,
+      "latitude": -15.614995,
+      "longitude": -47.684333,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4434,7 +4514,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Habitacional%20Mestre%20D'Armas%20III%2C%20Quadra%2014%20-%20M%C3%B3dulo%2013%20-%20Lote%2020%2C%20Planaltina%2C%20DF%2C%2073401-633%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Habitacional%20Mestre%20D'Armas%20III%2C%20Quadra%2014%20-%20M%C3%B3dulo%2013%20-%20Lote%2020%2C%20Planaltina%2C%20DF%2C%2073401-633%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0050",
@@ -4465,8 +4546,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6239465,
-      "longitude": -47.6553677,
+      "latitude": -15.600739,
+      "longitude": -47.676888,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4496,7 +4577,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Mans%C3%B5es%20Itiquira%2C%20M%C3%B3dulo%2016%20-%20Lote%202%2C%20Planaltina%2C%20DF%2C%2073403-148%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Mans%C3%B5es%20Itiquira%2C%20M%C3%B3dulo%2016%20-%20Lote%202%2C%20Planaltina%2C%20DF%2C%2073403-148%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0064",
@@ -4522,8 +4604,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6738603,
-      "longitude": -47.6455265,
+      "latitude": -15.681574,
+      "longitude": -47.656618,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4545,7 +4627,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vale%20do%20Amanhecer%2C%20Conjunto%20Residencial%2095%20-%20Lotes%203%2C4%20e%205%2C%20Planaltina%2C%20DF%2C%2073381-095%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vale%20do%20Amanhecer%2C%20Conjunto%20Residencial%2095%20-%20Lotes%203%2C4%20e%205%2C%20Planaltina%2C%20DF%2C%2073381-095%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0100",
@@ -4571,8 +4654,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7084174,
-      "longitude": -47.3656883,
+      "latitude": -15.702714,
+      "longitude": -47.372964,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4594,7 +4677,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20S%C3%A3o%20Jos%C3%A9%2C%20N%C3%BAcleo%20Rural%20S%C3%A3o%20Jos%C3%A9%20-%20Lote%2040%2C%20Planaltina%2C%20DF%2C%2073390-300%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20S%C3%A3o%20Jos%C3%A9%2C%20N%C3%BAcleo%20Rural%20S%C3%A3o%20Jos%C3%A9%20-%20Lote%2040%2C%20Planaltina%2C%20DF%2C%2073390-300%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0127",
@@ -4625,8 +4709,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.949058,
+      "longitude": -48.16976,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4642,7 +4726,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Asa%20Branca%2C%20Rodovia%20BR-060%20-%20Km%2015%2C%20Recanto%20Das%20Emas%2C%20DF%2C%2072668-100%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Asa%20Branca%2C%20Rodovia%20BR-060%20-%20Km%2015%2C%20Recanto%20Das%20Emas%2C%20DF%2C%2072668-100%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0135",
@@ -4673,8 +4758,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.9250966,
-      "longitude": -48.1063666,
+      "latitude": -15.924217,
+      "longitude": -48.10725,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4696,7 +4781,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Quadra%20115%20-%20Lote%2013%2C%20Avenida%20Recanto%20das%20Emas%2C%20Recanto%20Das%20Emas%2C%20DF%2C%2072603-309%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Quadra%20115%20-%20Lote%2013%2C%20Avenida%20Recanto%20das%20Emas%2C%20Recanto%20Das%20Emas%2C%20DF%2C%2072603-309%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "approximate",
+      "coordinateSource": "cnefe-address"
     },
     {
       "id": "BR-24-0074",
@@ -4722,8 +4808,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.924433,
-      "longitude": -48.0548215,
+      "latitude": -15.924642,
+      "longitude": -48.053881,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4745,7 +4831,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Quadra%20803%20-%20Conjunto%2019%20-%20Casa%2017%2C%20Recanto%20Das%20Emas%2C%20DF%2C%2072650-500%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Quadra%20803%20-%20Conjunto%2019%20-%20Casa%2017%2C%20Recanto%20Das%20Emas%2C%20DF%2C%2072650-500%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0069",
@@ -4771,8 +4858,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.9472752,
-      "longitude": -48.2311439,
+      "latitude": -15.948311,
+      "longitude": -48.231203,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4795,7 +4882,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Habitacional%20%C3%81guas%20Quentes%2C%20Quadra%20C%20-%20Lote%2028%2C%20Recanto%20Das%20Emas%2C%20DF%2C%2072669-309%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Habitacional%20%C3%81guas%20Quentes%2C%20Quadra%20C%20-%20Lote%2028%2C%20Recanto%20Das%20Emas%2C%20DF%2C%2072669-309%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0136",
@@ -4826,8 +4914,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.9208038,
-      "longitude": -48.0528109,
+      "latitude": -15.902696,
+      "longitude": -48.075393,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4861,7 +4949,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Hospitalar%20-%20Central%2C%20Quadra%20105%20-%20Lote%2050%2C%20Recanto%20Das%20Emas%2C%20DF%2C%2072600-500%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Hospitalar%20-%20Central%2C%20Quadra%20105%20-%20Lote%2050%2C%20Recanto%20Das%20Emas%2C%20DF%2C%2072600-500%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0101",
@@ -4887,8 +4976,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8828684,
-      "longitude": -47.9883928,
+      "latitude": -15.889603,
+      "longitude": -47.993883,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4910,7 +4999,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Canegae%2C%20Col%C3%B4nia%20Agr%C3%ADcola%20Riacho%20Fundo%2C%20Riacho%20Fundo%2C%20DF%2C%2071828-435%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Canegae%2C%20Col%C3%B4nia%20Agr%C3%ADcola%20Riacho%20Fundo%2C%20Riacho%20Fundo%2C%20DF%2C%2071828-435%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0063",
@@ -4936,8 +5026,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8912193,
-      "longitude": -48.0202672,
+      "latitude": -15.893953,
+      "longitude": -48.02026,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -4959,7 +5049,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Col%C3%B4nia%20Agr%C3%ADcola%20Sucupira%2C%20Ch%C3%A1cara%2027%20-%20Lote%209%2C%20Riacho%20Fundo%2C%20DF%2C%2071827-750%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Col%C3%B4nia%20Agr%C3%ADcola%20Sucupira%2C%20Ch%C3%A1cara%2027%20-%20Lote%209%2C%20Riacho%20Fundo%2C%20DF%2C%2071827-750%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0047",
@@ -4990,8 +5081,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8880961,
-      "longitude": -48.0181263,
+      "latitude": -15.889736,
+      "longitude": -48.019635,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5028,7 +5119,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Riacho%20Fundo%20I%20-%20Central%2C%20%C3%81rea%20Especial%20A%20-%20QS%2012%20-%20Conjunto%208-A%2C%20Riacho%20Fundo%2C%20DF%2C%2071825-221%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Riacho%20Fundo%20I%20-%20Central%2C%20%C3%81rea%20Especial%20A%20-%20QS%2012%20-%20Conjunto%208-A%2C%20Riacho%20Fundo%2C%20DF%2C%2071825-221%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0052",
@@ -5059,8 +5151,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.9034867,
-      "longitude": -48.0465385,
+      "latitude": -15.903399,
+      "longitude": -48.047007,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5088,7 +5180,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Riacho%20Fundo%20II%2C%20QN%207D%20-%20Conjunto%205%20-%20Lote%201%2C%20Riacho%20Fundo%2C%20DF%2C%2071880-045%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Riacho%20Fundo%20II%2C%20QN%207D%20-%20Conjunto%205%20-%20Lote%201%2C%20Riacho%20Fundo%2C%20DF%2C%2071880-045%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0126",
@@ -5114,8 +5207,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.9424765,
-      "longitude": -48.0095438,
+      "latitude": -15.94905,
+      "longitude": -48.016502,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5143,7 +5236,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Riacho%20Fundo%20II%20-%20Caub%20I%2C%20Lote%2073%2C%20Riacho%20Fundo%2C%20DF%2C%2071884-690%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Riacho%20Fundo%20II%20-%20Caub%20I%2C%20Lote%2073%2C%20Riacho%20Fundo%2C%20DF%2C%2071884-690%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0072",
@@ -5169,8 +5263,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.9371337,
-      "longitude": -48.0322113,
+      "latitude": -15.94803,
+      "longitude": -48.033354,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5192,7 +5286,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Riacho%20Fundo%20II%20-%20Caub%20II%2C%20Quadra%20QS%2016%20-%20Conjunto%207%20-%20Lote%204%2C%20Riacho%20Fundo%2C%20DF%2C%2071884-300%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Riacho%20Fundo%20II%20-%20Caub%20II%2C%20Quadra%20QS%2016%20-%20Conjunto%207%20-%20Lote%204%2C%20Riacho%20Fundo%2C%20DF%2C%2071884-300%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0066",
@@ -5223,8 +5318,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8655996,
-      "longitude": -48.0740309,
+      "latitude": -15.863255,
+      "longitude": -48.076464,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5258,7 +5353,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QN%20210%2C%20Conjunto%20F%20-%20Lote%201%2C%20Samambaia%2C%20DF%2C%2072316-526%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QN%20210%2C%20Conjunto%20F%20-%20Lote%201%2C%20Samambaia%2C%20DF%2C%2072316-526%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0038",
@@ -5294,8 +5390,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8761352,
-      "longitude": -48.0776936,
+      "latitude": -15.876191,
+      "longitude": -48.07728,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5332,7 +5428,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QN%20306%20-%20Central%2C%20Conjunto%205%20-%20Lote%208%2C%20Samambaia%2C%20DF%2C%2072306-205%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QN%20306%20-%20Central%2C%20Conjunto%205%20-%20Lote%208%2C%20Samambaia%2C%20DF%2C%2072306-205%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0058",
@@ -5363,8 +5460,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8889774,
-      "longitude": -48.09864349999999,
+      "latitude": -15.884862,
+      "longitude": -48.100675,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5392,7 +5489,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QN%20309%2C%20Conjunto%202%20-%20Lote%208%2C%20Samambaia%2C%20DF%2C%2072305-702%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QN%20309%2C%20Conjunto%202%20-%20Lote%208%2C%20Samambaia%2C%20DF%2C%2072305-702%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0104",
@@ -5418,8 +5516,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8632856,
-      "longitude": -48.0820685,
+      "latitude": -15.885279,
+      "longitude": -48.149706,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5435,7 +5533,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QR%201033%2C%20Conjunto%207%20-%20Lote%2037%2C%20Samambaia%2C%20DF%2C%2072339-077%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QR%201033%2C%20Conjunto%207%20-%20Lote%2037%2C%20Samambaia%2C%20DF%2C%2072339-077%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0106",
@@ -5466,8 +5565,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.897796,
-      "longitude": -48.1261709,
+      "latitude": -15.898102,
+      "longitude": -48.12623,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5489,7 +5588,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QR%20327%2C%20Conjunto%204%20-%20Casa%207%2C%20Samambaia%2C%20DF%2C%2072311-104%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QR%20327%2C%20Conjunto%204%20-%20Casa%207%2C%20Samambaia%2C%20DF%2C%2072311-104%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0080",
@@ -5520,8 +5620,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8722449,
-      "longitude": -48.1011826,
+      "latitude": -15.8726,
+      "longitude": -48.10177,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5545,7 +5645,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QR%20405%2C%20Conjunto%2021%20-%20Casa%2035%2C%20Samambaia%2C%20DF%2C%2072319-221%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QR%20405%2C%20Conjunto%2021%20-%20Casa%2035%2C%20Samambaia%2C%20DF%2C%2072319-221%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0028",
@@ -5576,8 +5677,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8856023,
-      "longitude": -48.1230333,
+      "latitude": -15.885739,
+      "longitude": -48.123581,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5599,7 +5700,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QR%20423%2C%20Conjunto%203%20-%20Lote%2016%2C%20Samambaia%2C%20DF%2C%2072325-203%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QR%20423%2C%20Conjunto%203%20-%20Lote%2016%2C%20Samambaia%2C%20DF%2C%2072325-203%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0042",
@@ -5630,8 +5732,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8918255,
-      "longitude": -48.1404041,
+      "latitude": -15.89154,
+      "longitude": -48.140164,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5653,7 +5755,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QR%20429%2C%20Conjunto%2017%20-%20Casa%2010%2C%20Samambaia%2C%20DF%2C%2072329-017%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QR%20429%2C%20Conjunto%2017%20-%20Casa%2010%2C%20Samambaia%2C%20DF%2C%2072329-017%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0077",
@@ -5684,8 +5787,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -16.0283503,
-      "longitude": -48.0328441,
+      "latitude": -16.026385,
+      "longitude": -48.031163,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5708,7 +5811,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20CL%20106%20-%20Lote%20E%2C%20Santa%20Maria%2C%20DF%2C%2072506-205%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20CL%20106%20-%20Lote%20E%2C%20Santa%20Maria%2C%20DF%2C%2072506-205%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0039",
@@ -5734,8 +5838,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -16.0117341,
-      "longitude": -47.9873586,
+      "latitude": -16.003243,
+      "longitude": -47.988611,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5757,7 +5861,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20CL%20118%20-%20Bloco%20K%2C%20Santa%20Maria%2C%20DF%2C%2072548-211%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20CL%20118%20-%20Bloco%20K%2C%20Santa%20Maria%2C%20DF%2C%2072548-211%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0041",
@@ -5788,8 +5893,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -16.018327,
-      "longitude": -47.9891263,
+      "latitude": -16.013979,
+      "longitude": -47.991037,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5811,7 +5916,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20CL%20517%20-%20Bloco%20B%2C%20Santa%20Maria%2C%20DF%2C%2072547-704%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20CL%20517%20-%20Bloco%20B%2C%20Santa%20Maria%2C%20DF%2C%2072547-704%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "approximate",
+      "coordinateSource": "cnefe-address"
     },
     {
       "id": "BR-24-0097",
@@ -5842,8 +5948,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -16.0326145,
-      "longitude": -48.0253885,
+      "latitude": -16.034153,
+      "longitude": -48.019272,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5871,7 +5977,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Porto%20Rico%2C%20Quadra%2011%20-%20Lote%2018%20-%203%C2%AA%20Etapa%2C%20Santa%20Maria%2C%20DF%2C%2072504-003%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Porto%20Rico%2C%20Quadra%2011%20-%20Lote%2018%20-%203%C2%AA%20Etapa%2C%20Santa%20Maria%2C%20DF%2C%2072504-003%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0076",
@@ -5902,8 +6009,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -16.0221428,
-      "longitude": -48.0169767,
+      "latitude": -16.021907,
+      "longitude": -48.016754,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5925,7 +6032,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QC%202%2C%20Conjunto%20I%20-%20Lote%204%2C%20Santa%20Maria%2C%20DF%2C%2072536-090%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QC%202%2C%20Conjunto%20I%20-%20Lote%204%2C%20Santa%20Maria%2C%20DF%2C%2072536-090%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0096",
@@ -5951,8 +6059,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.9997723,
-      "longitude": -47.9941726,
+      "latitude": -15.997361,
+      "longitude": -47.99288,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -5974,7 +6082,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QR%20121%2C%20Conjunto%20B%20-%20Lote%2029%2C%20Santa%20Maria%2C%20DF%2C%2072547-377%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QR%20121%2C%20Conjunto%20B%20-%20Lote%2029%2C%20Santa%20Maria%2C%20DF%2C%2072547-377%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0057",
@@ -6005,8 +6114,8 @@
           "type": "Reunião de jovens e menores"
         }
       ],
-      "latitude": -16.0125172,
-      "longitude": -48.0052582,
+      "latitude": -16.01236,
+      "longitude": -48.006264,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6043,7 +6152,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Quadra%20212%2F312%20-%20Central%2C%20EQ%20212%2F312%20-%20Lote%20A%20-%20%C3%81rea%20Especial%2C%20Santa%20Maria%2C%20DF%2C%2072542-502%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Quadra%20212%2F312%20-%20Central%2C%20EQ%20212%2F312%20-%20Lote%20A%20-%20%C3%81rea%20Especial%2C%20Santa%20Maria%2C%20DF%2C%2072542-502%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0110",
@@ -6074,8 +6184,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.932065,
-      "longitude": -47.6008092,
+      "latitude": -15.931582,
+      "longitude": -47.59736,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6097,7 +6207,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Caf%C3%A9%20Sem%20Troco%2C%20Ch%C3%A1cara%2041-Lote%2001%20-%20Rural%20Leste%20-%20Rodovia%20DF-130%20-%20Km%2033%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071570-990%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Caf%C3%A9%20Sem%20Troco%2C%20Ch%C3%A1cara%2041-Lote%2001%20-%20Rural%20Leste%20-%20Rodovia%20DF-130%20-%20Km%2033%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071570-990%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0140",
@@ -6135,7 +6246,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Morro%20da%20Cruz%20-%20Zumbi%20dos%20Palmares%2C%20Quadra%205%20-%20Lote%201%20-%20Conjunto%2040%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071699-899%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Morro%20da%20Cruz%20-%20Zumbi%20dos%20Palmares%2C%20Quadra%205%20-%20Lote%201%20-%20Conjunto%2040%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071699-899%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "unavailable",
+      "coordinateSource": null
     },
     {
       "id": "BR-24-0071",
@@ -6151,8 +6263,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.9028899,
-      "longitude": -47.7760971,
+      "latitude": -16.017795,
+      "longitude": -47.748413,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6168,7 +6280,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Nova%20Bet%C3%A2nia%2C%20N%C3%BAcleo%20Rural%20Chapada%20-%20Ch%C3%A1cara%20Ara%C3%BAjo%20-%20DF-135%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071693-993%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Nova%20Bet%C3%A2nia%2C%20N%C3%BAcleo%20Rural%20Chapada%20-%20Ch%C3%A1cara%20Ara%C3%BAjo%20-%20DF-135%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071693-993%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0083",
@@ -6189,8 +6302,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8940556,
-      "longitude": -47.7865846,
+      "latitude": null,
+      "longitude": null,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6212,7 +6325,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Residencial%20Vivendas%20Del%20Rey%2C%20Quadra%20C%20-%20Lote%201B%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2072596-560%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Residencial%20Vivendas%20Del%20Rey%2C%20Quadra%20C%20-%20Lote%201B%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2072596-560%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "unavailable",
+      "coordinateSource": null
     },
     {
       "id": "BR-24-0133",
@@ -6238,8 +6352,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.9028899,
-      "longitude": -47.7760971,
+      "latitude": null,
+      "longitude": null,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6255,7 +6369,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Rosa%20de%20Saron%2C%20108%20e%20109%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071699-899%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Rosa%20de%20Saron%2C%20108%20e%20109%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071699-899%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "unavailable",
+      "coordinateSource": null
     },
     {
       "id": "BR-24-0067",
@@ -6286,8 +6401,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.9032373,
-      "longitude": -47.7588307,
+      "latitude": -15.914164,
+      "longitude": -47.762701,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6323,7 +6438,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20S%C3%A3o%20Francisco%20-%20Central%2C%20Quadra%208%20-%20Lotes%201%20e%202%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071693-308%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20S%C3%A3o%20Francisco%20-%20Central%2C%20Quadra%208%20-%20Lotes%201%20e%202%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071693-308%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0099",
@@ -6344,8 +6460,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8999755,
-      "longitude": -47.7873153,
+      "latitude": -15.901293,
+      "longitude": -47.788187,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6361,7 +6477,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Residencial%20Oeste%2C%20Quadra%20305%20-%20Conjunto%208%20-%20Lote%207%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071691-585%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Residencial%20Oeste%2C%20Quadra%20305%20-%20Conjunto%208%20-%20Lote%207%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071691-585%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0029",
@@ -6392,8 +6509,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8987431,
-      "longitude": -47.7720376,
+      "latitude": -15.897632,
+      "longitude": -47.771156,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6417,7 +6534,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Tradicional%2C%20Rua%2036%20-%20Lote%20190%2F210%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071691-143%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Tradicional%2C%20Rua%2036%20-%20Lote%20190%2F210%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071691-143%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "approximate",
+      "coordinateSource": "cnefe-address"
     },
     {
       "id": "BR-24-0145",
@@ -6433,8 +6551,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.879883,
+      "longitude": -47.79069,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [],
       "phones": [],
@@ -6443,7 +6561,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20do%20Boa%2C%20Rua%20S%C3%A3o%20Lucas%20-%20Lote%201%20-%20Loja%203%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071697-335%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20do%20Boa%2C%20Rua%20S%C3%A3o%20Lucas%20-%20Lote%201%20-%20Loja%203%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071697-335%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "approximate",
+      "coordinateSource": "cnefe-postal-code"
     },
     {
       "id": "BR-24-0070",
@@ -6464,8 +6583,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.9028899,
-      "longitude": -47.7760971,
+      "latitude": null,
+      "longitude": null,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6481,7 +6600,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20Sussuarana%2C%20Rodovia%20DF-270%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071699-899%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20Sussuarana%2C%20Rodovia%20DF-270%2C%20S%C3%A3o%20Sebasti%C3%A3o%2C%20DF%2C%2071699-899%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "unavailable",
+      "coordinateSource": null
     },
     {
       "id": "BR-24-0143",
@@ -6502,8 +6622,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.5285411,
-      "longitude": -47.7240073,
+      "latitude": null,
+      "longitude": null,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6519,7 +6639,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Boa%20Vista%20-%20Fercal%2C%20Rodovia%20DF-205%20-%20Km%206%20-%20Quadra%202%20-%20Loja%202%2C%20Sobradinho%2C%20DF%2C%2073150-045%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Boa%20Vista%20-%20Fercal%2C%20Rodovia%20DF-205%20-%20Km%206%20-%20Quadra%202%20-%20Loja%202%2C%20Sobradinho%2C%20DF%2C%2073150-045%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "unavailable",
+      "coordinateSource": null
     },
     {
       "id": "BR-24-0012",
@@ -6550,8 +6671,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": null,
-      "longitude": null,
+      "latitude": -15.652609,
+      "longitude": -47.803287,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6589,7 +6710,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Centro%20-%20Central%2C%20Lote%20Especial%202%20-%20Quadra%204%2C%20Sobradinho%2C%20DF%2C%2073405-620%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Centro%20-%20Central%2C%20Lote%20Especial%202%20-%20Quadra%204%2C%20Sobradinho%2C%20DF%2C%2073405-620%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "unavailable"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0087",
@@ -6615,8 +6737,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.65482,
-      "longitude": -47.76056,
+      "latitude": -15.64884,
+      "longitude": -47.760499,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6638,7 +6760,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Colina%20Nova%20Diguin%C3%A9ia%20I%2C%20Conjunto%20B%20-%20Lotes%203%20e%205%2C%20Sobradinho%2C%20DF%2C%2073270-060%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Colina%20Nova%20Diguin%C3%A9ia%20I%2C%20Conjunto%20B%20-%20Lotes%203%20e%205%2C%20Sobradinho%2C%20DF%2C%2073270-060%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0024",
@@ -6669,8 +6792,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6029493,
-      "longitude": -47.8707587,
+      "latitude": -15.5972,
+      "longitude": -47.874223,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6692,7 +6815,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Fercal%20-%20Engenho%20Velho%2C%20Quadra%2013%20-%20Lote%202%2C%20Sobradinho%2C%20DF%2C%2073150-045%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Fercal%20-%20Engenho%20Velho%2C%20Quadra%2013%20-%20Lote%202%2C%20Sobradinho%2C%20DF%2C%2073150-045%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0095",
@@ -6718,8 +6842,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6337983,
-      "longitude": -47.84823369999999,
+      "latitude": -15.633917,
+      "longitude": -47.847533,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6741,7 +6865,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Serra%20Azul%2C%20Quadra%209%20-%20Lote%201%2C%20Sobradinho%2C%20DF%2C%2073083-480%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Serra%20Azul%2C%20Quadra%209%20-%20Lote%201%2C%20Sobradinho%2C%20DF%2C%2073083-480%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0094",
@@ -6767,8 +6892,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6200995,
-      "longitude": -47.8225993,
+      "latitude": -15.619666,
+      "longitude": -47.823146,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6784,7 +6909,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Vale%20dos%20Pinheiros%2C%20Conjunto%20F%20-%20Quadra%2045A%20-%20Lote%2045%2C%20Sobradinho%2C%20DF%2C%2073088-350%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Condom%C3%ADnio%20Vale%20dos%20Pinheiros%2C%20Conjunto%20F%20-%20Quadra%2045A%20-%20Lote%2045%2C%20Sobradinho%2C%20DF%2C%2073088-350%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0019",
@@ -6805,8 +6931,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6573342,
-      "longitude": -47.80049460000001,
+      "latitude": null,
+      "longitude": null,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6828,7 +6954,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Fazenda%20C%C3%B3rrego%20do%20Meio%2C%20Sobradinho%2C%20DF%2C%2073299-899%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Fazenda%20C%C3%B3rrego%20do%20Meio%2C%20Sobradinho%2C%20DF%2C%2073299-899%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "unavailable",
+      "coordinateSource": null
     },
     {
       "id": "BR-24-0079",
@@ -6849,8 +6976,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.5909647,
-      "longitude": -47.8816294,
+      "latitude": null,
+      "longitude": null,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6866,7 +6993,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Queima%20Len%C3%A7ol%20-%20Fercal%2C%20Rodovia%20DF-205%20-%20Km%202%20-%20Lote%201209-B%2C%20Sobradinho%2C%20DF%2C%2073151-010%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Queima%20Len%C3%A7ol%20-%20Fercal%2C%20Rodovia%20DF-205%20-%20Km%202%20-%20Lote%201209-B%2C%20Sobradinho%2C%20DF%2C%2073151-010%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "unavailable",
+      "coordinateSource": null
     },
     {
       "id": "BR-24-0115",
@@ -6887,8 +7015,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7977022,
-      "longitude": -48.0436385,
+      "latitude": -15.645057,
+      "longitude": -47.829316,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6904,7 +7032,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Habitacional%20Buritis%2C%20Rua%2010%20-%20Lote%20164%2C%20Sobradinho%2C%20DF%2C%2073060-660%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Habitacional%20Buritis%2C%20Rua%2010%20-%20Lote%20164%2C%20Sobradinho%2C%20DF%2C%2073060-660%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0033",
@@ -6930,8 +7059,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6424299,
-      "longitude": -47.8242904,
+      "latitude": -15.646219,
+      "longitude": -47.823127,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -6953,7 +7082,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Sobradinho%20II%2C%20AR%2013%20-%20Conjunto%2015%20-%20Lote%202%2C%20Sobradinho%2C%20DF%2C%2073062-315%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Sobradinho%20II%2C%20AR%2013%20-%20Conjunto%2015%20-%20Lote%202%2C%20Sobradinho%2C%20DF%2C%2073062-315%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0093",
@@ -6979,8 +7109,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6406085,
-      "longitude": -47.8294501,
+      "latitude": -15.640055,
+      "longitude": -47.886437,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -7003,7 +7133,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20Basevi%2C%20AR%204%20-%20Lote%2034%2C%20Sobradinho%2C%20DF%2C%2073100-730%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20Basevi%2C%20AR%204%20-%20Lote%2034%2C%20Sobradinho%2C%20DF%2C%2073100-730%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0049",
@@ -7029,8 +7160,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.6164409,
-      "longitude": -47.8508297,
+      "latitude": -15.62214,
+      "longitude": -47.846659,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -7052,7 +7183,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20Rabelo%2C%20Quadra%201%20-%20Conjunto%206%20-%20Lote%208%2C%20Sobradinho%2C%20DF%2C%2073070-055%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vila%20Rabelo%2C%20Quadra%201%20-%20Conjunto%206%20-%20Lote%208%2C%20Sobradinho%2C%20DF%2C%2073070-055%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0113",
@@ -7078,8 +7210,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7787858,
-      "longitude": -48.046727,
+      "latitude": -15.779296,
+      "longitude": -48.044762,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -7101,7 +7233,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Cooperville%2C%20Rodovia%20DF-001%20-%20Km%2083%2C%20Taguatinga%2C%20DF%2C%2077320-000%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Cooperville%2C%20Rodovia%20DF-001%20-%20Km%2083%2C%20Taguatinga%2C%20DF%2C%2077320-000%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0084",
@@ -7127,8 +7260,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8006956,
-      "longitude": -48.1060728,
+      "latitude": -15.799598,
+      "longitude": -48.106917,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -7152,7 +7285,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20M%20Norte%2C%20QNM%2040%20-%20Conjunto%20C2%20-%20Casa%2024%2C%20Taguatinga%2C%20DF%2C%2072146-033%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20M%20Norte%2C%20QNM%2040%20-%20Conjunto%20C2%20-%20Casa%2024%2C%20Taguatinga%2C%20DF%2C%2072146-033%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0013",
@@ -7183,8 +7317,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8379526,
-      "longitude": -48.0583026,
+      "latitude": -15.823681,
+      "longitude": -48.065804,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -7223,7 +7357,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QNC%2011%20-%20%C3%81rea%20Especial%207%20-%20Central%2C%20Setor%20C%20Norte%2C%20Taguatinga%2C%20DF%2C%2072115-700%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20QNC%2011%20-%20%C3%81rea%20Especial%207%20-%20Central%2C%20Setor%20C%20Norte%2C%20Taguatinga%2C%20DF%2C%2072115-700%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0037",
@@ -7254,8 +7389,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.8907929,
-      "longitude": -48.0226905,
+      "latitude": -15.784791,
+      "longitude": -48.137608,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -7283,7 +7418,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Priv%C3%AA%2C%20Rua%202%20-%20M%C3%B3dulo%2012%20-%20Lote%202%2C%20Taguatinga%2C%20DF%2C%2072280-458%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Setor%20Priv%C3%AA%2C%20Rua%202%20-%20M%C3%B3dulo%2012%20-%20Lote%202%2C%20Taguatinga%2C%20DF%2C%2072280-458%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     },
     {
       "id": "BR-24-0091",
@@ -7314,8 +7450,8 @@
           "type": "Culto oficial"
         }
       ],
-      "latitude": -15.7866953,
-      "longitude": -48.03076129999999,
+      "latitude": -15.794719,
+      "longitude": -48.030473,
       "sourceUrl": "https://congregacaocristanobrasil.org.br/relatorio",
       "ministry": [
         {
@@ -7343,7 +7479,8 @@
       "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vicente%20Pires%20-%20Central%2C%20Rua%2012%20-%20Ch%C3%A1cara%20143%20-%20Lote%2001%2C%20Vicente%20Pires%2C%20DF%2C%2072007-515%2C%20Brasil",
       "wazeUrl": "https://waze.com/ul?q=Congrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vicente%20Pires%20-%20Central%2C%20Rua%2012%20-%20Ch%C3%A1cara%20143%20-%20Lote%2001%2C%20Vicente%20Pires%2C%20DF%2C%2072007-515%2C%20Brasil&navigate=yes",
       "officialVerification": "2026-08-27",
-      "coordinateStatus": "source-reported"
+      "coordinateStatus": "verified",
+      "coordinateSource": "cnefe-temple"
     }
   ]
 }

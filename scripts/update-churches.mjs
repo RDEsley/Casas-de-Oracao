@@ -197,7 +197,7 @@ async function listOfficialScope(post) {
 }
 
 async function loadOfficialChurch(record, existingChurch, post) {
-  const church = existingChurch ?? { id: record.id, latitude: null, longitude: null };
+  const church = existingChurch ?? { id: record.id };
   const officialId = record.officialId;
   const detail = parseDetail(await post("/service/localidade-detalhe", { codigo: officialId }));
   if (detail.code !== church.id || !detail.name || !detail.city || !detail.services.length) {
@@ -214,10 +214,8 @@ async function loadOfficialChurch(record, existingChurch, post) {
     detail.postalCode,
     "Brasil",
   ].filter(Boolean).join(", ");
-  const coordinatesInRegion = Number.isFinite(church.latitude) && Number.isFinite(church.longitude)
-    && church.latitude >= -16.5 && church.latitude <= -15.2
-    && church.longitude >= -49.1 && church.longitude <= -47.1;
-  const coordinatesAvailable = coordinatesInRegion && !church.coordinatePrecision;
+  // A posição vem de scripts/geocode-churches.mjs e só vale para o endereço em que foi conferida.
+  const positionStillValid = church.address === address && Number.isFinite(church.latitude) && Number.isFinite(church.longitude);
   const updated = {
     ...church,
     name: displayName,
@@ -226,9 +224,10 @@ async function loadOfficialChurch(record, existingChurch, post) {
     state: detail.state,
     address,
     services: detail.services,
-    latitude: coordinatesAvailable ? church.latitude : null,
-    longitude: coordinatesAvailable ? church.longitude : null,
-    coordinateStatus: coordinatesAvailable ? "source-reported" : "unavailable",
+    latitude: positionStillValid ? church.latitude : null,
+    longitude: positionStillValid ? church.longitude : null,
+    coordinateStatus: positionStillValid ? church.coordinateStatus : "unavailable",
+    coordinateSource: positionStillValid ? church.coordinateSource : null,
     ministry: detail.ministry,
     phones: detail.phones,
     officialId: Number(officialId),
@@ -238,8 +237,7 @@ async function loadOfficialChurch(record, existingChurch, post) {
     sourceUrl: REPORT_URL,
     officialVerification: new Date().toISOString().slice(0, 10),
   };
-  delete updated.mapsUrl;
-  delete updated.coordinatePrecision;
+  if (existingChurch && !positionStillValid) process.stdout.write(`${church.id}: endereço alterado; execute "npm run data:geocode" para reposicionar.\n`);
   return updated;
 }
 

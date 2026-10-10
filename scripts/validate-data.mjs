@@ -5,6 +5,11 @@ const OFFICIAL_REPORT = "https://congregacaocristanobrasil.org.br/relatorio";
 const allowedDays = new Set(["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"]);
 const errors = [];
 const ids = new Set();
+const points = new Set();
+const COORDINATE_SOURCES = {
+  verified: ["cnefe-temple"],
+  approximate: ["cnefe-address", "cnefe-postal-code"],
+};
 
 function fail(id, message) {
   errors.push(`${id}: ${message}`);
@@ -19,10 +24,15 @@ for (const church of data.churches) {
   if (!church.officialVerification) fail(church.id, "data de conferência ausente");
   if (church.state !== "DF" && !(church.state === "GO" && church.city === "Águas Lindas de Goiás")) fail(church.id, "cidade fora do escopo");
   if (!church.services.length || church.services.some((service) => !allowedDays.has(service.day) || !/^\d{2}:\d{2}$/.test(service.time))) fail(church.id, "agenda inválida");
-  if (church.coordinateStatus === "source-reported") {
-    if (!Number.isFinite(church.latitude) || !Number.isFinite(church.longitude)) fail(church.id, "coordenadas reportadas ausentes");
+  if (church.coordinateStatus in COORDINATE_SOURCES) {
+    if (!Number.isFinite(church.latitude) || !Number.isFinite(church.longitude)) fail(church.id, "coordenadas ausentes");
     if (church.latitude < -16.5 || church.latitude > -15.2 || church.longitude < -49.1 || church.longitude > -47.1) fail(church.id, "coordenadas fora da região atendida");
-  } else if (church.coordinateStatus !== "unavailable" || church.latitude !== null || church.longitude !== null) {
+    if (!COORDINATE_SOURCES[church.coordinateStatus].includes(church.coordinateSource)) fail(church.id, "origem da coordenada incompatível com o status");
+    // Coordenada repetida era o sintoma da base antiga: geocodificação caindo no centro do bairro.
+    const point = `${church.latitude},${church.longitude}`;
+    if (points.has(point)) fail(church.id, "coordenada repetida em outra casa de oração");
+    points.add(point);
+  } else if (church.coordinateStatus !== "unavailable" || church.latitude !== null || church.longitude !== null || church.coordinateSource !== null) {
     fail(church.id, "estado de coordenadas inválido");
   }
   if (!church.routeQuery.startsWith("Congregação Cristã no Brasil - ")) fail(church.id, "rota sem identificação explícita da CCB");
