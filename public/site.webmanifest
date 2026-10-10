@@ -1,15 +1,15 @@
 {
   "id": "/",
-  "name": "Casas de Oração — Brasília & Águas Lindas",
+  "name": "Localizador de Casas de Oração",
   "short_name": "Casas de Oração",
-  "description": "Encontre casas de oração por dia, período e distância.",
+  "description": "Encontre casas de oração da Congregação Cristã no Brasil em Brasília e Águas Lindas por dia, período e distância. Projeto independente, sem vínculo com a instituição.",
   "lang": "pt-BR",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#f5f7f4",
-  "theme_color": "#ffffff",
+  "theme_color": "#176b4a",
   "icons": [
     {
       "src": "/favicons/favicon-192x192.png",
@@ -22,6 +22,12 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "/favicons/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

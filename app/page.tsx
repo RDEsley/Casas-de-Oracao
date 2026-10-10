@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AppPrompt from "../components/AppPrompt";
 import { isInstalled, openInstall } from "../lib/install";
+import { SITE } from "../lib/site";
 import {
   Archive,
   ArchiveRestore,
@@ -368,7 +369,7 @@ export default function Home() {
     <header className="topbar">
       <a className="brand" href="#top">
         <span className="brand-mark"><Image src="/favicons/favicon-128x128.png" alt="" width={34} height={34} priority /></span>
-        <b>Casas de Oração</b>
+        <b>{SITE.shortName}</b>
       </a>
       {viewTabs("nav-links")}
       {installable && <button className="app-link" onClick={openInstall}><Download size={16} /><span>Instalar app</span></button>}
@@ -466,9 +467,12 @@ export default function Home() {
     </section>
 
     <footer>
-      <span>Projeto independente · {churchData.officialTotal} casas conferidas em {churchData.updatedAt.split("-").reverse().join("/")}</span>
-      <a href="https://congregacaocristanobrasil.org.br/relatorio" target="_blank" rel="noreferrer">Consultar relatório oficial</a>
+      <p className="footer-independence">{SITE.independence}</p>
+      <span>{churchData.officialTotal} casas conferidas em {churchData.updatedAt.split("-").reverse().join("/")}</span>
+      <a href={SITE.officialReportUrl} target="_blank" rel="noreferrer">Consultar relatório oficial</a>
       {installable && <button className="footer-link" onClick={openInstall}>Instalar app</button>}
+      <Link href="/apoiar">Apoiar o desenvolvedor</Link>
+      <Link href="/termos">Termos de uso</Link>
       <Link href="/privacidade">Privacidade</Link>
     </footer>
 
@@ -517,7 +521,7 @@ export default function Home() {
           {selectedChurch.phones.length ? <div className="phone-list">{selectedChurch.phones.map((phone) => <a href={`tel:${phone.replace(/[^+\d]/g, "")}`} key={phone}><Phone size={14} /> {phone}</a>)}</div> : <p className="not-informed">Não informado no relatório oficial.</p>}
         </div>
 
-        <a className="official-source" href={selectedChurch.sourceUrl} target="_blank" rel="noreferrer"><ShieldCheck size={14} /> Agenda conferida no relatório oficial da CCB em {selectedChurch.officialVerification.split("-").reverse().join("/")}</a>
+        <a className="official-source" href={selectedChurch.sourceUrl} target="_blank" rel="noreferrer"><ShieldCheck size={14} /> Agenda conferida no relatório oficial em {selectedChurch.officialVerification.split("-").reverse().join("/")}</a>
       </section>
     </div>}
   </main>;
