@@ -3,7 +3,7 @@
   <h3>Brasília & Águas Lindas</h3>
   <p>Encontre o próximo culto por dia, período e distância.<br />Mais perto. Mais simples. Direto ao caminho.</p>
   <p>
-    <a href="package.json"><img src="https://img.shields.io/badge/version-1.2.0-176B4A.svg" alt="Versão 1.2.0" /></a>
+    <a href="package.json"><img src="https://img.shields.io/badge/version-1.2.1-176B4A.svg" alt="Versão 1.2.1" /></a>
     <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white" alt="Next.js 16" /></a>
     <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=0B1F2A" alt="React 19" /></a>
     <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white" alt="TypeScript" /></a>
@@ -36,7 +36,7 @@ O projeto funciona sem cadastro e sem banco de dados. A agenda pública fica ver
 | --- | --- |
 | 📍 **Localização** | GPS lido na hora (nunca do cache), validação de precisão e endereços pessoais persistentes |
 | 🧭 **Distância** | Trajeto de carro até o ponto conferido de cada casa, da mais próxima para a mais distante; se o serviço de rotas cair, mostra estimativa em linha reta com aviso |
-| 📅 **Agenda** | Filtro por dia da semana e seleção automática do dia atual |
+| 📅 **Agenda** | Filtro por dia da semana e seleção automática do dia atual; as casas mais próximas que não têm culto naquele dia aparecem em "Perto de você, em outros dias", com atalho para o dia em que têm |
 | 🌅 **Período** | Manhã, tarde, noite ou todos, com identificação automática pelo horário |
 | ⛪ **Serviços** | Culto oficial e Reunião de Jovens e Menores apresentados diretamente no card |
 | 👥 **Detalhes** | Ministério, telefones e agenda completa exibidos ao abrir cada casa de oração |
@@ -164,6 +164,7 @@ Requisitos: Android Studio com SDK 36 e JDK 21 (o JBR do Android Studio serve). 
 
 - O site envia cabeçalhos de segurança (nosniff, anti-iframe, política de referrer) e o app Android não permite backup automático dos dados locais.
 - A origem é enviada temporariamente ao endpoint de rotas e ao OSRM somente para calcular as distâncias; o servidor não a armazena.
+- Endereços salvos são localizados pelo OpenStreetMap: resultados que contradizem o digitado (outra quadra) são recusados, e resultados só de bairro ou cidade geram um aviso de ponto de saída aproximado.
 - A posição atual não fica salva entre visitas; somente endereços cadastrados manualmente permanecem no navegador.
 - Ao cadastrar um endereço, a busca de coordenadas usa o serviço público Nominatim.
 - Limpar os dados do navegador remove favoritos, arquivados e locais salvos.
