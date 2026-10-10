@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" role="img" aria-labelledby="title">
+  <title id="title">Casas de Oração — Localizador independente</title>
+  <g transform="translate(18,10) scale(.39)">
+    <rect width="512" height="512" rx="112" fill="#176B4A"/>
+    <path d="M256 70c-91 0-165 72-165 162 0 111 165 230 165 230s165-119 165-230C421 142 347 70 256 70Z" fill="#F7F5EB"/>
+    <path d="M174 253v-36l82-65 82 65v88" fill="none" stroke="#176B4A" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M218 304v-48c0-21 17-38 38-38s38 17 38 38v48" fill="#176B4A"/>
+    <path d="M256 304v53" stroke="#D9A441" stroke-width="15" stroke-linecap="round"/>
+    <circle cx="256" cy="371" r="8" fill="#D9A441"/>
+  </g>
+  <text x="250" y="105" font-family="Arial, Helvetica, sans-serif" font-size="47" font-weight="700" fill="#1B2A23">Casas de Oração</text>
+  <text x="252" y="151" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="2" fill="#6B7871">LOCALIZADOR INDEPENDENTE</text>
+</svg>
