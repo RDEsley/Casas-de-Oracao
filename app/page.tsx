@@ -43,7 +43,7 @@ import {
   routeDestinations,
   wazeRouteUrl,
 } from "../lib/churches";
-import { formatAccuracy, formatDistance, straightLineKm } from "../lib/geo";
+import { formatAccuracy, formatDistance, geocodeUncertainty, straightLineKm } from "../lib/geo";
 import { LOCATION_FAILURE_MESSAGES, LocationError, getDevicePosition } from "../lib/location";
 
 type SavedPlace = { id: string; name: string; address: string; latitude: number; longitude: number; accuracy?: number };
@@ -54,6 +54,8 @@ type Distances = { status: "idle" | "loading" | "road" | "estimated"; values: Re
 
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "";
 const MAX_LOCATION_ACCURACY_METERS = 500;
+// Acima disso o ponto de saída é tratado como aproximado e a tela avisa.
+const APPROXIMATE_ORIGIN_METERS = 250;
 const PAGE_SIZE = 12;
 const PERIODS: Period[] = ["Todos", "Manhã", "Tarde", "Noite"];
 
@@ -297,7 +299,13 @@ export default function Home() {
       if (!response.ok) throw new Error();
       const [result] = await response.json();
       if (!result) throw new Error();
-      const place = { id: crypto.randomUUID(), name: placeName.trim(), address: result.display_name || placeAddress.trim(), latitude: Number(result.lat), longitude: Number(result.lon) };
+      const accuracy = geocodeUncertainty(result, placeAddress);
+      if (accuracy === null) {
+        const found = String(result.display_name ?? "").split(",").slice(0, 3).join(",");
+        setLocationError(`O mapa devolveu outro lugar (${found}). Confira o número da quadra e o bairro, ou use a localização atual.`);
+        return;
+      }
+      const place: SavedPlace = { id: crypto.randomUUID(), name: placeName.trim(), address: result.display_name || placeAddress.trim(), latitude: Number(result.lat), longitude: Number(result.lon), accuracy };
       const next = [...places, place];
       setPlaces(next);
       localStorage.setItem("ccb-places", JSON.stringify(next));
@@ -338,6 +346,24 @@ export default function Home() {
       })
       .sort((a, b) => (a.distance ?? Infinity) - (b.distance ?? Infinity) || a.church.name.localeCompare(b.church.name, "pt-BR"));
   }, [day, period, query, view, favorites.items, archived.items, distances.values]);
+
+  // Casas mais perto do que os primeiros resultados, mas sem culto no dia/período escolhido.
+  const nearbyElsewhere = useMemo(() => {
+    const ready = distances.status === "road" || distances.status === "estimated";
+    if (!origin || !ready || view !== "explore" || query.trim()) return [];
+    const shown = new Set(results.map(({ church }) => church.id));
+    const limit = results[2]?.distance ?? Infinity;
+    return churches
+      .filter((church) => !shown.has(church.id) && !archived.items.has(church.id) && (distances.values[church.id] ?? Infinity) < limit)
+      .map((church) => ({
+        church,
+        distance: distances.values[church.id],
+        days: DAYS.filter((item) => church.services.some((service) => service.day === item.short && (period === "Todos" || periodFor(service.time) === period))),
+      }))
+      .filter(({ days }) => days.length > 0)
+      .sort((a, b) => a.distance - b.distance)
+      .slice(0, 3);
+  }, [origin, distances, view, query, period, results, archived.items]);
 
   const distanceText = (church: ChurchItem, distance: number | null) => {
     if (distance === null) return null;
@@ -393,17 +419,36 @@ export default function Home() {
     <section className="results-section" aria-busy={!today}>
       <div className="results-toolbar">
         <div>
-          <h2>{today ? `${results.length} ${results.length === 1 ? "casa" : "casas"}` : "Carregando…"}</h2>
+          <h2>{today ? `${results.length} ${results.length === 1 ? "casa com culto" : "casas com culto"}` : "Carregando…"}</h2>
           <p>{dayName} · {period === "Todos" ? "todos os períodos" : period.toLocaleLowerCase("pt-BR")}{distances.status === "loading" ? " · calculando rotas" : distances.status === "road" ? " · mais próximas primeiro, de carro" : ""}</p>
         </div>
         {view === "archived" && archived.items.size > 0 && <button className="restore-all" onClick={archived.clear}><ArchiveRestore size={16} /> Desarquivar todas</button>}
       </div>
+
+      {origin?.accuracy !== undefined && origin.accuracy > APPROXIMATE_ORIGIN_METERS && <div className="notice" role="status">
+        <TriangleAlert size={18} />
+        <p><b>Ponto de saída aproximado (±{formatAccuracy(origin.accuracy)}).</b> As distâncias podem variar até esse valor. Para um cálculo exato, use a localização atual ou salve o endereço com quadra e conjunto.</p>
+        <button onClick={() => setLocationOpen(true)}><Crosshair size={15} /> Mudar</button>
+      </div>}
 
       {distances.status === "estimated" && <div className="notice" role="status">
         <TriangleAlert size={18} />
         <p><b>Rotas indisponíveis no momento.</b> As distâncias abaixo são estimativas em linha reta; o trajeto de carro costuma ser maior.</p>
         <button onClick={retryRoutes}><RefreshCw size={15} /> Tentar de novo</button>
       </div>}
+
+      {nearbyElsewhere.length > 0 && <section className="nearby-other" aria-label="Perto de você, em outros dias">
+        <h3><MapPin size={16} /> Perto de você, em outros dias</h3>
+        <p>Estas casas ficam mais perto, mas não têm culto neste filtro ({dayName}{period === "Todos" ? "" : ` · ${period.toLocaleLowerCase("pt-BR")}`}). Toque em um dia para ver.</p>
+        <ul>
+          {nearbyElsewhere.map(({ church, distance, days }) => <li key={church.id}>
+            <div><b>{church.name}</b><small>{church.city} · {distanceText(church, distance)} {distanceMode}</small></div>
+            <div className="nearby-days">
+              {days.map((item) => <button key={item.short} title={item.long} onClick={() => { setDay(item.short); setVisibleCount(PAGE_SIZE); window.scrollTo({ top: 0 }); }}>{item.short}</button>)}
+            </div>
+          </li>)}
+        </ul>
+      </section>}
 
       {!today ? <div className="church-grid" aria-hidden="true">{[0, 1, 2].map((item) => <div className="church-card skeleton" key={item} />)}</div> : results.length ? <>
         <div className="church-grid">

@@ -308,3 +308,16 @@ footer a { color: var(--green); font-weight: 600; }
   .app-link { position: absolute; right: 12px; padding: 8px; }
   .app-link span { display: none; }
 }
+
+/* Casas próximas que não têm culto no filtro atual */
+.nearby-other { margin-bottom: 16px; padding: 14px; border: 1px solid #c5d4cc; border-radius: 14px; background: var(--mint); }
+.nearby-other h3 { display: flex; align-items: center; gap: 7px; margin: 0; color: var(--green-dark); font-family: var(--font-display); font-size: 17px; font-weight: 600; }
+.nearby-other > p { margin: 4px 0 10px; color: var(--ink-soft); font-size: 13px; }
+.nearby-other ul { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.nearby-other li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 4px 10px; padding: 9px 10px; border-radius: 10px; background: white; }
+.nearby-other li > div:first-child { min-width: 0; display: flex; flex-direction: column; }
+.nearby-other li b { font-size: 14px; line-height: 1.25; }
+.nearby-other li small { color: var(--muted); font-size: 12px; }
+.nearby-days { max-width: 150px; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px; }
+.nearby-days button { min-width: 44px; height: 36px; padding: 0 8px; border: 1px solid #b9cdc1; border-radius: 9px; background: white; color: var(--green); font-size: 13px; font-weight: 700; }
+.nearby-days button:hover { border-color: var(--green); background: var(--green); color: white; }
