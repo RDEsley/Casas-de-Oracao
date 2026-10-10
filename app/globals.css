@@ -284,3 +284,27 @@ footer a { color: var(--green); font-weight: 600; }
 .legal h1 { margin: 18px 0 10px; color: var(--ink); font-family: var(--font-display); font-size: 34px; font-weight: 500; letter-spacing: -.8px; }
 .legal h2 { margin: 26px 0 6px; color: var(--ink); font-family: var(--font-display); font-size: 19px; font-weight: 600; }
 .legal p { margin: 0 0 10px; }
+
+/* Convite para baixar o app */
+.app-link { display: flex; align-items: center; gap: 7px; padding: 9px 13px; border: 1px solid #c5d4cc; border-radius: 10px; background: white; color: var(--green); font-size: 14px; font-weight: 700; }
+.app-link:hover { background: var(--mint); }
+.footer-link { padding: 0; border: 0; background: none; color: var(--green); font-size: 12px; font-weight: 600; text-decoration: underline; }
+.app-banner { position: fixed; z-index: 35; inset: auto 12px calc(var(--tabbar-height) + env(safe-area-inset-bottom) + 10px); display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 4px 10px; padding: 10px 8px 8px 12px; border: 1px solid #c5d4cc; border-radius: 16px; background: white; box-shadow: var(--shadow-raised); animation: rise-in 240ms ease; }
+.app-banner-icon { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 10px; background: var(--mint); color: var(--green); }
+.app-banner p { margin: 0; display: flex; flex-direction: column; font-size: 14px; }
+.app-banner small { color: var(--muted); font-size: 12px; }
+.app-banner-cta { padding: 10px 16px; border-radius: 10px; background: var(--green); color: white; font-size: 14px; font-weight: 700; text-decoration: none; }
+.app-banner-close { width: 36px; height: 36px; display: grid; place-items: center; border: 0; border-radius: 10px; background: transparent; color: var(--muted); }
+.app-banner-hint { grid-column: 1 / -1; padding-left: 2px; color: var(--muted); font-size: 11px; }
+.app-sheet-list { display: grid; gap: 10px; margin: 18px 0 0; padding: 0; list-style: none; color: var(--ink-soft); font-size: 14px; }
+.app-sheet-list li { display: flex; gap: 9px; align-items: flex-start; }
+.app-sheet-list svg { flex: none; margin-top: 1px; color: var(--green); }
+.app-sheet-cta { text-decoration: none; }
+.app-sheet .position-note { margin-top: 16px; }
+.app-sheet-note { text-align: center; }
+@media (min-width: 621px) { .app-banner { inset: auto 20px 20px auto; width: 380px; } }
+@media (max-width: 620px) {
+  .topbar { position: sticky; }
+  .app-link { position: absolute; right: 12px; padding: 8px; }
+  .app-link span { display: none; }
+}

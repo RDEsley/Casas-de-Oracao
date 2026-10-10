@@ -3,6 +3,8 @@
 import { Capacitor } from "@capacitor/core";
 import Image from "next/image";
 import Link from "next/link";
+import AppPrompt from "../components/AppPrompt";
+import { openAppPrompt } from "../lib/app-download";
 import {
   Archive,
   ArchiveRestore,
@@ -12,6 +14,7 @@ import {
   ChevronRight,
   Church,
   Crosshair,
+  Download,
   Heart,
   Info,
   LoaderCircle,
@@ -126,6 +129,7 @@ function RouteActions({ church, origin, className = "" }: { church: ChurchItem; 
 
 export default function Home() {
   const [today, setToday] = useState<string | null>(null);
+  const [webVisitor, setWebVisitor] = useState(false);
   const [day, setDay] = useState("Dom");
   const [period, setPeriod] = useState<Period>("Todos");
   const [query, setQuery] = useState("");
@@ -159,6 +163,7 @@ export default function Home() {
     const timer = window.setTimeout(() => {
       const currentDay = DAYS[new Date().getDay()].short;
       setToday(currentDay);
+      setWebVisitor(!Capacitor.isNativePlatform());
       setDay(currentDay);
       try {
         setPlaces(JSON.parse(localStorage.getItem("ccb-places") || "[]"));
@@ -356,6 +361,7 @@ export default function Home() {
         <b>Casas de Oração</b>
       </a>
       {viewTabs("nav-links")}
+      {webVisitor && <button className="app-link" onClick={openAppPrompt}><Download size={16} /><span>Baixar app</span></button>}
     </header>
 
     <section className="hero" id="top">
@@ -433,10 +439,13 @@ export default function Home() {
     <footer>
       <span>Projeto independente · {churchData.officialTotal} casas conferidas em {churchData.updatedAt.split("-").reverse().join("/")}</span>
       <a href="https://congregacaocristanobrasil.org.br/relatorio" target="_blank" rel="noreferrer">Consultar relatório oficial</a>
+      {webVisitor && <button className="footer-link" onClick={openAppPrompt}>Baixar app</button>}
       <Link href="/privacidade">Privacidade</Link>
     </footer>
 
     {viewTabs("tabbar")}
+
+    <AppPrompt />
 
     {locationOpen && <div className="modal-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) setLocationOpen(false); }}>
       <section className="location-modal" role="dialog" aria-modal="true" aria-labelledby="location-title">
