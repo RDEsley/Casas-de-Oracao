@@ -1,9 +1,10 @@
 <div align="center">
-  <h1>⛪ Casas de Oração</h1>
+  <h1>⛪ Localizador de Casas de Oração</h1>
   <h3>Brasília & Águas Lindas</h3>
   <p>Encontre o próximo culto por dia, período e distância.<br />Mais perto. Mais simples. Direto ao caminho.</p>
+  <p><strong>Projeto independente, sem vínculo com a Congregação Cristã no Brasil.</strong></p>
   <p>
-    <a href="package.json"><img src="https://img.shields.io/badge/version-1.3.1-176B4A.svg" alt="Versão 1.3.1" /></a>
+    <a href="package.json"><img src="https://img.shields.io/badge/version-1.4.0-176B4A.svg" alt="Versão 1.4.0" /></a>
     <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white" alt="Next.js 16" /></a>
     <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=0B1F2A" alt="React 19" /></a>
     <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white" alt="TypeScript" /></a>
@@ -16,6 +17,7 @@
     <a href="#-instalação-local">Instalação</a> •
     <a href="#-deploy-na-vercel">Deploy</a> •
     <a href="#-instalar-como-aplicativo">Instalar</a> •
+    <a href="#-independência-termos-e-apoio">Termos e apoio</a> •
     <a href="#-créditos">Créditos</a>
   </p>
 </div>
@@ -23,6 +25,8 @@
 ---
 
 ## 📌 Sobre o projeto
+
+> **Aviso de independência.** Este app não é um canal oficial e não foi criado, autorizado, patrocinado nem endossado pela Congregação Cristã no Brasil. O nome da instituição aparece somente para identificar de quais casas de oração o app trata; o app não usa o nome nem a marca dela. A fonte oficial é o [relatório público da instituição](https://congregacaocristanobrasil.org.br/relatorio).
 
 Aplicação web instalável (PWA) focada nas casas de oração da Congregação Cristã no Brasil no **Distrito Federal** e em **Águas Lindas de Goiás**. A experiência elimina a navegação repetitiva do relatório nacional: o dia atual já vem selecionado, os filtros ficam salvos e os resultados aparecem em ordem de distância.
 
@@ -151,6 +155,13 @@ O site é um PWA: o próprio navegador o instala, sem loja e sem baixar arquivo.
 - "Agora não" adia o convite por 14 dias. O botão **Instalar app** (topo no celular, rodapé em qualquer tela) reabre a janela, e tudo some quando o app já está instalado.
 - [`public/sw.js`](public/sw.js) busca sempre a rede primeiro, então o app instalado acompanha cada deploy; sem conexão, abre a última versão vista (as distâncias exigem internet).
 
+## 🤲 Independência, termos e apoio
+
+- **Nome e marca:** o app se chama *Localizador de Casas de Oração* e usa um ícone próprio. Nome, descrições e o aviso de independência ficam em [`lib/site.ts`](lib/site.ts); o aviso aparece no rodapé de todas as telas.
+- **Termos de uso** em `/termos` e **Política de privacidade** em `/privacidade`, escritos a partir do que o app realmente faz com os dados (LGPD).
+- **Apoio ao desenvolvedor** em `/apoiar`: doação voluntária por Pix, de qualquer valor. O código Pix e o QR Code só aparecem depois que a pessoa confirma ter lido que **a doação vai para o desenvolvedor, e não para a Congregação Cristã no Brasil**. Não há pop-up nem função bloqueada: o único acesso é o link no rodapé.
+- O Pix é estático (BR Code gerado no navegador por [`lib/pix.ts`](lib/pix.ts)), sem intermediário e sem taxa. Por isso o app **não sabe se alguém doou nem quanto**: o total fica no extrato do recebedor, identificado por `CASASORACAO`. A configuração está em [`lib/donation.ts`](lib/donation.ts).
+
 ## 🔐 Privacidade e limites
 
 - O site envia cabeçalhos de segurança (nosniff, anti-iframe, política de referrer).
@@ -162,7 +173,7 @@ O site é um PWA: o próprio navegador o instala, sem loja e sem baixar arquivo.
 - As posições vêm do Censo 2022: um templo que mudou de endereço depois disso perde a posição na próxima atualização, em vez de apontar para o lugar antigo.
 - A distância de carro vem do OSRM, sem trânsito; o Waze pode indicar um trajeto um pouco diferente na hora.
 - Agendas podem mudar por reformas, eventos ou decisões locais; confirme alterações no relatório oficial.
-- Este é um projeto independente e não representa oficialmente a Congregação Cristã no Brasil.
+- Este é um projeto independente, sem vínculo com a Congregação Cristã no Brasil, e não a representa.
 
 ## 🤝 Contribuição
 
