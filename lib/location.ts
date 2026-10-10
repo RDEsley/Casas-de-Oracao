@@ -1,5 +1,3 @@
-import { Capacitor } from "@capacitor/core";
-
 export type DevicePosition = { latitude: number; longitude: number; accuracy: number };
 export type LocationFailure = "denied" | "timeout" | "unavailable" | "unsupported";
 
@@ -13,26 +11,8 @@ const browserPosition = (options: PositionOptions) => new Promise<GeolocationPos
   navigator.geolocation.getCurrentPosition(resolve, reject, options);
 });
 
-async function nativePosition(): Promise<DevicePosition> {
-  const { Geolocation } = await import("@capacitor/geolocation");
-  try {
-    let permission = await Geolocation.checkPermissions();
-    if (permission.location !== "granted" && permission.coarseLocation !== "granted") {
-      permission = await Geolocation.requestPermissions();
-    }
-    if (permission.location !== "granted" && permission.coarseLocation !== "granted") throw new LocationError("denied");
-    const { coords } = await Geolocation.getCurrentPosition({ enableHighAccuracy: true, maximumAge: 0, timeout: 15_000 });
-    return { latitude: coords.latitude, longitude: coords.longitude, accuracy: coords.accuracy };
-  } catch (error) {
-    if (error instanceof LocationError) throw error;
-    // checkPermissions rejeita quando o serviço de localização do aparelho está desligado.
-    throw new LocationError("unavailable");
-  }
-}
-
 /** Posição atual do aparelho, sempre recém-obtida (nunca do cache do navegador). */
 export async function getDevicePosition(): Promise<DevicePosition> {
-  if (Capacitor.isNativePlatform()) return nativePosition();
   if (!("geolocation" in navigator)) throw new LocationError("unsupported");
 
   try {

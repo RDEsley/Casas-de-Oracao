@@ -17,15 +17,7 @@ const ROUTING_URLS = [
 const BATCH_SIZE = 45;
 const MAX_DESTINATIONS = 200;
 
-// O app Capacitor roda em outra origem (https://localhost) e consome esta rota.
-const CORS_HEADERS = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "POST, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type",
-  "Access-Control-Max-Age": "86400",
-};
-
-const json = (body: unknown, status = 200) => NextResponse.json(body, { status, headers: CORS_HEADERS });
+const json = (body: unknown, status = 200) => NextResponse.json(body, { status });
 
 const isCoordinate = (value: unknown, minimum: number, maximum: number): value is number =>
   typeof value === "number" && Number.isFinite(value) && value >= minimum && value <= maximum;
@@ -73,10 +65,6 @@ async function fetchDistances(baseUrl: string, origin: Coordinate, destinations:
   }
   const entries = await Promise.all(batches.map((batch) => fetchBatch(baseUrl, origin, batch)));
   return Object.fromEntries(entries.flat());
-}
-
-export function OPTIONS() {
-  return new NextResponse(null, { status: 204, headers: CORS_HEADERS });
 }
 
 export async function POST(request: Request) {

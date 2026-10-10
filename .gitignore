@@ -27,15 +27,12 @@ next-env.d.ts
 
 # Agents
 AGENTS.md
-# Mobile (Capacitor) and data caches
-out/
+# Cache do cadastro de endereços do IBGE (npm run data:geocode)
 .cache/
 
-# Segredos e assinatura do app Android (nunca versionar)
+# Chaves de assinatura (nunca versionar)
 *.keystore
 *.jks
-keystore.properties
-android/local.properties
 
 # Dados locais do Vercel CLI
 .vercel/
