@@ -373,14 +373,14 @@ export default function Home() {
 
   return <main className="app-shell">
     {splashVisible && <div className="app-splash" role="status" aria-live="polite">
-      <span className="app-splash-mark"><Image src="/favicons/favicon-128x128.png" alt="" width={88} height={88} priority /></span>
+      <span className="app-splash-mark"><Image src="/favicons/icon.svg" alt="" width={88} height={88} priority unoptimized /></span>
       <p className="app-splash-title">Casas de Oração</p>
       <p className="app-splash-subtitle">Encontre um lugar para congregar</p>
       <span className="app-splash-loader" aria-hidden="true"><i /><i /><i /></span>
     </div>}
     <header className="topbar">
       <a className="brand" href="#top">
-        <span className="brand-mark"><Image src="/favicons/favicon-128x128.png" alt="" width={34} height={34} priority /></span>
+        <span className="brand-mark"><Image src="/favicons/icon.svg" alt="" width={34} height={34} priority unoptimized /></span>
         <b>{SITE.shortName}</b>
       </a>
       {viewTabs("nav-links")}
