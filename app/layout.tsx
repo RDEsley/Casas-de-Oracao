@@ -26,11 +26,13 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   icons: {
     icon: [
-      { url: "/favicons/favicon-128x128.png", sizes: "128x128", type: "image/png" },
+      { url: "/favicons/favicon.ico", sizes: "any" },
       { url: "/favicons/icon.svg", sizes: "any", type: "image/svg+xml" },
+      { url: "/favicons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicons/favicon-192x192.png", sizes: "192x192", type: "image/png" },
     ],
-    apple: [{ url: "/favicons/favicon-128x128.png", sizes: "128x128", type: "image/png" }],
-    shortcut: "/favicons/favicon-128x128.png",
+    apple: [{ url: "/favicons/favicon-180x180.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicons/favicon.ico",
   },
   openGraph: {
     title,

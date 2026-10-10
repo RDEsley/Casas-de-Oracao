@@ -1,28 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
   <title id="title">Casas de Oração</title>
-  <desc id="desc">Marcador de localização em verde e creme, com uma entrada dourada e um caminho até ela.</desc>
+  <desc id="desc">Marcador de localização creme com uma casa estilizada e caminho dourado, sobre fundo verde profundo.</desc>
   <defs>
-    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#13815c"/>
-      <stop offset=".55" stop-color="#086243"/>
-      <stop offset="1" stop-color="#043d2b"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14805A"/>
+      <stop offset=".52" stop-color="#086143"/>
+      <stop offset="1" stop-color="#043B2A"/>
     </linearGradient>
-    <linearGradient id="cream" x1=".1" y1="0" x2=".95" y2="1">
-      <stop offset="0" stop-color="#fffbed"/>
-      <stop offset="1" stop-color="#ece2c9"/>
+    <linearGradient id="ivory" x1=".12" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#FFFBEF"/>
+      <stop offset="1" stop-color="#E9DFC6"/>
     </linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2=".8" y2="1">
-      <stop offset="0" stop-color="#ffdc78"/>
-      <stop offset=".55" stop-color="#f5b43b"/>
-      <stop offset="1" stop-color="#d99623"/>
+      <stop offset="0" stop-color="#FFDE82"/>
+      <stop offset=".55" stop-color="#F6B943"/>
+      <stop offset="1" stop-color="#D99224"/>
     </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#002719" flood-opacity=".24"/>
+    <filter id="pin-shadow" x="-20%" y="-15%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#00281B" flood-opacity=".28"/>
     </filter>
   </defs>
-  <rect width="512" height="512" rx="112" fill="url(#green)"/>
-  <path d="M256 70C165 70 91 142 91 232c0 91 83 166 165 221 82-55 165-130 165-221C421 142 347 70 256 70Z" fill="url(#cream)" filter="url(#shadow)"/>
-  <path d="M256 296C280 307 300 317 286 334c-13 15-46 26-60 43-18 22 9 44 30 58" fill="none" stroke="url(#gold)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M174 302V222l82-65 82 65v80h-46v-49a36 36 0 0 0-72 0v49Z" fill="#064a32" stroke="#063f2c" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M220 302v-49a36 36 0 0 1 72 0v49Z" fill="url(#gold)"/>
+  <rect width="512" height="512" fill="url(#background)"/>
+  <path d="M0 0H512V148C417 195 326 170 246 139 157 105 75 126 0 170Z" fill="#79C8A4" opacity=".10"/>
+  <path d="M0 398C93 349 170 383 247 420S402 477 512 411V512H0Z" fill="#002F21" opacity=".20"/>
+  <path d="M256 55C164 55 88 130 88 222c0 113 168 237 168 237s168-124 168-237C424 130 348 55 256 55Z" fill="url(#ivory)" filter="url(#pin-shadow)"/>
+  <path d="M164 242 256 168l92 74v88h-52v-56a40 40 0 0 0-80 0v56h-52Z" fill="#064A32" stroke="#064A32" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M220 329V264a36 36 0 0 1 72 0v65Z" fill="url(#gold)"/>
+  <path d="M220 325c26 1 61 7 72 23 16 23-12 43-34 64-14 13-13 25-2 37l-26 0c-15-20-16-37-1-56 16-20 43-37 41-48-1-7-25-14-50-16Z" fill="url(#gold)"/>
 </svg>

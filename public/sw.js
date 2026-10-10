@@ -1,6 +1,6 @@
 // Service worker mínimo: torna o site instalável e mantém a última versão vista disponível
 // sem conexão. Sempre tenta a rede primeiro, então o app instalado nunca fica preso em versão antiga.
-const CACHE = "casas-de-oracao-v2";
+const CACHE = "casas-de-oracao-v3";
 
 self.addEventListener("install", () => self.skipWaiting());
 
