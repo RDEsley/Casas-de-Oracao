@@ -3,7 +3,7 @@
   <h3>Brasília & Águas Lindas</h3>
   <p>Encontre o próximo culto por dia, período e distância.<br />Mais perto. Mais simples. Direto ao caminho.</p>
   <p>
-    <a href="package.json"><img src="https://img.shields.io/badge/version-1.2.1-176B4A.svg" alt="Versão 1.2.1" /></a>
+    <a href="package.json"><img src="https://img.shields.io/badge/version-1.3.1-176B4A.svg" alt="Versão 1.3.1" /></a>
     <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white" alt="Next.js 16" /></a>
     <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=0B1F2A" alt="React 19" /></a>
     <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white" alt="TypeScript" /></a>
@@ -15,7 +15,7 @@
     <a href="#-dados-e-manutenção">Dados</a> •
     <a href="#-instalação-local">Instalação</a> •
     <a href="#-deploy-na-vercel">Deploy</a> •
-    <a href="#-aplicativo-android">App Android</a> •
+    <a href="#-instalar-como-aplicativo">Instalar</a> •
     <a href="#-créditos">Créditos</a>
   </p>
 </div>
@@ -24,7 +24,7 @@
 
 ## 📌 Sobre o projeto
 
-Aplicação web e aplicativo Android focados nas casas de oração da Congregação Cristã no Brasil no **Distrito Federal** e em **Águas Lindas de Goiás**. A experiência elimina a navegação repetitiva do relatório nacional: o dia atual já vem selecionado, os filtros ficam salvos e os resultados aparecem em ordem de distância.
+Aplicação web instalável (PWA) focada nas casas de oração da Congregação Cristã no Brasil no **Distrito Federal** e em **Águas Lindas de Goiás**. A experiência elimina a navegação repetitiva do relatório nacional: o dia atual já vem selecionado, os filtros ficam salvos e os resultados aparecem em ordem de distância.
 
 O projeto funciona sem cadastro e sem banco de dados. A agenda pública fica versionada em JSON; favoritos, arquivados, filtros e locais pessoais ficam somente no `localStorage` do navegador do usuário.
 
@@ -43,7 +43,7 @@ O projeto funciona sem cadastro e sem banco de dados. A agenda pública fica ver
 | ⭐ **Favoritos** | Seleção privada e persistente, com área dedicada |
 | 🗄️ **Arquivados** | Oculta casas das buscas, permite restaurar individualmente ou desarquivar todas |
 | 🚗 **Rotas** | Waze e Google Maps abrem direto no ponto quando a posição é confirmada; nas demais, pela busca do endereço oficial, com aviso para conferir o destino |
-| 📱 **Aplicativo** | Mesmo código empacotado para Android com Capacitor, com GPS nativo e botão voltar |
+| 📱 **Aplicativo** | Instalável direto pelo navegador (PWA), com convite na primeira visita e abertura em tela cheia |
 | 🔎 **Busca** | Pesquisa instantânea por casa, bairro, cidade ou endereço |
 | 🔐 **Privacidade** | Nenhuma conta, cookie de rastreamento ou dado pessoal enviado para um banco |
 
@@ -56,7 +56,7 @@ flowchart LR
   A[Agenda versionada em JSON] --> B[Next.js]
   B --> C[Filtros no navegador]
   I[IBGE CNEFE 2022] --> A
-  B --> J[App Android via Capacitor]
+  B --> J[Instalação PWA pelo navegador]
   C --> D[API de distâncias]
   D --> E[Motor de rotas OSRM]
   C --> F[Google Maps / Waze]
@@ -108,7 +108,7 @@ O script baixa os arquivos do IBGE para `.cache/cnefe/` (uns 22 MB), cruza CEP, 
 - **OpenStreetMap Nominatim** para localizar endereços pessoais.
 - **OSRM** para calcular distâncias rodoviárias sem chave de API, com servidor reserva.
 - **IBGE CNEFE 2022** para a posição conferida de cada casa de oração.
-- **Capacitor 8** para o aplicativo Android.
+- **PWA** (manifest + service worker) para instalar sem loja.
 - **Vercel** como destino de produção.
 
 ## 🚀 Instalação local
@@ -132,8 +132,6 @@ Acesse [http://localhost:3000](http://localhost:3000).
 | `npm run data:update` | Atualiza a agenda das casas de oração |
 | `npm run data:geocode` | Reposiciona as casas pelo cadastro de endereços do IBGE |
 | `npm run data:validate` | Valida escopo, fonte, códigos, coordenadas e rotas |
-| `npm run build:mobile` | Gera o site estático e sincroniza o projeto Android |
-| `npm run android:open` | Abre o projeto no Android Studio |
 
 ## ☁️ Deploy na Vercel
 
@@ -144,25 +142,18 @@ Acesse [http://localhost:3000](http://localhost:3000).
 
 O [`vercel.json`](vercel.json) já configura a região de São Paulo. Previews de pull requests também funcionam sem serviços externos.
 
-## 📱 Aplicativo Android
+## 📱 Instalar como aplicativo
 
-O app é o mesmo site exportado como estático e embarcado com Capacitor. O cálculo de rotas continua na API publicada (`/api/distances`), então **publique o site antes de distribuir o app**.
+O site é um PWA: o próprio navegador o instala, sem loja e sem baixar arquivo.
 
-```bash
-npm run build:mobile   # next build (export) + cap sync android
-npm run android:open   # abre android/ no Android Studio
-```
-
-Requisitos: Android Studio com SDK 36 e JDK 21 (o JBR do Android Studio serve). Para um APK de teste pela linha de comando: `cd android && ./gradlew assembleDebug` (saída em `android/app/build/outputs/apk/debug/`).
-
-- **Convite no site:** quem abre o site no Android vê um banner para baixar o app. "Agora não" adia por 14 dias, e o botão "Baixar app" (topo no celular, rodapé em qualquer tela) reabre a janela. O link vem de `NEXT_PUBLIC_APP_DOWNLOAD_URL`; o padrão é o arquivo `casas-de-oracao.apk` na última release do GitHub — publique o APK lá com esse nome (ou configure a URL da Google Play).
-- `NEXT_PUBLIC_API_BASE` troca o endereço da API usado pelo app (padrão: produção na Vercel).
-- Ícone e splash: `node scripts/build-app-icon.mjs` e depois `npx capacitor-assets generate --android`.
-- Para a Google Play: gere um bundle assinado em **Build → Generate Signed App Bundle**, informe a política de privacidade (`/privacidade`) e declare o uso de localização em primeiro plano. O `appId` (`io.github.rdesley.casasdeoracao`) não pode mudar depois da primeira publicação.
+- **Android e computador (Chrome/Edge):** quem acessa vê o convite "Instale o app"; um toque em **Instalar** abre o diálogo do navegador.
+- **iPhone (Safari):** Compartilhar → **Adicionar à Tela de Início**; o convite mostra esse passo a passo.
+- "Agora não" adia o convite por 14 dias. O botão **Instalar app** (topo no celular, rodapé em qualquer tela) reabre a janela, e tudo some quando o app já está instalado.
+- [`public/sw.js`](public/sw.js) busca sempre a rede primeiro, então o app instalado acompanha cada deploy; sem conexão, abre a última versão vista (as distâncias exigem internet).
 
 ## 🔐 Privacidade e limites
 
-- O site envia cabeçalhos de segurança (nosniff, anti-iframe, política de referrer) e o app Android não permite backup automático dos dados locais.
+- O site envia cabeçalhos de segurança (nosniff, anti-iframe, política de referrer).
 - A origem é enviada temporariamente ao endpoint de rotas e ao OSRM somente para calcular as distâncias; o servidor não a armazena.
 - Endereços salvos são localizados pelo OpenStreetMap: resultados que contradizem o digitado (outra quadra) são recusados, e resultados só de bairro ou cidade geram um aviso de ponto de saída aproximado.
 - A posição atual não fica salva entre visitas; somente endereços cadastrados manualmente permanecem no navegador.
