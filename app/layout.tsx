@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import ServiceWorker from "../components/ServiceWorker";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://relatorio-ccb-brasilia.vercel.app"),
   title: "Casas de Oração — Brasília & Águas Lindas",
   description: "Encontre casas de oração por dia, período e distância, com rotas no Waze e Google Maps.",
+  appleWebApp: { capable: true, title: "Casas de Oração", statusBarStyle: "default" },
   manifest: "/site.webmanifest",
   icons: {
     icon: [
@@ -70,6 +72,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <ServiceWorker />
       </body>
     </html>
   );

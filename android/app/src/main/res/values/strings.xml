@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">Casas de Oração</string>
-    <string name="title_activity_main">Casas de Oração</string>
-    <string name="package_name">io.github.rdesley.casasdeoracao</string>
-    <string name="custom_url_scheme">io.github.rdesley.casasdeoracao</string>
-</resources>

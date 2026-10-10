@@ -1,10 +1,9 @@
 "use client";
 
-import { Capacitor } from "@capacitor/core";
 import Image from "next/image";
 import Link from "next/link";
 import AppPrompt from "../components/AppPrompt";
-import { openAppPrompt } from "../lib/app-download";
+import { isInstalled, openInstall } from "../lib/install";
 import {
   Archive,
   ArchiveRestore,
@@ -52,7 +51,6 @@ type View = "explore" | "favorites" | "archived";
 // "road": trajeto de carro; "estimated": linha reta, usada quando o serviço de rotas falha.
 type Distances = { status: "idle" | "loading" | "road" | "estimated"; values: Record<string, number> };
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "";
 const MAX_LOCATION_ACCURACY_METERS = 500;
 // Acima disso o ponto de saída é tratado como aproximado e a tela avisa.
 const APPROXIMATE_ORIGIN_METERS = 250;
@@ -131,7 +129,7 @@ function RouteActions({ church, origin, className = "" }: { church: ChurchItem; 
 
 export default function Home() {
   const [today, setToday] = useState<string | null>(null);
-  const [webVisitor, setWebVisitor] = useState(false);
+  const [installable, setInstallable] = useState(false);
   const [day, setDay] = useState("Dom");
   const [period, setPeriod] = useState<Period>("Todos");
   const [query, setQuery] = useState("");
@@ -165,7 +163,7 @@ export default function Home() {
     const timer = window.setTimeout(() => {
       const currentDay = DAYS[new Date().getDay()].short;
       setToday(currentDay);
-      setWebVisitor(!Capacitor.isNativePlatform());
+      setInstallable(!isInstalled());
       setDay(currentDay);
       try {
         setPlaces(JSON.parse(localStorage.getItem("ccb-places") || "[]"));
@@ -196,7 +194,7 @@ export default function Home() {
     if (!origin) return;
 
     const controller = new AbortController();
-    fetch(`${API_BASE}/api/distances`, {
+    fetch("/api/distances", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -231,20 +229,6 @@ export default function Home() {
       document.body.style.overflow = "";
     };
   }, [modalOpen]);
-
-  useEffect(() => {
-    if (!Capacitor.isNativePlatform()) return;
-    let active = true;
-    let removeListener: (() => void) | undefined;
-    import("@capacitor/app").then(async ({ App }) => {
-      const handle = await App.addListener("backButton", () => {
-        if (!closeModalRef.current()) App.minimizeApp();
-      });
-      if (active) removeListener = () => handle.remove();
-      else handle.remove();
-    });
-    return () => { active = false; removeListener?.(); };
-  }, []);
 
   const selectOrigin = (place: SavedPlace, persist = true) => {
     setDistances({ status: "loading", values: {} });
@@ -387,7 +371,7 @@ export default function Home() {
         <b>Casas de Oração</b>
       </a>
       {viewTabs("nav-links")}
-      {webVisitor && <button className="app-link" onClick={openAppPrompt}><Download size={16} /><span>Baixar app</span></button>}
+      {installable && <button className="app-link" onClick={openInstall}><Download size={16} /><span>Instalar app</span></button>}
     </header>
 
     <section className="hero" id="top">
@@ -484,7 +468,7 @@ export default function Home() {
     <footer>
       <span>Projeto independente · {churchData.officialTotal} casas conferidas em {churchData.updatedAt.split("-").reverse().join("/")}</span>
       <a href="https://congregacaocristanobrasil.org.br/relatorio" target="_blank" rel="noreferrer">Consultar relatório oficial</a>
-      {webVisitor && <button className="footer-link" onClick={openAppPrompt}>Baixar app</button>}
+      {installable && <button className="footer-link" onClick={openInstall}>Instalar app</button>}
       <Link href="/privacidade">Privacidade</Link>
     </footer>
 

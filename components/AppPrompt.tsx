@@ -1,35 +1,42 @@
 "use client";
 
-import { Capacitor } from "@capacitor/core";
-import { Download, ShieldCheck, Smartphone, X } from "lucide-react";
+import { Download, MoreVertical, Share, ShieldCheck, Smartphone, SquarePlus, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { APP_DOWNLOAD_URL, OPEN_APP_PROMPT_EVENT } from "../lib/app-download";
+import { INSTALL_STATE_EVENT, OPEN_INSTALL_EVENT, canPromptInstall, isInstalled, isIos, promptInstall } from "../lib/install";
 
 const DISMISSED_KEY = "ccb-app-prompt-dismissed";
 const SNOOZE_MS = 14 * 24 * 60 * 60 * 1000;
 
-const readSnooze = () => {
+const snoozed = () => {
   try { return Date.now() - Number(localStorage.getItem(DISMISSED_KEY) || 0) < SNOOZE_MS; } catch { return false; }
 };
 
 /**
- * Convida quem abriu o site no Android a baixar o app. "Agora não" adia por 14 dias; o botão
- * "Baixar app" (topo e rodapé) reabre a mesma janela a qualquer momento, em qualquer aparelho.
+ * Convida a instalar o site como app. "Agora não" adia por 14 dias; o botão "Instalar app"
+ * (topo e rodapé) reabre a janela a qualquer momento. Some quando o app já está instalado.
  */
 export default function AppPrompt() {
   const [mode, setMode] = useState<"none" | "banner" | "sheet">("none");
-  const [android, setAndroid] = useState(false);
+  const [promptable, setPromptable] = useState(false);
+  const [ios, setIos] = useState(false);
 
   useEffect(() => {
-    const timer = window.setTimeout(() => {
-      if (Capacitor.isNativePlatform()) return;
-      const onAndroid = /Android/i.test(navigator.userAgent);
-      setAndroid(onAndroid);
-      if (onAndroid && !readSnooze()) setMode("banner");
-    }, 1200);
+    // O convite automático aparece quando o navegador oferece instalação (Chrome) ou no iPhone.
+    const sync = () => {
+      setPromptable(canPromptInstall());
+      setIos(isIos());
+      if (isInstalled()) setMode("none");
+      else if ((canPromptInstall() || isIos()) && !snoozed()) setMode((current) => current === "none" ? "banner" : current);
+    };
+    const timer = window.setTimeout(sync, 1200);
     const open = () => setMode("sheet");
-    window.addEventListener(OPEN_APP_PROMPT_EVENT, open);
-    return () => { window.clearTimeout(timer); window.removeEventListener(OPEN_APP_PROMPT_EVENT, open); };
+    window.addEventListener(INSTALL_STATE_EVENT, sync);
+    window.addEventListener(OPEN_INSTALL_EVENT, open);
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener(INSTALL_STATE_EVENT, sync);
+      window.removeEventListener(OPEN_INSTALL_EVENT, open);
+    };
   }, []);
 
   useEffect(() => {
@@ -44,28 +51,37 @@ export default function AppPrompt() {
     setMode("none");
   };
 
+  const install = async () => {
+    if (!promptable) return setMode("sheet");
+    await promptInstall();
+    dismiss();
+  };
+
   if (mode === "banner") {
-    return <aside className="app-banner" role="region" aria-label="Baixar o aplicativo">
+    return <aside className="app-banner" role="region" aria-label="Instalar o aplicativo">
       <span className="app-banner-icon"><Smartphone size={20} /></span>
-      <p><b>Use o app no celular</b><small>Mais rápido, com GPS nativo.</small></p>
-      <a className="app-banner-cta" href={APP_DOWNLOAD_URL} onClick={dismiss}>Baixar</a>
+      <p><b>Instale o app</b><small>Abre direto da tela inicial.</small></p>
+      <button className="app-banner-cta" onClick={install}>Instalar</button>
       <button className="app-banner-close" onClick={dismiss} aria-label="Agora não"><X size={18} /></button>
-      <span className="app-banner-hint">Você pode baixar depois pelo botão “Baixar app”.</span>
+      <span className="app-banner-hint">Você pode instalar depois pelo botão “Instalar app”.</span>
     </aside>;
   }
 
   if (mode === "sheet") {
     return <div className="modal-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) setMode("none"); }}>
       <section className="location-modal app-sheet" role="dialog" aria-modal="true" aria-labelledby="app-sheet-title">
-        <div className="modal-head"><div><h2 id="app-sheet-title">Baixe o aplicativo</h2><p>Casas de Oração para Android.</p></div><button onClick={() => setMode("none")} aria-label="Fechar"><X /></button></div>
+        <div className="modal-head"><div><h2 id="app-sheet-title">Instale o aplicativo</h2><p>Sem loja e sem baixar arquivo: o próprio navegador instala.</p></div><button onClick={() => setMode("none")} aria-label="Fechar"><X /></button></div>
         <ul className="app-sheet-list">
-          <li><ShieldCheck size={18} /> Localização do GPS lida na hora, sem cadastro.</li>
-          <li><ShieldCheck size={18} /> Mesmas casas, horários e rotas para Waze e Google Maps.</li>
+          <li><ShieldCheck size={18} /> Ícone na tela inicial e abertura em tela cheia.</li>
+          <li><ShieldCheck size={18} /> Sempre atualizado, com as mesmas casas, horários e rotas.</li>
         </ul>
-        {android
-          ? <a className="current-location-card app-sheet-cta" href={APP_DOWNLOAD_URL}><Download size={20} /><span><b>Baixar para Android</b><small>Arquivo APK</small></span></a>
-          : <p className="position-note"><Smartphone size={16} /> O app existe só para Android por enquanto. Abra este endereço no celular Android para baixar; no iPhone, use o site normalmente.</p>}
-        {android && <p className="privacy-note app-sheet-note">Ao abrir o arquivo, o Android pode pedir para permitir a instalação deste navegador.</p>}
+        {promptable
+          ? <button className="current-location-card app-sheet-cta" onClick={install}><Download size={20} /><span><b>Instalar agora</b><small>Leva poucos segundos</small></span></button>
+          : <ol className="app-sheet-steps">
+              {ios
+                ? <><li><Share size={17} /> No Safari, toque em <b>Compartilhar</b>.</li><li><SquarePlus size={17} /> Escolha <b>Adicionar à Tela de Início</b>.</li></>
+                : <><li><MoreVertical size={17} /> Abra o menu do navegador (⋮).</li><li><SquarePlus size={17} /> Toque em <b>Instalar app</b> ou <b>Adicionar à tela inicial</b>.</li></>}
+            </ol>}
       </section>
     </div>;
   }

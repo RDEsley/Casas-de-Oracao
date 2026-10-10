@@ -293,15 +293,15 @@ footer a { color: var(--green); font-weight: 600; }
 .app-banner-icon { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 10px; background: var(--mint); color: var(--green); }
 .app-banner p { margin: 0; display: flex; flex-direction: column; font-size: 14px; }
 .app-banner small { color: var(--muted); font-size: 12px; }
-.app-banner-cta { padding: 10px 16px; border-radius: 10px; background: var(--green); color: white; font-size: 14px; font-weight: 700; text-decoration: none; }
+.app-banner-cta { padding: 10px 16px; border: 0; border-radius: 10px; background: var(--green); color: white; font-size: 14px; font-weight: 700; text-decoration: none; }
 .app-banner-close { width: 36px; height: 36px; display: grid; place-items: center; border: 0; border-radius: 10px; background: transparent; color: var(--muted); }
 .app-banner-hint { grid-column: 1 / -1; padding-left: 2px; color: var(--muted); font-size: 11px; }
 .app-sheet-list { display: grid; gap: 10px; margin: 18px 0 0; padding: 0; list-style: none; color: var(--ink-soft); font-size: 14px; }
 .app-sheet-list li { display: flex; gap: 9px; align-items: flex-start; }
 .app-sheet-list svg { flex: none; margin-top: 1px; color: var(--green); }
-.app-sheet-cta { text-decoration: none; }
-.app-sheet .position-note { margin-top: 16px; }
-.app-sheet-note { text-align: center; }
+.app-sheet-steps { display: grid; gap: 10px; margin: 16px 0 0; padding: 14px; border-radius: 12px; background: var(--mint); color: var(--green-dark); font-size: 14px; list-style: none; }
+.app-sheet-steps li { display: flex; align-items: center; gap: 9px; }
+.app-sheet-steps svg { flex: none; }
 @media (min-width: 621px) { .app-banner { inset: auto 20px 20px auto; width: 380px; } }
 @media (max-width: 620px) {
   .topbar { position: sticky; }

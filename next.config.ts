@@ -1,10 +1,5 @@
 import type { NextConfig } from "next";
 
-// BUILD_TARGET=mobile gera o site estático embarcado no app Capacitor.
-// O export não aceita route handlers com POST; "route.ts" sai do build ao
-// restringir as extensões de página a "tsx", e o app consome a API publicada.
-const isMobileBuild = process.env.BUILD_TARGET === "mobile";
-
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "X-Frame-Options", value: "DENY" },
@@ -12,16 +7,13 @@ const securityHeaders = [
   { key: "Permissions-Policy", value: "geolocation=(self), camera=(), microphone=()" },
 ];
 
-const nextConfig: NextConfig = isMobileBuild
-  ? {
-      output: "export",
-      pageExtensions: ["tsx"],
-      trailingSlash: true,
-      images: { unoptimized: true },
-    }
-  : {
-      poweredByHeader: false,
-      headers: async () => [{ source: "/(.*)", headers: securityHeaders }],
-    };
+const nextConfig: NextConfig = {
+  poweredByHeader: false,
+  headers: async () => [
+    { source: "/(.*)", headers: securityHeaders },
+    // O navegador precisa revalidar o service worker a cada visita para pegar atualizações.
+    { source: "/sw.js", headers: [{ key: "Cache-Control", value: "no-cache, no-store, must-revalidate" }] },
+  ],
+};
 
 export default nextConfig;
