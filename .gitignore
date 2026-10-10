@@ -27,3 +27,16 @@ next-env.d.ts
 
 # Agents
 AGENTS.md
+# Mobile (Capacitor) and data caches
+out/
+.cache/
+
+# Segredos e assinatura do app Android (nunca versionar)
+*.keystore
+*.jks
+keystore.properties
+android/local.properties
+
+# Dados locais do Vercel CLI
+.vercel/
+.env*.local
