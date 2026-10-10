@@ -3,7 +3,7 @@
   <h3>Brasília & Águas Lindas</h3>
   <p>Encontre o próximo culto por dia, período e distância.<br />Mais perto. Mais simples. Direto ao caminho.</p>
   <p>
-    <a href="package.json"><img src="https://img.shields.io/badge/version-1.1.0-176B4A.svg" alt="Versão 1.1.0" /></a>
+    <a href="package.json"><img src="https://img.shields.io/badge/version-1.2.0-176B4A.svg" alt="Versão 1.2.0" /></a>
     <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white" alt="Next.js 16" /></a>
     <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=0B1F2A" alt="React 19" /></a>
     <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white" alt="TypeScript" /></a>
@@ -155,6 +155,7 @@ npm run android:open   # abre android/ no Android Studio
 
 Requisitos: Android Studio com SDK 36 e JDK 21 (o JBR do Android Studio serve). Para um APK de teste pela linha de comando: `cd android && ./gradlew assembleDebug` (saída em `android/app/build/outputs/apk/debug/`).
 
+- **Convite no site:** quem abre o site no Android vê um banner para baixar o app. "Agora não" adia por 14 dias, e o botão "Baixar app" (topo no celular, rodapé em qualquer tela) reabre a janela. O link vem de `NEXT_PUBLIC_APP_DOWNLOAD_URL`; o padrão é o arquivo `casas-de-oracao.apk` na última release do GitHub — publique o APK lá com esse nome (ou configure a URL da Google Play).
 - `NEXT_PUBLIC_API_BASE` troca o endereço da API usado pelo app (padrão: produção na Vercel).
 - Ícone e splash: `node scripts/build-app-icon.mjs` e depois `npx capacitor-assets generate --android`.
 - Para a Google Play: gere um bundle assinado em **Build → Generate Signed App Bundle**, informe a política de privacidade (`/privacidade`) e declare o uso de localização em primeiro plano. O `appId` (`io.github.rdesley.casasdeoracao`) não pode mudar depois da primeira publicação.
