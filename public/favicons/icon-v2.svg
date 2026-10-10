@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title>Casas de Oração — símbolo de localização</title>
+  <desc>Um marcador de localização verde com uma porta aberta em tom creme e um caminho curto, representando encontrar uma casa de oração.</desc>
+  <rect width="512" height="512" rx="112" fill="#176B4A"/>
+  <path d="M256 70c-91 0-165 72-165 162 0 111 165 230 165 230s165-119 165-230C421 142 347 70 256 70Z" fill="#F7F5EB"/>
+  <path d="M174 253v-36l82-65 82 65v88" fill="none" stroke="#176B4A" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M218 304v-48c0-21 17-38 38-38s38 17 38 38v48" fill="#176B4A"/>
+  <path d="M256 304v53" stroke="#D9A441" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="256" cy="371" r="8" fill="#D9A441"/>
+</svg>
