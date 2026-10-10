@@ -22,6 +22,12 @@
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "/favicons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ]
 }
