@@ -358,3 +358,52 @@ footer a { color: var(--green); font-weight: 600; }
 .donation-steps { margin: 0; padding-left: 20px; color: var(--ink-soft); font-size: 14px; }
 .legal ul, .donation-warning ul { list-style: disc; }
 .legal ol { list-style: decimal; }
+
+
+/* Identidade visual: tela de abertura do app */
+.app-splash {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+  color: var(--ink);
+  animation: splash-in 220ms ease both;
+}
+.app-splash-mark {
+  width: 88px;
+  height: 88px;
+  overflow: hidden;
+  border-radius: 22px;
+  box-shadow: 0 12px 32px rgba(16, 45, 31, .18);
+}
+.app-splash-mark img { width: 100%; height: 100%; object-fit: cover; }
+.app-splash-title {
+  margin: 20px 0 0;
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -.5px;
+}
+.app-splash-subtitle { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+.app-splash-loader { display: flex; gap: 6px; margin-top: 26px; }
+.app-splash-loader i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: splash-bounce 900ms ease-in-out infinite;
+}
+.app-splash-loader i:nth-child(2) { animation-delay: 120ms; }
+.app-splash-loader i:nth-child(3) { animation-delay: 240ms; }
+@keyframes splash-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes splash-bounce {
+  0%, 80%, 100% { opacity: .35; transform: scale(.7); }
+  40% { opacity: 1; transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .app-splash, .app-splash-loader i { animation: none !important; }
+}

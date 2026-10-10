@@ -25,14 +25,9 @@ export const metadata: Metadata = {
   appleWebApp: { capable: true, title: SITE.shortName, statusBarStyle: "default" },
   manifest: "/site.webmanifest",
   icons: {
-    icon: [
-      { url: "/favicons/favicon.ico", sizes: "48x48" },
-      { url: "/favicons/icon.svg", type: "image/svg+xml" },
-      { url: "/favicons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicons/favicon-192x192.png", sizes: "192x192", type: "image/png" },
-    ],
-    apple: [{ url: "/favicons/favicon-180x180.png", sizes: "180x180", type: "image/png" }],
-    shortcut: "/favicons/favicon.ico",
+    icon: [{ url: "/favicons/icon.svg", type: "image/svg+xml", sizes: "any" }],
+    apple: [{ url: "/favicons/icon.svg", type: "image/svg+xml" }],
+    shortcut: "/favicons/icon.svg",
   },
   openGraph: {
     title,
@@ -55,7 +50,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#ffffff",
+  themeColor: "#176B4A",
 };
 
 export default function RootLayout({
