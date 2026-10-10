@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   appleWebApp: { capable: true, title: SITE.shortName, statusBarStyle: "default" },
   manifest: "/site.webmanifest",
   icons: {
-    icon: [{ url: "/favicons/icon.svg", type: "image/svg+xml", sizes: "any" }],
-    apple: [{ url: "/favicons/icon.svg", type: "image/svg+xml" }],
-    shortcut: "/favicons/icon.svg",
+    icon: [{ url: "/favicons/favicon-128x128.png", sizes: "128x128", type: "image/png" }],
+    apple: [{ url: "/favicons/favicon-128x128.png", sizes: "128x128", type: "image/png" }],
+    shortcut: "/favicons/favicon-128x128.png",
   },
   openGraph: {
     title,
