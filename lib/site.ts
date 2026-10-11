@@ -4,7 +4,7 @@ export const SITE = {
   name: "Localizador de Casas de Oração",
   shortName: "Casas de Oração",
   region: "Brasília e Águas Lindas",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://relatorio-ccb-brasilia.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://casas-de-oracao.vercel.app",
   description: "Encontre casas de oração da Congregação Cristã no Brasil em Brasília, no Distrito Federal e em Águas Lindas de Goiás por dia, período e distância. Projeto independente, sem vínculo com a instituição.",
   /** Deve aparecer em toda tela e em toda descrição pública. */
   independence: "Projeto independente, sem vínculo com a Congregação Cristã no Brasil.",
