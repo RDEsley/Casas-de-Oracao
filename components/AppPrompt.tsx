@@ -79,7 +79,7 @@ export default function AppPrompt() {
           ? <button className="current-location-card app-sheet-cta" onClick={install}><Download size={20} /><span><b>Instalar agora</b><small>Leva poucos segundos</small></span></button>
           : <ol className="app-sheet-steps">
               {ios
-                ? <><li><Share size={17} /> No Safari, toque em <b>Compartilhar</b>.</li><li><SquarePlus size={17} /> Escolha <b>Adicionar à Tela de Início</b>.</li></>
+                ? <><li><Share size={17} /> No Safari, toque em <b>Compartilhar</b> (se não aparecer, toque antes em <b>•••</b>).</li><li><SquarePlus size={17} /> Escolha <b>Adicionar à Tela de Início</b>.</li></>
                 : <><li><MoreVertical size={17} /> Abra o menu do navegador (⋮).</li><li><SquarePlus size={17} /> Toque em <b>Instalar app</b> ou <b>Adicionar à tela inicial</b>.</li></>}
             </ol>}
       </section>
