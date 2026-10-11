@@ -3,7 +3,9 @@
 import { Check, Copy, TriangleAlert } from "lucide-react";
 import { useMemo, useState } from "react";
 import { DONATION } from "../lib/donation";
+import { settleInvite } from "../lib/invite";
 import { buildPixCode } from "../lib/pix";
+import { WaveArt } from "./DonationArt";
 import PixQrCode from "./PixQrCode";
 
 const formatMoney = (value: number) => value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -26,6 +28,7 @@ export default function DonationPanel() {
   const [preset, setPreset] = useState<number | "custom" | null>(null);
   const [customText, setCustomText] = useState("");
   const [copied, setCopied] = useState(false);
+  const [thanked, setThanked] = useState(false);
 
   const amount = preset === "custom" ? parseAmount(customText) : preset;
   const code = useMemo(() => buildPixCode({
@@ -40,6 +43,8 @@ export default function DonationPanel() {
     try {
       await navigator.clipboard.writeText(code);
       setCopied(true);
+      setThanked(true);
+      settleInvite();
       window.setTimeout(() => setCopied(false), 2500);
     } catch { /* sem permissão de área de transferência: o código continua visível para copiar à mão */ }
   };
@@ -78,6 +83,11 @@ export default function DonationPanel() {
         <code>{code}</code>
         <button className="donation-copy" onClick={copy}>{copied ? <><Check size={18} /> Código copiado</> : <><Copy size={18} /> Copiar código Pix</>}</button>
       </div>
+
+      {thanked && <div className="donation-thanks" role="status">
+        <WaveArt className="donation-thanks-art" />
+        <p><b>Muito obrigado!</b> Agora é só colar o código no Pix do seu banco. O app não fica sabendo se o pagamento foi feito, então o agradecimento já fica aqui: sua ajuda faz diferença de verdade.</p>
+      </div>}
 
       <ol className="donation-steps">
         <li>No app do seu banco, abra o Pix e escolha <b>Ler QR Code</b> ou <b>Pix Copia e Cola</b>.</li>

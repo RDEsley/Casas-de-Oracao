@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AppPrompt from "../components/AppPrompt";
 import { isInstalled, openInstall } from "../lib/install";
+import DonationInvite from "../components/DonationInvite";
 import { SITE } from "../lib/site";
 import {
   Archive,
@@ -477,6 +478,8 @@ export default function Home() {
         {visibleCount < results.length && <button className="load-more" onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}>Mostrar mais {Math.min(PAGE_SIZE, results.length - visibleCount)} de {results.length - visibleCount}</button>}
       </> : <div className="empty-state"><Church size={30} /><h3>{EMPTY_STATES[view].title}</h3><p>{EMPTY_STATES[view].text}</p><button onClick={() => { setView("explore"); setPeriod("Todos"); setQuery(""); }}>Limpar filtros</button></div>}
     </section>
+
+    <DonationInvite />
 
     <footer>
       <p className="footer-independence">{SITE.independence}</p>
