@@ -4,7 +4,7 @@
   <p>Encontre o próximo culto por dia, período e distância.<br />Mais perto. Mais simples. Direto ao caminho.</p>
   <p><strong>Projeto independente, sem vínculo com a Congregação Cristã no Brasil.</strong></p>
   <p>
-    <a href="package.json"><img src="https://img.shields.io/badge/version-1.5.0-176B4A.svg" alt="Versão 1.5.0" /></a>
+    <a href="package.json"><img src="https://img.shields.io/badge/version-1.5.1-176B4A.svg" alt="Versão 1.5.1" /></a>
     <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white" alt="Next.js 16" /></a>
     <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=0B1F2A" alt="React 19" /></a>
     <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white" alt="TypeScript" /></a>
