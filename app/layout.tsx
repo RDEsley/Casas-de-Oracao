@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: SITE.name,
-    images: [{ url: "/og-casas-de-oracao.png", width: 1200, height: 630, type: "image/png", alt: title }],
+    images: [{ url: "/favicons/favicon-512x512.png", width: 512, height: 512, type: "image/png", alt: "Logo do Casas de Oração" }],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title,
     description: SITE.description,
-    images: ["/og-casas-de-oracao.png"],
+    images: ["/favicons/favicon-512x512.png"],
   },
 };
 
