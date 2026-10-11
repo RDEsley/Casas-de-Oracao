@@ -4,7 +4,7 @@
   <p>Encontre o próximo culto por dia, período e distância.<br />Mais perto. Mais simples. Direto ao caminho.</p>
   <p><strong>Projeto independente, sem vínculo com a Congregação Cristã no Brasil.</strong></p>
   <p>
-    <a href="package.json"><img src="https://img.shields.io/badge/version-1.4.0-176B4A.svg" alt="Versão 1.4.0" /></a>
+    <a href="package.json"><img src="https://img.shields.io/badge/version-1.5.0-176B4A.svg" alt="Versão 1.5.0" /></a>
     <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white" alt="Next.js 16" /></a>
     <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=0B1F2A" alt="React 19" /></a>
     <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white" alt="TypeScript" /></a>
@@ -159,7 +159,7 @@ O site é um PWA: o próprio navegador o instala, sem loja e sem baixar arquivo.
 
 - **Nome e marca:** o app se chama *Localizador de Casas de Oração* e usa um ícone próprio. Nome, descrições e o aviso de independência ficam em [`lib/site.ts`](lib/site.ts); o aviso aparece no rodapé de todas as telas.
 - **Termos de uso** em `/termos` e **Política de privacidade** em `/privacidade`, escritos a partir do que o app realmente faz com os dados (LGPD).
-- **Apoio ao desenvolvedor** em `/apoiar`: doação voluntária por Pix, de qualquer valor. O código Pix e o QR Code só aparecem depois que a pessoa confirma ter lido que **a doação vai para o desenvolvedor, e não para a Congregação Cristã no Brasil**. Não há pop-up nem função bloqueada: o único acesso é o link no rodapé.
+- **Apoio ao desenvolvedor** em `/apoiar`: doação voluntária por Pix, de qualquer valor. O código Pix e o QR Code só aparecem depois que a pessoa confirma ter lido que **a doação vai para o desenvolvedor, e não para a Congregação Cristã no Brasil**. Nenhuma função é bloqueada. Além do link no rodapé, há um cartão dispensável e um convite que aparece uma única vez, a partir da quinta visita; os dois repetem que a doação não é para a igreja. Quem copia o código recebe um agradecimento, e o app continua sem saber se alguém doou.
 - O Pix é estático (BR Code gerado no navegador por [`lib/pix.ts`](lib/pix.ts)), sem intermediário e sem taxa. Por isso o app **não sabe se alguém doou nem quanto**: o total fica no extrato do recebedor, identificado por `CASASORACAO`. A configuração está em [`lib/donation.ts`](lib/donation.ts).
 
 ## 🔐 Privacidade e limites
