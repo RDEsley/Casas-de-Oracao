@@ -72,15 +72,15 @@ export default function AppPrompt() {
       <section className="location-modal app-sheet" role="dialog" aria-modal="true" aria-labelledby="app-sheet-title">
         <div className="modal-head"><div><h2 id="app-sheet-title">Instale o aplicativo</h2><p>Sem loja e sem baixar arquivo: o próprio navegador instala.</p></div><button onClick={() => setMode("none")} aria-label="Fechar"><X /></button></div>
         <ul className="app-sheet-list">
-          <li><ShieldCheck size={18} /> Ícone na tela inicial e abertura em tela cheia.</li>
-          <li><ShieldCheck size={18} /> Sempre atualizado, com as mesmas casas, horários e rotas.</li>
+          <li><ShieldCheck size={18} /><span>Ícone na tela inicial e abertura em tela cheia.</span></li>
+          <li><ShieldCheck size={18} /><span>Sempre atualizado, com as mesmas casas, horários e rotas.</span></li>
         </ul>
         {promptable
           ? <button className="current-location-card app-sheet-cta" onClick={install}><Download size={20} /><span><b>Instalar agora</b><small>Leva poucos segundos</small></span></button>
           : <ol className="app-sheet-steps">
               {ios
-                ? <><li><Share size={17} /> No Safari, toque em <b>Compartilhar</b> (se não aparecer, toque antes em <b>•••</b>).</li><li><SquarePlus size={17} /> Escolha <b>Adicionar à Tela de Início</b>.</li></>
-                : <><li><MoreVertical size={17} /> Abra o menu do navegador (⋮).</li><li><SquarePlus size={17} /> Toque em <b>Instalar app</b> ou <b>Adicionar à tela inicial</b>.</li></>}
+                ? <><li><Share size={17} /><span>No Safari, toque em <b>Compartilhar</b> (se não aparecer, toque antes em <b>•••</b>).</span></li><li><SquarePlus size={17} /><span>Escolha <b>Adicionar à Tela de Início</b>.</span></li></>
+                : <><li><MoreVertical size={17} /><span>Abra o menu do navegador (⋮).</span></li><li><SquarePlus size={17} /><span>Toque em <b>Instalar app</b> ou <b>Adicionar à tela inicial</b>.</span></li></>}
             </ol>}
       </section>
     </div>;
