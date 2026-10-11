@@ -21,7 +21,7 @@ export default function Privacy() {
     <h3>Endereços que você salva</h3>
     <p>O texto digitado é enviado, direto do seu navegador, ao serviço público Nominatim (OpenStreetMap) para encontrar a posição. O resultado fica guardado <b>somente no seu aparelho</b>.</p>
     <h3>Preferências</h3>
-    <p>Favoritos, arquivados, filtros e a escolha de adiar o convite de instalação ficam somente no seu aparelho (armazenamento local do navegador). O app instalado também guarda no aparelho uma cópia das páginas para abrir sem conexão.</p>
+    <p>Favoritos, arquivados, filtros, a escolha de adiar o convite de instalação e a contagem de quantas vezes você abriu o app (usada só para mostrar o convite de apoio uma única vez) ficam somente no seu aparelho (armazenamento local do navegador). O app instalado também guarda no aparelho uma cópia das páginas para abrir sem conexão.</p>
     <h3>Registros técnicos</h3>
     <p>A hospedagem (Vercel) registra dados técnicos de acesso, como endereço IP, data, hora e navegador, para manter o serviço funcionando e seguro. Esses registros não são usados para identificar você.</p>
 
