@@ -1,6 +1,6 @@
 {
   "name": "localizador-casas-de-oracao",
-  "version": "1.5.1",
+  "version": "2.0.0",
   "private": true,
   "engines": {
     "node": "24.x"
@@ -12,7 +12,9 @@
     "data:update": "node scripts/update-churches.mjs",
     "data:geocode": "node scripts/geocode-churches.mjs",
     "data:validate": "node scripts/validate-data.mjs",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "data:icons": "node scripts/build-icons.mjs",
+    "data:audit": "node scripts/audit-positions.mjs"
   },
   "dependencies": {
     "lottie-web": "^5.13.0",
