@@ -1,261 +1,122 @@
-import { readFile, writeFile } from "node:fs/promises";
+// Lê o relatório oficial da Congregação Cristã no Brasil e grava uma base por estado em
+// data/churches/<UF>.json. Retomável: o que já foi lido fica em .cache/official/.
+//   node scripts/update-churches.mjs                 todos os estados
+//   node scripts/update-churches.mjs --uf=DF,GO      só alguns
+// Posições (latitude/longitude) NÃO vêm daqui: ver scripts/geocode-churches.mjs.
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { STATES } from "./lib/states.mjs";
+import { REPORT_URL, SERVICE_FILTER, createOfficialClient, hasNextPage, parseDetail, parseListing } from "./lib/official.mjs";
+import { rebuildIndex } from "./lib/index.mjs";
 
-const BASE_URL = "https://congregacaocristanobrasil.org.br";
-const REPORT_URL = `${BASE_URL}/relatorio`;
-const DATA_URL = new URL("../data/churches.json", import.meta.url);
-const DAY_NAMES = new Map([
-  ["Domingo", "Dom"], ["Segunda-feira", "Seg"], ["Terça-feira", "Ter"],
-  ["Quarta-feira", "Qua"], ["Quinta-feira", "Qui"], ["Sexta-feira", "Sex"], ["Sábado", "Sáb"],
-]);
+const DATA_DIR = new URL("../data/churches/", import.meta.url);
+const CACHE_DIR = new URL("../.cache/official/", import.meta.url);
+const arg = (name) => process.argv.find((item) => item.startsWith(`--${name}=`))?.split("=")[1];
+const wanted = arg("uf")?.toUpperCase().split(",");
+const CONCURRENCY = Number(arg("concurrency") ?? 5);
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const readJson = async (url, fallback) => JSON.parse(await readFile(url, "utf8").catch(() => "null")) ?? fallback;
 
-function decodeHtml(value = "") {
-  return value
-    .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(Number.parseInt(code, 16)))
-    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
-    .replaceAll("&nbsp;", " ").replaceAll("&amp;", "&").replaceAll("&quot;", '"')
-    .replaceAll("&apos;", "'").replaceAll("&lt;", "<").replaceAll("&gt;", ">");
+async function pool(items, size, task) {
+  const queue = [...items];
+  await Promise.all(Array.from({ length: size }, async () => {
+    while (queue.length) { await task(queue.shift()); await sleep(80); }
+  }));
 }
 
-function plainText(value = "") {
-  return decodeHtml(value.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
-}
-
-function cardsFrom(html) {
-  return [...html.matchAll(/<div class="card detalhe">([\s\S]*?)<\/div>/g)].map((match) => match[1]);
-}
-
-function parseMinistry(card = "") {
-  const groups = [];
-  let current = null;
-  for (const match of card.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/g)) {
-    const paragraph = match[1];
-    const value = plainText(paragraph);
-    if (!value) continue;
-    if (/<strong/i.test(paragraph)) {
-      current = { role: value, names: [] };
-      groups.push(current);
-    } else if (current) current.names.push(value);
-  }
-  return groups.filter((group) => group.names.length > 0);
-}
-
-function parseServices(card = "") {
-  const services = [];
-  let currentType = "";
-  for (const match of card.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/g)) {
-    const paragraph = match[1];
-    const value = plainText(paragraph);
-    if (!value) continue;
-    if (/<strong/i.test(paragraph)) {
-      if (/Reunião de Jovens e Menores/i.test(value)) currentType = "Reunião de jovens e menores";
-      if (/Culto Oficial/i.test(value)) currentType = "Culto oficial";
-      continue;
-    }
-    const schedule = /^(Domingo|Segunda-feira|Terça-feira|Quarta-feira|Quinta-feira|Sexta-feira|Sábado)\s*-\s*(\d{2}:\d{2})/.exec(value);
-    if (schedule && currentType) services.push({ day: DAY_NAMES.get(schedule[1]), time: schedule[2], type: currentType });
-  }
-  return services;
-}
-
-function valueAfterLabel(card, label) {
-  return plainText(new RegExp(`${label}:?\\s*<\\/strong>\\s*([^<]*)`, "i").exec(card)?.[1] ?? "");
-}
-
-function parseDetail(html) {
-  const cards = cardsFrom(html);
-  const headerCard = cards[0] ?? "";
-  const locationCard = cards.find((card) => /Localiza(?:ção|&#231;&#227;o)/i.test(card)) ?? "";
-  const serviceCard = cards.find((card) => /Dias de Culto/i.test(card)) ?? "";
-  const ministryCard = cards.find((card) => /Minist(?:ério|&#233;rio)/i.test(card)) ?? "";
-  const phoneCard = cards.find((card) => /Telefone\(s\)/i.test(card)) ?? "";
-  const cityParts = valueAfterLabel(locationCard, "Cidade").split(",").map((part) => part.trim()).filter(Boolean);
-  return {
-    name: plainText(/<label[^>]*>[\s\S]*?<strong>([\s\S]*?)<\/strong>/.exec(headerCard)?.[1] ?? ""),
-    isCentral: [...headerCard.matchAll(/<small[^>]*>[\s\S]*?<strong>([\s\S]*?)<\/strong>[\s\S]*?<\/small>/g)]
-      .map((match) => plainText(match[1])).includes("CENTRAL"),
-    code: [...headerCard.matchAll(/<small[^>]*>[\s\S]*?<strong>([\s\S]*?)<\/strong>[\s\S]*?<\/small>/g)]
-      .map((match) => plainText(match[1])).find((value) => /^BR-\d{2}-\d{4}$/.test(value)) ?? "",
-    street: valueAfterLabel(locationCard, "Logradouro"),
-    postalCode: valueAfterLabel(locationCard, "CEP"),
-    city: cityParts[0] ?? "",
-    state: cityParts[1] ?? "",
-    services: parseServices(serviceCard),
-    ministry: parseMinistry(ministryCard),
-    phones: [...phoneCard.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/g)].map((match) => plainText(match[1])).filter(Boolean),
-  };
-}
-
-async function fetchWithRetry(url, options, attempts = 3) {
-  let lastError;
-  for (let attempt = 1; attempt <= attempts; attempt += 1) {
-    try {
-      const response = await fetch(url, options);
-      const isManualRedirect = options?.redirect === "manual" && response.status >= 300 && response.status < 400;
-      if (!response.ok && !isManualRedirect) throw new Error(`${response.status} ${response.statusText}`);
-      return response;
-    } catch (error) {
-      lastError = error;
-      if (attempt < attempts) await new Promise((resolve) => setTimeout(resolve, attempt * 750));
-    }
-  }
-  throw lastError;
-}
-
-async function createOfficialClient() {
-  const cookieJar = new Map();
-  let response;
-  let requestUrl = REPORT_URL;
-  for (let redirect = 0; redirect < 5; redirect += 1) {
-    response = await fetchWithRetry(requestUrl, {
-      redirect: "manual",
-      headers: {
-        "Cookie": [...cookieJar.entries()].map(([name, value]) => `${name}=${value}`).join("; "),
-        "User-Agent": "Relatorio-CCB-Brasilia/1.0",
-      },
-    });
-    for (const cookie of response.headers.getSetCookie?.() ?? []) {
-      const [pair] = cookie.split(";", 1);
-      const separator = pair.indexOf("=");
-      cookieJar.set(pair.slice(0, separator), pair.slice(separator + 1));
-    }
-    if (response.status < 300 || response.status >= 400) break;
-    requestUrl = new URL(response.headers.get("location"), requestUrl).href;
-  }
-  if (!response || !response.ok) throw new Error("Não foi possível iniciar uma sessão no relatório oficial.");
-  const html = await response.text();
-  const token = /name="__RequestVerificationToken"[^>]*value="([^"]+)"/.exec(html)?.[1];
-  const cookies = [...cookieJar.entries()].map(([name, value]) => `${name}=${value}`).join("; ");
-  if (!token) throw new Error("O relatório oficial não forneceu o token de consulta.");
-  return async (path, body) => {
-    const result = await fetchWithRetry(`${BASE_URL}${path}`, {
-      method: "POST",
-      headers: {
-        "AntiForgeryToken": token,
-        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-        "Cookie": cookies,
-        "User-Agent": "Relatorio-CCB-Brasilia/1.0",
-        "X-Requested-With": "XMLHttpRequest",
-      },
-      body: new URLSearchParams(body),
-    });
-    return result.text();
-  };
-}
-
-function parseListingRows(html) {
-  return [...html.matchAll(/<tr>([\s\S]*?)<\/tr>/g)].flatMap((match) => {
-    const row = match[1];
-    const officialId = /data-id="(\d+)"/.exec(row)?.[1];
-    const code = /BR-\d{2}-\d{4}/.exec(plainText(row))?.[0];
-    return officialId && code ? [{ id: code, officialId: Number(officialId) }] : [];
-  });
-}
-
-async function listOfficialScope(post) {
-  const countries = JSON.parse(await post("/service/pais-relatorio", {})).list;
-  const country = countries.find((item) => item.Text === "Brasil");
-  if (!country) throw new Error("Brasil não encontrado no relatório oficial.");
-
-  const states = JSON.parse(await post("/service/estado-relatorio", { codigoPais: country.Value })).list;
-  const df = states.find((item) => item.Text === "DISTRITO FEDERAL");
-  const go = states.find((item) => item.Text === "GOIÁS");
-  if (!df || !go) throw new Error("DF ou Goiás não encontrado no relatório oficial.");
-
-  const dfCities = JSON.parse(await post("/service/cidade-relatorio", { codigoEstado: df.Value })).list;
-  const goCities = JSON.parse(await post("/service/cidade-relatorio", { codigoEstado: go.Value })).list;
-  const aguasLindas = goCities.find((item) => item.Text === "Águas Lindas de Goiás");
-  if (!aguasLindas) throw new Error("Águas Lindas de Goiás não encontrada no relatório oficial.");
-
-  const targets = [
-    ...dfCities.map((city) => ({ ...city, stateCode: df.Value })),
-    { ...aguasLindas, stateCode: go.Value },
-  ];
+async function listCity(post, scope, city) {
+  const body = { ...SERVICE_FILTER, codigoPais: scope.country, codigoEstado: scope.state, codigoCidade: city.Value };
   const records = new Map();
-
-  for (const city of targets) {
-    const commonBody = {
-      codigoPais: country.Value,
-      codigoEstado: city.stateCode,
-      codigoCidade: city.Value,
-      tipoCulto: "Culto Oficial,Reunião de Jovens e Menores",
-      diaSemana: "1,2,3,4,5,6,7",
-      periodo: "Manhã,Tarde,Noite",
-    };
-    const cityRecords = [];
-    for (let page = 1; page <= 100; page += 1) {
-      const html = await post("/service/servico-relatorio", { ...commonBody, pagina: String(page) });
-      const pageRecords = parseListingRows(html);
-      cityRecords.push(...pageRecords);
-      const hasNextPage = new RegExp(`<button[^>]*value="${page + 1}"[^>]*>`, "i").test(html);
-      if (!pageRecords.length || !hasNextPage) break;
-    }
-    cityRecords.forEach((record) => records.set(record.id, record));
-    process.stdout.write(`${city.Text}: ${cityRecords.length} casas encontradas.\n`);
+  let announced = 0;
+  for (let page = 1; page <= 400; page += 1) {
+    const html = await post("/service/servico-relatorio", { ...body, pagina: String(page) });
+    const listing = parseListing(html);
+    announced = listing.total || announced;
+    listing.records.forEach((record) => records.set(record.id, record));
+    if (!listing.records.length || !hasNextPage(html, page)) break;
   }
-
+  // "Exibindo N de M" conta agendas (uma casa com dois tipos de culto vale duas), então M não é o total de casas.
+  void announced;
   return [...records.values()];
 }
 
-async function loadOfficialChurch(record, existingChurch, post) {
-  const church = existingChurch ?? { id: record.id };
-  const officialId = record.officialId;
-  const detail = parseDetail(await post("/service/localidade-detalhe", { codigo: officialId }));
-  if (detail.code !== church.id || !detail.name || !detail.city || !detail.services.length) {
-    throw new Error(`${church.id}: detalhes oficiais incompletos ou divergentes: ${JSON.stringify(detail)}`);
+function buildChurch(record, detail, previous) {
+  if (detail.code !== record.id || !detail.name || !detail.city || !detail.services.length) {
+    throw new Error(`${record.id}: detalhes oficiais incompletos ou divergentes: ${JSON.stringify(detail)}`);
   }
-
-  const displayName = `${detail.name}${detail.isCentral ? " - Central" : ""}`;
+  const name = `${detail.name}${detail.isCentral ? " - Central" : ""}`;
   const address = `${detail.street || "Endereço não informado"}${detail.postalCode ? `, CEP ${detail.postalCode}` : ""}`;
-  const routeQuery = [
-    `Congregação Cristã no Brasil - ${displayName}`,
-    detail.street,
-    detail.city,
-    detail.state,
-    detail.postalCode,
-    "Brasil",
-  ].filter(Boolean).join(", ");
-  // A posição vem de scripts/geocode-churches.mjs e só vale para o endereço em que foi conferida.
-  const positionStillValid = church.address === address && Number.isFinite(church.latitude) && Number.isFinite(church.longitude);
-  const updated = {
-    ...church,
-    name: displayName,
-    neighborhood: displayName,
+  // A posição só vale para o endereço em que foi conferida.
+  const keep = previous && previous.address === address && previous.name === name && Number.isFinite(previous.latitude);
+  return {
+    id: record.id,
+    officialId: record.officialId,
+    name,
     city: detail.city,
     state: detail.state,
     address,
     services: detail.services,
-    latitude: positionStillValid ? church.latitude : null,
-    longitude: positionStillValid ? church.longitude : null,
-    coordinateStatus: positionStillValid ? church.coordinateStatus : "unavailable",
-    coordinateSource: positionStillValid ? church.coordinateSource : null,
+    latitude: keep ? previous.latitude : null,
+    longitude: keep ? previous.longitude : null,
+    coordinateStatus: keep ? previous.coordinateStatus : "unavailable",
+    coordinateSource: keep ? previous.coordinateSource : null,
+    ...(keep && previous.cnefeId ? { cnefeId: previous.cnefeId } : {}),
     ministry: detail.ministry,
     phones: detail.phones,
-    officialId: Number(officialId),
-    routeQuery,
-    googleMapsUrl: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(routeQuery)}`,
-    wazeUrl: `https://waze.com/ul?q=${encodeURIComponent(routeQuery)}&navigate=yes`,
-    sourceUrl: REPORT_URL,
     officialVerification: new Date().toISOString().slice(0, 10),
   };
-  if (existingChurch && !positionStillValid) process.stdout.write(`${church.id}: endereço alterado; execute "npm run data:geocode" para reposicionar.\n`);
-  return updated;
 }
 
-const current = JSON.parse(await readFile(DATA_URL, "utf8"));
+await mkdir(DATA_DIR, { recursive: true });
+await mkdir(CACHE_DIR, { recursive: true });
 const post = await createOfficialClient();
-const officialRecords = await listOfficialScope(post);
-const existingById = new Map(current.churches.map((church) => [church.id, church]));
-const churches = [];
-for (let index = 0; index < officialRecords.length; index += 4) {
-  const batch = officialRecords.slice(index, index + 4);
-  churches.push(...await Promise.all(batch.map((record) => loadOfficialChurch(record, existingById.get(record.id), post))));
-  process.stdout.write(`Verificadas ${churches.length}/${officialRecords.length} casas no relatório oficial.\n`);
-  await new Promise((resolve) => setTimeout(resolve, 250));
+const country = JSON.parse(await post("/service/pais-relatorio", {})).list.find((item) => item.Text === "Brasil");
+const officialStates = JSON.parse(await post("/service/estado-relatorio", { codigoPais: country.Value })).list;
+
+for (const state of STATES) {
+  if (wanted && !wanted.includes(state.uf)) continue;
+  const official = officialStates.find((item) => item.Text === state.official);
+  if (!official) throw new Error(`${state.uf}: estado não encontrado no relatório oficial.`);
+  const cities = JSON.parse(await post("/service/cidade-relatorio", { codigoEstado: official.Value })).list.filter((item) => item.Value !== "0");
+  const target = new URL(`${state.uf}.json`, DATA_DIR);
+  const previousFile = await readJson(target, { churches: [] });
+  const previousById = new Map(previousFile.churches.map((church) => [church.id, church]));
+  const cachePath = new URL(`${state.uf}.json`, CACHE_DIR);
+  const details = await readJson(cachePath, {});
+  const records = new Map();
+  const scope = { country: country.Value, state: official.Value };
+
+  await pool(cities, CONCURRENCY, async (city) => {
+    for (const record of await listCity(post, scope, city)) records.set(record.id, record);
+  });
+  process.stdout.write(`${state.uf}: ${records.size} casas listadas em ${cities.length} cidades.\n`);
+
+  const pending = [...records.values()].filter((record) => !details[record.id]);
+  let done = 0;
+  await pool(pending, CONCURRENCY, async (record) => {
+    details[record.id] = parseDetail(await post("/service/localidade-detalhe", { codigo: String(record.officialId) }));
+    done += 1;
+    if (done % 200 === 0) {
+      await writeFile(cachePath, JSON.stringify(details));
+      process.stdout.write(`  ${state.uf}: ${done}/${pending.length} detalhes lidos\n`);
+    }
+  });
+  await writeFile(cachePath, JSON.stringify(details));
+
+  // Casas que o relatório lista sem nenhum horário (só "Domingo - ") não entram: sem horário não há como filtrar nem orientar.
+  const skipped = [];
+  const complete = [...records.values()].filter((record) => {
+    const detail = details[record.id];
+    if (detail.services.length) return true;
+    skipped.push({ id: record.id, name: detail.name, city: detail.city, reason: "sem horário informado no relatório oficial" });
+    return false;
+  });
+  const churches = complete
+    .map((record) => buildChurch(record, details[record.id], previousById.get(record.id)))
+    .sort((a, b) => a.city.localeCompare(b.city, "pt-BR") || a.name.localeCompare(b.name, "pt-BR") || a.id.localeCompare(b.id));
+  const lines = churches.map((church) => `    ${JSON.stringify(church)}`).join(",\n");
+  await writeFile(target, `{\n  "state": "${state.uf}",\n  "updatedAt": "${new Date().toISOString().slice(0, 10)}",\n  "count": ${churches.length},\n  "skipped": ${JSON.stringify(skipped)},\n  "churches": [\n${lines}\n  ]\n}\n`);
+  process.stdout.write(`${state.uf}: ${churches.length} casas gravadas${skipped.length ? ` (${skipped.length} sem horário, ignoradas)` : ""}.\n`);
 }
 
-churches.sort((a, b) => a.city.localeCompare(b.city, "pt-BR") || a.name.localeCompare(b.name, "pt-BR"));
-const cityCounts = Object.fromEntries([...new Set(churches.map((church) => church.city))]
-  .sort((a, b) => a.localeCompare(b, "pt-BR"))
-  .map((city) => [city, churches.filter((church) => church.city === city).length]));
-await writeFile(DATA_URL, `${JSON.stringify({ updatedAt: new Date().toISOString().slice(0, 10), officialTotal: churches.length, cityCounts, churches }, null, 2)}\n`);
-console.log(`Concluído: ${churches.length} casas confirmadas no relatório oficial.`);
+await rebuildIndex();
+console.log(`Concluído. Fonte: ${REPORT_URL}`);
