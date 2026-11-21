@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: SITE.name,
-    images: [{ url: "/favicons/favicon-512x512.png", width: 512, height: 512, type: "image/png", alt: "Logo do Casas de Oração" }],
+    images: [{ url: "/og-casas-de-oracao.png", width: 1200, height: 630, type: "image/png", alt: "Localizador de Casas de Oração" }],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title,
     description: SITE.description,
-    images: ["/favicons/favicon-512x512.png"],
+    images: ["/og-casas-de-oracao.png"],
   },
 };
 
@@ -53,7 +53,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#176B4A",
+  themeColor: "#14397F",
 };
 
 export default function RootLayout({

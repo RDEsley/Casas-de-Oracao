@@ -1,33 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
   <title id="title">Casas de Oração</title>
-  <desc id="desc">Emblema circular verde com um marcador creme, uma entrada acolhedora e um caminho dourado.</desc>
+  <desc id="desc">Marcador de mapa branco sobre fundo azul-petróleo, com uma casa e uma porta em arco iluminada em dourado.</desc>
   <defs>
-    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#159268"/>
-      <stop offset=".48" stop-color="#08704D"/>
-      <stop offset="1" stop-color="#03432F"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1D4FB8"/>
+      <stop offset=".55" stop-color="#14397F"/>
+      <stop offset="1" stop-color="#0B8A8C"/>
     </linearGradient>
-    <linearGradient id="cream" x1=".12" y1="0" x2=".9" y2="1">
-      <stop offset="0" stop-color="#FFFBEF"/>
-      <stop offset="1" stop-color="#EDE3CC"/>
+    <linearGradient id="pin" x1=".2" y1="0" x2=".8" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DCE8F8"/>
     </linearGradient>
-    <linearGradient id="gold" x1=".1" y1="0" x2=".8" y2="1">
-      <stop offset="0" stop-color="#FFE18A"/>
-      <stop offset=".5" stop-color="#F9BE49"/>
-      <stop offset="1" stop-color="#D99121"/>
+    <linearGradient id="gold" x1=".1" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#FFE9A3"/>
+      <stop offset=".55" stop-color="#FFC24B"/>
+      <stop offset="1" stop-color="#F29B1F"/>
     </linearGradient>
-    <clipPath id="circle-clip"><circle cx="256" cy="256" r="240"/></clipPath>
-    <filter id="pin-shadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#003522" flood-opacity=".25"/>
+    <radialGradient id="glow" cx=".5" cy=".62" r=".6">
+      <stop offset="0" stop-color="#FFD978" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#FFD978" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="tile"><rect width="512" height="512" rx="116"/></clipPath>
+    <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#04163A" flood-opacity=".38"/>
     </filter>
   </defs>
-  <g clip-path="url(#circle-clip)">
-    <circle cx="256" cy="256" r="240" fill="url(#green)"/>
-    <path d="M-10 83C109 16 188 47 265 82S414 113 526 52V-10H-10Z" fill="#A6E6C5" opacity=".10"/>
-    <path d="M-4 395C90 342 167 374 249 411s176 56 270-7v120H-4Z" fill="#002F20" opacity=".17"/>
+  <g clip-path="url(#tile)">
+    <rect width="512" height="512" fill="url(#bg)"/>
+    <circle cx="420" cy="70" r="190" fill="#FFFFFF" opacity=".07"/>
+    <path d="M-20 430C80 392 150 416 240 440s190 24 292-28v140H-20Z" fill="#031A44" opacity=".28"/>
   </g>
-  <path d="M256 70C169 70 98 140 98 226c0 93 78 166 158 222 80-56 158-129 158-222C414 140 343 70 256 70Z" fill="url(#cream)" filter="url(#pin-shadow)"/>
-  <path d="M168 267v-39l88-69 88 69v88h-48v-55a40 40 0 0 0-80 0v55h-48Z" fill="#064A32" stroke="#064A32" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M220 316v-55a36 36 0 0 1 72 0v55Z" fill="url(#gold)"/>
-  <path d="M221 314c26 3 55 10 63 24 11 20-15 38-35 56-12 11-14 20-3 34l10 13 25-24c23-22 43-43 33-65-9-19-33-32-57-38Z" fill="url(#gold)"/>
+  <path d="M256 62C168 62 96 133 96 222c0 98 82 174 160 234 78-60 160-136 160-234C416 133 344 62 256 62Z" fill="url(#pin)" filter="url(#drop)"/>
+  <circle cx="256" cy="256" r="118" fill="url(#glow)"/>
+  <path d="M154 250 256 158l102 92" fill="none" stroke="#14397F" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M188 246 256 186l68 60v78H188Z" fill="#14397F"/>
+  <path d="M230 324v-46a26 26 0 0 1 52 0v46Z" fill="url(#gold)"/>
+  <path d="M256 104l7 17 17 7-17 7-7 17-7-17-17-7 17-7Z" fill="url(#gold)"/>
 </svg>
