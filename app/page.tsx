@@ -174,6 +174,7 @@ export default function Home() {
   const [saved, setSaved] = useState<ChurchItem[]>([]);
   const [roadState, setRoadState] = useState<Roads>({ originKey: "", failed: false, values: {} });
   const [attempt, setAttempt] = useState(0);
+  const [othersOpen, setOthersOpen] = useState(false);
   const favorites = useStoredSet("ccb-favorites");
   const archived = useStoredSet("ccb-archived");
   const modalOpen = locationOpen || selectedChurch !== null;
@@ -208,6 +209,7 @@ export default function Home() {
           if (savedOrigin.id === "current") localStorage.removeItem("ccb-origin");
           else setOrigin(savedOrigin);
         }
+        setOthersOpen(localStorage.getItem("ccb-others-open") === "1");
         const region = JSON.parse(localStorage.getItem("ccb-region") || "null");
         if (typeof region?.uf === "string" && STATES.some((state) => state.uf === region.uf)) {
           setUf(region.uf);
@@ -537,8 +539,12 @@ export default function Home() {
         <button onClick={() => setAttempt((value) => value + 1)}><RefreshCw size={15} /> Tentar de novo</button>
       </div>}
 
-      {view === "explore" && search.others.length > 0 && <section className="nearby-other" aria-label="Perto de você, em outros dias">
-        <h3><MapPin size={16} /> Perto de você, em outros dias</h3>
+      {view === "explore" && search.others.length > 0 && <details className="nearby-other" open={othersOpen} onToggle={(event) => {
+        const open = event.currentTarget.open;
+        setOthersOpen(open);
+        try { localStorage.setItem("ccb-others-open", open ? "1" : "0"); } catch { /* sem armazenamento local */ }
+      }}>
+        <summary><h3><MapPin size={16} /> Perto de você, em outros dias <i>{search.others.length}</i></h3><ChevronDown size={18} className="nearby-chevron" /></summary>
         <p>Estas casas ficam mais perto, mas não têm culto neste filtro ({dayName}{period === "Todos" ? "" : ` · ${period.toLocaleLowerCase("pt-BR")}`}). Toque em um dia para ver.</p>
         <ul>
           {search.others.map(({ church, distanceKm, days }) => {
@@ -551,7 +557,7 @@ export default function Home() {
             </li>;
           })}
         </ul>
-      </section>}
+      </details>}
 
       {loading ? <div className="church-grid" aria-hidden="true">{[0, 1, 2].map((item) => <div className="church-card skeleton" key={item} />)}</div>
         : needsRegion ? <div className="empty-state"><Globe2 size={30} /><h3>De onde você está?</h3><p>Use a sua localização para ver as casas de oração mais próximas, em qualquer lugar do Brasil, ou escolha o estado e a cidade acima.</p><button onClick={() => setLocationOpen(true)}>Usar minha localização</button></div>

@@ -466,3 +466,14 @@ footer a { color: var(--green); font-weight: 600; }
 @media (max-width: 520px) {
   .region-row select { height: 42px; padding: 0 6px; font-size: 14px; }
 }
+
+/* "Perto de você, em outros dias": recolhido por padrão */
+details.nearby-other { padding: 0; }
+details.nearby-other > summary { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 14px; cursor: pointer; list-style: none; }
+details.nearby-other > summary::-webkit-details-marker { display: none; }
+details.nearby-other > summary h3 { flex: 1; font-size: 15px; }
+details.nearby-other > summary h3 i { min-width: 20px; padding: 1px 7px; border-radius: 999px; background: white; color: var(--green-dark); font-family: system-ui, sans-serif; font-size: 12px; font-style: normal; font-weight: 700; text-align: center; }
+details.nearby-other .nearby-chevron { flex: none; color: var(--green-dark); transition: transform .15s; }
+details.nearby-other[open] .nearby-chevron { transform: rotate(180deg); }
+details.nearby-other > p { margin: 0 14px 10px; }
+details.nearby-other > ul { margin: 0 14px 14px; }
