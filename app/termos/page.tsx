@@ -13,7 +13,7 @@ export default function Terms() {
     <p>Ao usar o {SITE.name} (o “app”), no site ou instalado no aparelho, você concorda com estes termos. Se não concordar, basta não usar.</p>
 
     <h2>1. O que é o app</h2>
-    <p>É uma ferramenta gratuita para localizar casas de oração da Congregação Cristã no Brasil em Brasília, no Distrito Federal e em Águas Lindas de Goiás, com os dias de culto e atalhos para traçar a rota. Foi criado e é mantido por {SITE.author}, pessoa física, sem fins lucrativos.</p>
+    <p>É uma ferramenta gratuita para localizar casas de oração da Congregação Cristã no Brasil em todo o Brasil, com os dias de culto e atalhos para traçar a rota. Foi criado e é mantido por {SITE.author}, pessoa física, sem fins lucrativos.</p>
 
     <h2>2. Sem vínculo com a instituição</h2>
     <p>O app é um projeto <b>independente</b>. Ele <b>não é um canal oficial</b> e não foi criado, autorizado, patrocinado nem endossado pela Congregação Cristã no Brasil. O nome da instituição é citado somente para identificar de quais casas de oração o app trata; não há intenção de usar o nome ou a marca dela como se fossem do app. Nomes e marcas pertencem aos respectivos titulares.</p>
@@ -25,7 +25,7 @@ export default function Terms() {
     <h2>4. Limites das informações</h2>
     <ul>
       <li>Endereços, horários, ministério e telefones são reproduzidos do relatório público e <b>podem mudar</b> por reformas, eventos ou decisões locais sem que o app seja atualizado na hora.</li>
-      <li>As posições no mapa vêm do cadastro de endereços do IBGE (Censo 2022). Quando uma posição não está confirmada, o app avisa e a rota abre pela busca do endereço.</li>
+      <li>As posições no mapa vêm do cadastro de endereços do IBGE (Censo 2022). Só as posições conferidas geram rota pelo Waze ou pelo Google Maps; quando a posição não está confirmada, o app avisa, mostra apenas o endereço oficial e deixa a rota indisponível, para não levar ninguém ao lugar errado.</li>
       <li>As distâncias são estimativas de trajeto de carro, sem trânsito, a partir do ponto de saída que você informar.</li>
       <li>As rotas são traçadas pelo Waze e pelo Google Maps, serviços de terceiros com termos próprios.</li>
     </ul>

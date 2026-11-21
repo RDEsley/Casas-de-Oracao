@@ -3,14 +3,14 @@
 export const SITE = {
   name: "Localizador de Casas de Oração",
   shortName: "Casas de Oração",
-  region: "Brasília e Águas Lindas",
+  region: "todo o Brasil",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://casas-de-oracao.vercel.app",
-  description: "Encontre casas de oração da Congregação Cristã no Brasil em Brasília, no Distrito Federal e em Águas Lindas de Goiás por dia, período e distância. Projeto independente, sem vínculo com a instituição.",
+  description: "Encontre casas de oração da Congregação Cristã no Brasil em todo o Brasil, por localização, dia, período e distância. Projeto independente, sem vínculo com a instituição.",
   /** Deve aparecer em toda tela e em toda descrição pública. */
   independence: "Projeto independente, sem vínculo com a Congregação Cristã no Brasil.",
   author: "Richard Esley Silva Oliveira",
   contactEmail: "richardesleyso@gmail.com",
   officialReportUrl: "https://congregacaocristanobrasil.org.br/relatorio",
   repositoryUrl: "https://github.com/RDEsley/Relatorio-CCB-Brasilia",
-  legalUpdatedAt: "10 de outubro de 2026",
+  legalUpdatedAt: "20 de novembro de 2026",
 } as const;

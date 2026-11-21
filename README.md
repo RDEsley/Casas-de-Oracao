@@ -1,10 +1,10 @@
 <div align="center">
   <h1>⛪ Localizador de Casas de Oração</h1>
-  <h3>Brasília & Águas Lindas</h3>
-  <p>Encontre o próximo culto por dia, período e distância.<br />Mais perto. Mais simples. Direto ao caminho.</p>
+  <h3>Todo o Brasil</h3>
+  <p>Encontre a casa de oração mais próxima, por dia, período e distância.<br />Mais perto. Mais simples. Direto ao caminho.</p>
   <p><strong>Projeto independente, sem vínculo com a Congregação Cristã no Brasil.</strong></p>
   <p>
-    <a href="package.json"><img src="https://img.shields.io/badge/version-1.5.1-176B4A.svg" alt="Versão 1.5.1" /></a>
+    <a href="package.json"><img src="https://img.shields.io/badge/version-2.0.0-1C4FA8.svg" alt="Versão 2.0.0" /></a>
     <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white" alt="Next.js 16" /></a>
     <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=0B1F2A" alt="React 19" /></a>
     <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white" alt="TypeScript" /></a>
@@ -28,39 +28,41 @@
 
 > **Aviso de independência.** Este app não é um canal oficial e não foi criado, autorizado, patrocinado nem endossado pela Congregação Cristã no Brasil. O nome da instituição aparece somente para identificar de quais casas de oração o app trata; o app não usa o nome nem a marca dela. A fonte oficial é o [relatório público da instituição](https://congregacaocristanobrasil.org.br/relatorio).
 
-Aplicação web instalável (PWA) focada nas casas de oração da Congregação Cristã no Brasil no **Distrito Federal** e em **Águas Lindas de Goiás**. A experiência elimina a navegação repetitiva do relatório nacional: o dia atual já vem selecionado, os filtros ficam salvos e os resultados aparecem em ordem de distância.
+Aplicação web instalável (PWA) para encontrar casas de oração da Congregação Cristã no Brasil em **todo o país**. A experiência elimina a navegação repetitiva do relatório nacional: o dia atual já vem selecionado, os filtros ficam salvos e, com a localização do aparelho, os resultados aparecem em ordem de distância, em qualquer estado.
 
-O projeto funciona sem cadastro e sem banco de dados. A agenda pública fica versionada em JSON; favoritos, arquivados, filtros e locais pessoais ficam somente no `localStorage` do navegador do usuário.
+O projeto funciona sem cadastro e sem banco de dados. A agenda pública fica versionada em JSON (um arquivo por estado); favoritos, arquivados, filtros e locais pessoais ficam somente no `localStorage` do navegador do usuário.
 
-> **Cobertura atual:** 137 casas de oração e 461 horários de culto/RJM, conferidos em 26/08/2026. Posição no mapa: 114 confirmadas, 13 aproximadas e 10 sem posição segura.
+> **Cobertura atual:** 21.280 casas de oração em 27 estados, conferidas no relatório oficial em 20/11/2026. Posição no mapa: 10.362 confirmadas (com rota), 892 só aproximadas e 10.026 sem posição segura (sem rota; o app mostra o endereço oficial).
 
 ## ✨ Funcionalidades
 
 | Área | Recursos disponíveis |
 | --- | --- |
-| 📍 **Localização** | GPS lido na hora (nunca do cache), validação de precisão e endereços pessoais persistentes |
+| 📍 **Localização** | GPS lido na hora (nunca do cache), validação de precisão e endereços pessoais persistentes; as casas mais próximas são buscadas no país todo |
+| 🌎 **Região** | Sem localização, escolha o estado e a cidade (com a quantidade de casas de cada uma) |
 | 🧭 **Distância** | Trajeto de carro até o ponto conferido de cada casa, da mais próxima para a mais distante; se o serviço de rotas cair, mostra estimativa em linha reta com aviso |
-| 📅 **Agenda** | Filtro por dia da semana e seleção automática do dia atual; as casas mais próximas que não têm culto naquele dia aparecem em "Perto de você, em outros dias", com atalho para o dia em que têm |
+| 📅 **Agenda** | Filtro por dia da semana e seleção automática do dia atual; as casas mais próximas que não têm culto naquele dia aparecem em "Perto de você, em outros dias" |
 | 🌅 **Período** | Manhã, tarde, noite ou todos, com identificação automática pelo horário |
 | ⛪ **Serviços** | Culto oficial e Reunião de Jovens e Menores apresentados diretamente no card |
 | 👥 **Detalhes** | Ministério, telefones e agenda completa exibidos ao abrir cada casa de oração |
 | ⭐ **Favoritos** | Seleção privada e persistente, com área dedicada |
 | 🗄️ **Arquivados** | Oculta casas das buscas, permite restaurar individualmente ou desarquivar todas |
-| 🚗 **Rotas** | Waze e Google Maps abrem direto no ponto quando a posição é confirmada; nas demais, pela busca do endereço oficial, com aviso para conferir o destino |
+| 🚗 **Rotas** | Waze e Google Maps abrem direto no ponto **somente quando a posição foi confirmada**. Sem confirmação não há rota: o app mostra o endereço oficial e um botão para copiá-lo |
+| 🚩 **Correções** | Cada casa tem um link para avisar por e-mail que o endereço ou a posição está errado |
 | 📱 **Aplicativo** | Instalável direto pelo navegador (PWA), com convite na primeira visita e abertura em tela cheia |
-| 🔎 **Busca** | Pesquisa instantânea por casa, bairro, cidade ou endereço |
+| 🔎 **Busca** | Pesquisa por casa, bairro, cidade ou endereço dentro da região |
 | 🔐 **Privacidade** | Nenhuma conta, cookie de rastreamento ou dado pessoal enviado para um banco |
 
 ## 🧱 Decisão de arquitetura
 
-Um banco de dados não é necessário para este escopo. Os dados públicos mudam pouco e são mantidos em [`data/churches.json`](data/churches.json), enquanto preferências pessoais pertencem somente ao dispositivo. Isso reduz custo, manutenção, superfície de segurança e dependência de serviços externos.
+Um banco de dados não é necessário para este escopo. Os dados públicos mudam pouco e são mantidos em [`data/churches/`](data/churches) (`<UF>.json` por estado e `index.json` com o resumo), enquanto preferências pessoais pertencem somente ao dispositivo. Como a base nacional é grande demais para ir inteira ao navegador, a busca roda no servidor (`/api/churches`), que lê só os estados vizinhos ao ponto de saída e devolve as casas mais próximas. Isso reduz custo, manutenção e superfície de segurança.
 
 ```mermaid
 flowchart LR
-  A[Agenda versionada em JSON] --> B[Next.js]
-  B --> C[Filtros no navegador]
-  I[IBGE CNEFE 2022] --> A
-  B --> J[Instalação PWA pelo navegador]
+  A[Relatório oficial da CCB] --> B[data/churches/UF.json]
+  I[IBGE CNEFE 2022] --> B
+  B --> S[API de busca /api/churches]
+  S --> C[Next.js no navegador]
   C --> D[API de distâncias]
   D --> E[Motor de rotas OSRM]
   C --> F[Google Maps / Waze]
@@ -70,37 +72,38 @@ flowchart LR
 
 ## 🗺️ Dados e manutenção
 
-Os dados foram cruzados com o [Relatório oficial da CCB](https://congregacaocristanobrasil.org.br/relatorio) e páginas de consulta derivadas do Relatório Digital. O script de atualização cobre todas as 23 localidades cadastradas do DF, além de Águas Lindas de Goiás.
-
-Para atualizar a base:
+Os dados vêm do [relatório oficial da CCB](https://congregacaocristanobrasil.org.br/relatorio): o atualizador percorre todos os estados e cidades do relatório, lê o detalhe de cada casa e só então grava endereço, agenda, ministério e telefones.
 
 ```bash
-npm run data:update
+npm run data:update                 # todos os estados (retomável; leva algumas horas)
+npm run data:update -- --uf=DF,GO   # só alguns estados
+npm run data:validate               # integridade da base
 ```
 
-O atualizador consulta cada código diretamente no relatório oficial, confere a correspondência e só então grava endereço, agenda, ministério e telefones. Para executar as verificações de integridade da base e dos links:
-
-```bash
-npm run data:validate
-```
-
-O comando atualiza [`data/churches.json`](data/churches.json). A posição de uma casa é preservada enquanto o endereço oficial não mudar; se mudar, ela é zerada até a próxima geocodificação. Antes de publicar, revise o diff do arquivo e confirme mudanças relevantes no relatório oficial.
+A posição de uma casa é preservada enquanto o endereço oficial não mudar; se mudar, ela é zerada até a próxima geocodificação. Antes de publicar, revise o diff e confirme mudanças relevantes no relatório oficial. Casas que o relatório lista sem nenhum horário (35 hoje) ficam registradas em `skipped` no arquivo do estado e não aparecem no app.
 
 ### Posição no mapa
 
-O relatório oficial não traz coordenadas, e geocodificar o endereço por texto ou CEP erra por quilômetros no DF e em Águas Lindas. Por isso a posição vem do **CNEFE** (Cadastro Nacional de Endereços para Fins Estatísticos, IBGE, Censo 2022), que registra cada endereço com GPS coletado no local e o nome do estabelecimento:
+O relatório oficial não traz coordenadas, e geocodificar o endereço por texto ou CEP erra por quilômetros. Por isso a posição vem do **CNEFE** (Cadastro Nacional de Endereços para Fins Estatísticos, IBGE, Censo 2022), que registra cada endereço com GPS coletado no local e o nome do estabelecimento:
 
 ```bash
-npm run data:geocode
+npm run data:geocode                # todos os estados (baixa ~3,9 GB do IBGE em .cache/cnefe/)
+npm run data:geocode -- --uf=DF     # só um estado
 ```
 
 | `coordinateStatus` | Critério | Uso no app |
 | --- | --- | --- |
-| `verified` | O IBGE registrou um templo da Congregação no endereço do relatório oficial | Distância de carro e rota direto no ponto |
-| `approximate` | Só o endereço (ou o CEP curto) foi localizado, sem templo registrado | Distância com “≈” e rota pela busca do endereço |
-| `unavailable` | Nenhuma correspondência segura | Sem distância; rota pela busca do endereço |
+| `verified` | O IBGE registrou um templo da Congregação no endereço do relatório oficial (mesmo CEP e, quando o endereço tem número, o mesmo número) | Distância de carro e rota direto no ponto (Waze e Google Maps) |
+| `approximate` | Só o endereço (ou o CEP curto) foi localizado, sem templo registrado | Distância com “≈”, **sem rota** |
+| `unavailable` | Nenhuma correspondência segura | Sem distância e **sem rota**; só o endereço oficial |
 
-O script baixa os arquivos do IBGE para `.cache/cnefe/` (uns 22 MB), cruza CEP, numeração e nome, e lista o que ficou pendente. `npm run data:geocode -- --candidates` mostra os templos ainda não atribuídos mais parecidos com cada casa pendente. Casos conferidos à mão ficam em [`data/coordinate-overrides.json`](data/coordinate-overrides.json), sempre apontando o código do registro no CNEFE e o motivo — nunca uma coordenada digitada.
+Regra de ouro: **na dúvida, a rota fica indisponível.** Duas casas no mesmo ponto, ou um número de imóvel que não confere, derrubam a posição. `npm run data:geocode -- --candidates` mostra os templos ainda não atribuídos mais parecidos com cada casa pendente. Casos conferidos à mão ficam em [`data/coordinate-overrides.json`](data/coordinate-overrides.json), sempre apontando o código do registro no CNEFE e o motivo — nunca uma coordenada digitada. Cada casa com posição guarda o `cnefeId` de origem, para auditoria.
+
+Os links de rota são os oficiais do Waze (`waze.com/ul?ll=lat,lng`) e do Google Maps (`maps/dir/?api=1&destination=lat,lng`): levam exatamente à coordenada gravada. Nenhum dos dois oferece consulta automática gratuita (o Waze bloqueia robôs), então a conferência extra é por amostragem com o OpenStreetMap:
+
+```bash
+npm run data:audit -- --n=40 --uf=SP   # sorteia casas confirmadas e procura a CCB no OSM, a ~280 m
+```
 
 ## 🛠️ Tecnologias
 
@@ -133,9 +136,11 @@ Acesse [http://localhost:3000](http://localhost:3000).
 | `npm run dev` | Inicia o ambiente de desenvolvimento |
 | `npm run build` | Gera o build otimizado |
 | `npm run lint` | Verifica a qualidade do código |
-| `npm run data:update` | Atualiza a agenda das casas de oração |
+| `npm run data:update` | Atualiza a agenda das casas de oração (todos os estados; `-- --uf=DF` limita) |
 | `npm run data:geocode` | Reposiciona as casas pelo cadastro de endereços do IBGE |
 | `npm run data:validate` | Valida escopo, fonte, códigos, coordenadas e rotas |
+| `npm run data:audit` | Confere por amostragem as posições confirmadas contra o OpenStreetMap |
+| `npm run data:icons` | Gera favicons, ícone maskable e imagem de pré-visualização a partir do SVG |
 
 ## ☁️ Deploy na Vercel
 
@@ -165,10 +170,10 @@ O site é um PWA: o próprio navegador o instala, sem loja e sem baixar arquivo.
 ## 🔐 Privacidade e limites
 
 - O site envia cabeçalhos de segurança (nosniff, anti-iframe, política de referrer).
-- A origem é enviada temporariamente ao endpoint de rotas e ao OSRM somente para calcular as distâncias; o servidor não a armazena.
+- A origem é enviada ao servidor do app para listar as casas mais próximas e, daí, ao OSRM para calcular as distâncias; nada é armazenado.
 - Endereços salvos são localizados pelo OpenStreetMap: resultados que contradizem o digitado (outra quadra) são recusados, e resultados só de bairro ou cidade geram um aviso de ponto de saída aproximado.
 - A posição atual não fica salva entre visitas; somente endereços cadastrados manualmente permanecem no navegador.
-- Ao cadastrar um endereço, a busca de coordenadas usa o serviço público Nominatim.
+- Ao cadastrar um endereço, a busca de coordenadas usa o serviço público Nominatim (inclua cidade e estado, pois a busca vale para o Brasil todo).
 - Limpar os dados do navegador remove favoritos, arquivados e locais salvos.
 - As posições vêm do Censo 2022: um templo que mudou de endereço depois disso perde a posição na próxima atualização, em vez de apontar para o lugar antigo.
 - A distância de carro vem do OSRM, sem trânsito; o Waze pode indicar um trajeto um pouco diferente na hora.

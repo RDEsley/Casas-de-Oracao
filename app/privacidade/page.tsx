@@ -17,7 +17,7 @@ export default function Privacy() {
 
     <h2>2. O que é tratado</h2>
     <h3>Sua localização</h3>
-    <p>Só é lida quando você toca em “Usar localização atual” e autoriza no aparelho. As coordenadas vão para o servidor do app e, de lá, para os serviços públicos de rota do projeto OpenStreetMap (OSRM), apenas para calcular a distância até as casas de oração. Elas <b>não são armazenadas</b> e não ficam salvas entre uma visita e outra. Você pode revogar a permissão nas configurações do navegador ou do aparelho.</p>
+    <p>Só é lida quando você toca em “Usar localização atual” e autoriza no aparelho. As coordenadas vão para o servidor do app, que as usa para listar as casas mais próximas, e de lá para os serviços públicos de rota do projeto OpenStreetMap (OSRM), apenas para calcular a distância até as casas de oração. Elas <b>não são armazenadas</b> e não ficam salvas entre uma visita e outra. Você pode revogar a permissão nas configurações do navegador ou do aparelho.</p>
     <h3>Endereços que você salva</h3>
     <p>O texto digitado é enviado, direto do seu navegador, ao serviço público Nominatim (OpenStreetMap) para encontrar a posição. O resultado fica guardado <b>somente no seu aparelho</b>.</p>
     <h3>Preferências</h3>
