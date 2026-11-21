@@ -11,10 +11,11 @@ export function WaveArt({ className }: { className?: string }) {
 }
 
 /**
- * Potinho de doações (Lottie). O player e o arquivo só são baixados quando a animação aparece
- * na tela; se falhar, o espaço fica vazio e nada mais é afetado.
+ * Animação Lottie decorativa. O player e o arquivo só são baixados quando ela aparece na tela;
+ * se falhar, o espaço fica vazio e nada mais é afetado. Com `from` e `to` (quadros da
+ * composição) o trecho toca uma única vez e para no fim; sem eles a animação fica em laço.
  */
-export function JarArt({ className }: { className?: string }) {
+function LottieArt({ className, src, from, to }: { className?: string; src: string; from?: number; to?: number }) {
   const container = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -23,14 +24,33 @@ export function JarArt({ className }: { className?: string }) {
     const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     Promise.all([
       import("lottie-web/build/player/lottie_light"),
-      fetch("/animations/donation-jar.json").then((response) => response.ok ? response.json() : Promise.reject(new Error("animation"))),
+      fetch(src).then((response) => response.ok ? response.json() : Promise.reject(new Error("animation"))),
     ]).then(([{ default: lottie }, animationData]) => {
       if (cancelled || !container.current) return;
-      const item = lottie.loadAnimation({ container: container.current, renderer: "svg", loop: true, autoplay: !still, animationData });
+      const once = from !== undefined && to !== undefined;
+      const item = lottie.loadAnimation({ container: container.current, renderer: "svg", loop: !once, autoplay: !once && !still, animationData });
+      if (once) {
+        // Quem prefere menos movimento vê direto o quadro final do trecho.
+        if (still) item.goToAndStop(to - from, true);
+        else item.playSegments([from, to], true);
+      }
       destroy = () => item.destroy();
     }).catch(() => { /* decorativa: sem ela a tela continua completa */ });
     return () => { cancelled = true; destroy(); };
-  }, []);
+  }, [src, from, to]);
 
   return <div ref={container} className={className} aria-hidden="true" />;
+}
+
+/** Potinho de doações, na página de apoio. */
+export function JarArt({ className }: { className?: string }) {
+  return <LottieArt className={className} src="/animations/donation-jar.json" />;
+}
+
+/**
+ * Coração de agradecimento, para quem recusa o convite. A chama vira coração e ele fica na
+ * tela: o arquivo termina fazendo o coração sumir, então o trecho para antes disso.
+ */
+export function HeartArt({ className }: { className?: string }) {
+  return <LottieArt className={className} src="/animations/donation-heart.json" from={40} to={330} />;
 }

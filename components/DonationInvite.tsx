@@ -4,7 +4,7 @@ import { ArrowLeft, HeartHandshake, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { INVITE_AFTER_VISITS, INVITE_LOCK_MS, cardHidden, countVisit, hideCard, inviteSeen, markInviteSeen } from "../lib/invite";
-import { JarArt, WaveArt } from "./DonationArt";
+import { HeartArt, WaveArt } from "./DonationArt";
 
 type Step = "ask" | "thanks";
 
@@ -54,7 +54,7 @@ export default function DonationInvite() {
 
     {step && <div className="modal-backdrop">
       <section className="location-modal invite-modal" role="dialog" aria-modal="true" aria-labelledby="invite-title">
-        {step === "ask" ? <WaveArt className="invite-art" /> : <JarArt className="invite-art" />}
+        {step === "ask" ? <WaveArt className="invite-art" /> : <HeartArt className="invite-art" />}
         {step === "ask" ? <>
           <h2 id="invite-title">Que bom ter você por aqui!</h2>
           <p>Você já abriu o app algumas vezes, então ele deve estar sendo útil. Fico feliz de verdade.</p>
