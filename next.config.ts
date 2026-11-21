@@ -8,6 +8,11 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // A base por estado é lida do disco pelas rotas de busca; o rastreamento não a enxerga sozinho.
+  outputFileTracingIncludes: {
+    "/api/churches": ["./data/churches/**/*.json"],
+    "/api/places": ["./data/churches/index.json"],
+  },
   poweredByHeader: false,
   headers: async () => [
     { source: "/(.*)", headers: securityHeaders },
